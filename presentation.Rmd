@@ -78,7 +78,7 @@ style_extra_css(css = list(".todo" = list(color = "#17C25B"),
 ```
 
 ```{r, echo=FALSE}
-link <- "github.com/aaronpeikert/bayes-prereg"
+link <- "aaronpeikert.github.io/thesis"
 ```
 
 ```{r, echo=FALSE, out.width = "30%"}

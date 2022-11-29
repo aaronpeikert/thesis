@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Transparency in Science</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Aaron Peikert" />
+    <meta name="date" content="2022-11-29" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+name: qrcode
+
+
+
+
+
+
+
+&lt;img src="images/qr_slides.svg" width="30%" /&gt;
+
+github.com/aaronpeikert/bayes-prereg
+
+.pull-right[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)]
+
+---
+class: center, middle
+
+# Transparency in Science
+
+## Principled Approaches to Computational Reproducibility and Preregistration
+
+### Aaron Peikert
+
+### LCBC Berlin  | 22.11.2022
+
+---
+class: inverse, center, middle
+
+# Trust in Science
+
+---
+class: center, middle
+
+.enormous[?]
+
+---
+
+
+
+## Is there a replication crisis?*
+
+.center[
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-4-1.svg" width="70%" /&gt;
+]
+
+.small.right[Baker, M. 1,500 scientists lift the lid on reproducibility. *Nature* 533, 452–454 (2016). https://doi.org/10.1038/533452a]
+
+--
+
+.small.right[***They call it "reproducibility" and fail to publish the raw data.**]
+
+---
+class: inverse, center, middle
+
+# Transparency in Science*
+
+*Statisticians' Edition
+
+---
+class: center, middle
+
+# World → Theory
+
+---
+class: center, middle
+
+# World ← Theory
+
+---
+class: center, middle
+
+# World ↔ Theory
+
+--
+
+.curly.white.large[It's a match!]
+
+---
+class: center, middle, inverse
+
+# Principled Approach
+
+---
+class: center, middle
+
+# `\(L(\text{Theory}, \text{Data})\)`
+
+---
+class: center, middle
+
+# ѴαЯi€𝜏y
+
+### `\(L(\text{Theory}, \text{Data})\)`
+
+---
+class: center, middle
+
+`$$L_1(\text{Theory}, \text{Data})$$`
+`$$\vdots$$`
+`$$L_\infty(\text{Theory}, \text{Data})$$`
+
+---
+class: center, middle, inverse
+
+# Statistical Models
+
+--
+
+= automated induction
+
+---
+class: center, middle
+
+# Theory
+
+---
+class: center, middle
+
+# T█e█ry
+
+---
+class: middle
+
+`$$Model(\text{Theory})$$`
+---
+class: middle
+
+`$$Model(\text{Theory}, \text{Data})$$`
+
+---
+
+### How statisticians judge a model:
+
+Sampling the world and compare:
+
+$$
+L(\text{Model}(\text{Data}), \text{Data}) + \mathcal{C}(\text{Model})
+$$
+e.g.: Adjusted R², Stein's Unbiased Risk Estimator, Information Criteria, etc.
+
+.center[
+
+**We account for peeking at the data**
+
+]
+
+---
+
+### Researcher have a harder job:
+
+Sampling the world and compare:
+
+$$
+L(\text{Model}(\text{Data}), \text{Data}) + \mathcal{C}(\text{Model}) + \mathcal{C}(\text{Human})
+$$
+.center[
+
+**We must account for the models and humans ability to make sense of any data.**
+
+]
+
+---
+class: center, middle
+
+.left[What happens if]
+
+.center[
+
+`\(\mathcal{C}(\text{Model})\)` or `\(\mathcal{C}(\text{Human})\)`
+
+]
+
+.right[is unknown?]
+
+---
+class: center, middle, inverse
+
+# .blurry[Uncertainty]
+
+---
+
+The goal:
+
+.center[
+
+`\(L(\text{Model}(\text{Data}), \text{Data}) + \mathcal{C}(\text{Model}) + \mathcal{C}(\text{Human})\)`
+
+]
+
+--
+
+The enemy:
+
+.pull-left[
+
+.blurry2[$$\mathcal{C}(\text{Model})$$]
+
+]
+
+.pull-right[
+
+.blurry2[$$\mathcal{C}(\text{Human})$$]
+
+]
+
+--
+
+The solution:
+
+.pull-left.center[
+
+### Computational Reproducibility
+
+]
+
+.pull-right.center[
+
+### Preregistration
+
+]
+
+---
+
+.pull-left.center[
+
+### Computational Reproducibility
+
+Conceptually trivial
+
+]
+
+.pull-right.center[
+
+### Preregistration
+
+Conceptually difficult
+
+]
+
+--
+
+.pull-left.center[
+
+technologically difficult
+
+low social hurdles
+
+]
+
+.pull-right.center[
+
+technologically trivial
+
+high social hurdles
+
+]
+
+---
+
+.pull-left.center[
+
+### Computational Reproducibility
+
+Conceptually trivial 😀
+
+technologically difficult 😒
+
+low social hurdles 😀
+
+]
+
+.pull-right.center[
+
+### Preregistration
+
+Conceptually difficult 😒
+
+technologically trivial 😀
+
+high social hurdles 😒
+
+]
+
+--
+
+Reducing uncertainty about:
+
+.center[
+
+`\(\mathcal{C}(\text{Model})\)` &amp;emsp; vs &amp;emsp; `\(\mathcal{C}(\text{Human})\)`
+
+]
+
+---
+class: center, middle, inverse
+
+# Computational Reproducibility
+
+---
+class: center, middle
+
+“Insanity is doing the same thing over and over again and expecting different results.”
+
+.right[—Albert Einstein (disputed)]
+
+--
+
+As it turns out, doing the **same** thing is pretty complicated.
+
+---
+class: middle
+
+1. Multiple inconsistent versions of code and data
+--
+
+2. Copy-and-paste errors
+--
+
+3. Ambiguous order of code execution
+--
+
+4. Broken dependencies
+
+---
+class: center, middle
+
+| Problem       | Solution            | Implementation    |
+|---------------|---------------------|-------------------|
+| versions?     | version control     | Git               |
+| copy&amp;paste?   | dynamic documents   | R Markdown        |
+| order?        | workflow automation | Make / GH Actions |
+| dependencies? | software management | Docker            |
+
+---
+class: center, middle
+background-color: white
+
+&lt;img src="https://raw.githubusercontent.com/aaronpeikert/repro-tutorial/main/images/nutshell.svg" width="80%" /&gt;
+
+
+---
+class: center, middle
+
+.small[&lt;https://github.com/aaronpeikert/repro-talk/releases/download/marbach/repro-talk.pdf&gt;]
+
+---
+class: center, middle, inverse
+
+# Preregistration
+
+---
+
+## Is there a replication crisis?*
+
+.center[
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-6-1.svg" width="70%" /&gt;
+]
+
+.small.right[Baker, M. 1,500 scientists lift the lid on reproducibility. *Nature* 533, 452–454 (2016). https://doi.org/10.1038/533452a]
+
+---
+class: center, middle
+layout: true
+
+---
+
+## Because researchers are *fraudsters*?
+
+--
+
+# No
+
+???
+Some say to prevent intentional wrongdoing. 
+However, preregistrations are easily circumvented with bad intentions.
+We must assume researchers have good intentions.
+---
+
+## Because researchers are *fools*?
+
+--
+
+# No
+--
+, not necessarily
+
+???
+Some say to prevent unintentional wrongdoing.
+Researchers must be put in restrains to prevent them from cutting themselves on the sharp edge of "false positives".
+
+---
+layout: false
+class: inverse, center, middle
+
+# Traditional view
+
+---
+class: center
+
+# Researchers confuse:
+
+.pull-left.center[
+
+# confirmatory
+
+]
+.pull-right.center[
+
+# exploratory
+
+]
+---
+class: center
+
+# Preregistration separates:
+
+.pull-left.center[
+
+# confirmatory
+
+]
+.pull-right.center[
+
+# exploratory
+
+]
+--
+.pull-left.center[
+
+# ≈
+# preregistered
+
+]
+.pull-right.center[
+
+# ≈
+# not preregistered
+
+]
+
+--
+
+# ?
+
+---
+class: inverse, center, middle
+
+# A Formal Objective
+
+---
+class: middle
+
+.large[
+Ideally:
+1. The original author has **good intentions**.
+2. Their readers are **rational**.
+3. The goal is to **convince** the readers.
+]
+
+---
+
+### Adjusting for complexity in simple models
+
+Adjusted R², Stein's Unbiased Risk Estimator, Information Criteria, etc.
+
+`$$L(\text{Model}(\text{Data}), \text{Data})  + \mathcal{C}(\text{Model})$$`
+
+--
+
+### Alternatively:
+
+The statistical complexity of some models is hard to estimate.
+
+Find a situation, were `\(\mathcal{C}(\text{Model}) = 0\)`
+
+---
+## Test-set (cross validation)
+
+`\(\mathcal{C}(\text{Model}) = 0\)`
+
+$$
+L(\text{Model}(\text{Train, Test}), \text{Test})
+$$
+.center[
+
+**There is no peeking to account for.**
+
+]
+
+---
+## `\(\mathcal{C}(\text{Human})\)`
+
+The statistical complexity of humans is hard to estimate.
+
+Find a situation, were `\(\mathcal{C}(\text{Human}) = 0\)`
+
+--
+
+.center[
+
+# Preregistration
+
+]
+
+---
+class: center, middle, inverse
+
+# .blurry[Uncertainty]
+
+---
+# Statistical Relevancy
+
+Any:
+
+`$$L(\text{Theory}, \text{Data})$$`
+
+Must benefit from:
+
+`$$P(E|H) \gg P(E|¬H)$$`
+
+---
+class: center, middle, inverse
+
+# Bayes*
+
+*my favoritey `\(L(\text{Theory}, \text{Data})\)`
+
+---
+class: middle
+
+.large[
+
+
+`$$\frac{P(H)P(E|H)}{P(E)}$$`
+]
+
+--
+
+.left[Law of total probability:]
+
+
+
+`$$P(E) = P(H)P(E|H) + P(¬H)\color{#F28705}{P(E|¬H)}$$`
+
+---
+class: center, middle
+
+## `\(1 - P(E|¬H)\)`
+## =
+## `\(P(¬E|¬H)\)`
+## =
+## Theorethical Risk
+
+---
+class: center, middle
+
+## `\(\mathcal{C}(\text{Model})\)` → Theorethical Risk ← `\(\mathcal{C}(\text{Human})\)`
+
+---
+class: center, middle, inverse
+
+# .blurry[Uncertainty]
+
+---
+class: center, middle
+name: theoretical-risk-plot2
+
+
+
+
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-8-1.svg" width="100%" /&gt;
+
+
+---
+class: center, middle
+layout: true
+---
+
+.large[**Preregistrations**] reduce .large[**uncertainty**] about .large[**theoretical risk**].
+
+---
+
+### One further idea
+
+---
+
+# Preregistration as Code
+
+### version control + dynamic documents
+
+---
+class: center
+
+.pull-left[
+
+### Standard Preregistration
+
+hunches
+
+↓
+
+preregistration
+
+↓
+
+data
+
+↓
+
+article draft
+]
+
+.pull-right[
+
+### Preregistration as Code
+
+simulated data
+
+↓
+
+article draft with mock results
+
+↓
+
+data
+
+↓
+
+article draft with real results
+
+]
+
+
+---
+
+# Can I explore the data?
+
+--
+
+# Yes.
+
+---
+template: theoretical-risk-plot2
+
+---
+
+# Can I deviate?
+
+--
+
+# Sometimes.
+
+---
+template: theoretical-risk-plot2
+
+---
+
+# How much detail?
+
+--
+
+# Very detailed.
+
+---
+template: theoretical-risk-plot2
+
+---
+template: qrcode
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

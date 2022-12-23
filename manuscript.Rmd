@@ -100,7 +100,7 @@ Based on this split, the articles answer the second question (the "how").
 I argue that transparency about statistical methods is enabled by computational reproducibility, while transparency about sociological factors is facilitated by preregistration.
 The conceptualization of computational reproducibility and preregistration as means for transparency is supplemented by practical guidance on how researchers may implement these tools in practice.
 
-# Two perspectives that necessitate transparency
+# What necessitates transparency in an inductive science
 
 The need for transparency is closely tied to the use of induction in the empirical test of a theory.
 There has been a long and vigorous debate about what it means to test a theory empirically.
@@ -201,7 +201,7 @@ We might still want transparency on how they did gather the data and how they co
 However, it is a simple kind of transparency, about what did happen.
 If the researcher induces some quantities, transparency about what did happen is not enough; instead a transparency about what could have happened, had the data looked different, is required.
 
-# A future performance perspective on transparency
+## A future performance perspective
 
 There is another line of argumentation about why transparency about the process of induction is important besides closeness to truth.
 Instead of verisimilitude one might be concerned with future performance, hence, how well does a theory do in predicting novel facts.
@@ -210,10 +210,11 @@ If predictions and observed facts are compared using a sufficient statistic a cl
 The expectation over data $\mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))]$, can be estimated by repeatedly sampling data and repeating the inductive process.
 This insight connects the information theoretic setup with cross validation, where the data is partitioned and the inductive process is repeated on each partition.
 
+# How to establish transparency in an inductive science
 
-# Transparency about statistical models: Computational Reproducibilibiltiy
+## Transparency about statistical models: Computational Reproducibilibiltiy
 
-# Transparency about human researcher: Preregistration
+## Transparency about human researcher: Preregistration
 
 # Discussion
 

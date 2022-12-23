@@ -2,7 +2,7 @@ PROJECT := thesis
 WORKDIR := $(CURDIR)
 
 # list below your targets and their recipies
-all:
+all: manuscript.pdf
 
 manuscript.pdf: manuscript.tex
 

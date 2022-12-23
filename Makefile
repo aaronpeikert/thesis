@@ -9,6 +9,7 @@ manuscript.pdf: manuscript.tex
 apa.csl:
 	curl -sL https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl > $@
 
+publish/: manuscript.pdf
 
 ### Wrap Commands ###
 # if a command is to be send to another process e.g. a container/scheduler use:

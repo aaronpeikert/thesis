@@ -1,0 +1,7 @@
+RUN install2.r --error --skipinstalled \ 
+  here \ 
+  patchwork \ 
+  qrcode \ 
+  showtext \ 
+  svglite \ 
+  xaringanthemer

@@ -100,12 +100,18 @@ Based on this split, the articles answer the second question (the "how").
 I argue that transparency about statistical methods is enabled by computational reproducibility, while transparency about sociological factors is facilitated by preregistration.
 The conceptualization of computational reproducibility and preregistration as means for transparency is supplemented by practical guidance on how researchers may implement these tools in practice.
 
-# An information theorethic perspective on transparency in science
+# Two perspectives that necessitate transparency
 
 The need for transparency is closely tied to the use of induction in the empirical test of a theory.
 There has been a long and vigorous debate about what it means to test a theory empirically.
+Two frameworks lend themselves to investigate the effect of induction.
+The one framework motivates transparency under a sciences that attempts to empirically evaluate the verisimilitude ("truth likeness") of a theory.
+The other framework motivates transparency under a sciences that wants to select a theory according to its future predictive performance.
+
+## An information theorethic perspective
+
 One framework that is especially suited to investigate how induction plays into such empirical test is information theory.
-Information theory provides a rigorous mathematical measure that can be understood as the verisimilitude ("truth likeness") of a theory.
+Information theory provides a rigorous mathematical measure that can be understood as the verisimilitude of a theory.
 That is, how much information about the truth is lost when the theory is used to model reality.
 Expressed mathematically we have a function $f(x)$ that gives us the probability to observe the state of the world $x$ where $f$ represents the full reality.
 We are now interested, how much information is lost if we use $g(x)$, our theory, instead of $f(x)$, the reality, over all possible states $x$.
@@ -115,7 +121,7 @@ $$
 I(f, g) = \mathbb{E}_x\left[log(f(x))\right] - \mathbb{E}_x\left[log(g(x))\right]
 $$
 
-Most readers will recognize, that this information theoretic setup and the derivation below follow closely XXX in their derivation of the Akaike Information Criterion.
+Most readers will recognize, that this information theoretic setup and the derivation below follow closely @burnhamModelSelectionMultimodel2002 in their derivation of the Akaike Information Criterion in a very general form.
 What is of interest here, is not the derivation, but how this conceptualization can help us to understand what happens when data is simultaneously used to induce quantities of a theory and test the theory.
 
 This setup is of course highly theoretical.
@@ -193,18 +199,16 @@ A researcher who empirically evaluates a theory without inductive elements gets 
 If we believe they did not make any mistakes and that they are truthful, we may take their assessment at face value.
 We might still want transparency on how they did gather the data and how they compared it to the theories.
 However, it is a simple kind of transparency, about what did happen.
-If the researcher did induce some quantities, transparency about what did happen is not enough; instead a transparency about what could have happened, had the data looked different, is required.
-This information theoretic perspective one perspective that warrants transparency about the process of induction or equivalently about what could have happened.
-What it means to establish this kind of transparency (the "how") will be discussed at length, however, before we continue, let me motivate the need for transparency about the process (the "what") using another perspective.
+If the researcher induces some quantities, transparency about what did happen is not enough; instead a transparency about what could have happened, had the data looked different, is required.
 
 # A future performance perspective on transparency
 
-There is another line of argumentation why transparency about the process of induction is important besides closeness to truth.
+There is another line of argumentation about why transparency about the process of induction is important besides closeness to truth.
 Instead of verisimilitude one might be concerned with future performance, hence, how well does a theory do in predicting novel facts.
 These very different motivations can be linked, but both warrant transparency on their own.
 If predictions and observed facts are compared using a sufficient statistic a close link to information theory exists.
 The expectation over data $\mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))]$, can be estimated by repeatedly sampling data and repeating the inductive process.
-This insight connects the information theoretic setup with the process of cross validation, where the data is partitioned and the inductive process is repeated on each partition.
+This insight connects the information theoretic setup with cross validation, where the data is partitioned and the inductive process is repeated on each partition.
 
 
 # Transparency about statistical models: Computational Reproducibilibiltiy

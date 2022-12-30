@@ -165,7 +165,7 @@ $$
 \mathbb{E}_x[log(g(x|\hat{\theta}(y)))] > \mathbb{E}_x\left[log(g(x|\theta_o))\right] 
 $$
 
-That is to say, any induced estimate will be suboptimal.
+That is to say, any induced estimate will be sub optimal.
 The inference goal, however, is to compare the theory $g$ to reality $f$, not to evaluate the estimates of $\hat\theta$.
 The point is to make a statement about the theory, not to make a statement about the data in combination with the theory.
 If the estimate of $\hat\theta(y)$, i.e., the inductive process, is unbiased we may form an expectation over the data $y$:
@@ -204,7 +204,32 @@ If the researcher induces some quantities, transparency about what did happen is
 ## A future performance perspective
 
 In addition to closeness to truth, there is another line of argumentation about why transparency about the process of induction is important.
-Instead of verisimilitude one might be concerned with future performance. That is, how well does a theory do in predicting novel facts.
+Instead of verisimilitude one might be concerned with future performance.
+That is, how well does a theory do in predicting novel facts.
+We dispense in this argument with an appeal to ground truth, replace the Kullback–Leibler divergence with an arbitrary loss function, and no longer require $g(x)$ to return probabilities:
+
+$$
+\mathcal{L}(y, g(y|\theta)) = \mathbb{E}_yL(y, g(y|\theta))
+$$
+
+Still the core problems of limited sample and inductive process remain.
+Again there exists only a sample $y$ over which we form the expectation, but now we must pay a little more attention to the individual elements, $i = 1, \dots,n$:
+
+<!--the unconscious statistician strikes again-->
+
+$$
+\mathbb{E}_y L(y, g(y|\theta))
+ = \sum_{i=1}^n L(y_i, g(y_i|\theta)) \frac{1}{n}
+$$
+
+Since, we allow arbitrary $L$, the trick of using the Taylor series expansion does not get us very far.
+What we can do, however, is to make use of the cross-validatory, which is indicated by $y_{-i} = y \diagdown \{y_i\}$
+
+$$
+\mathbb{E}_y L(y, g(y|\hat\theta(y)))
+ = \sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i})))\frac{1}{n}
+$$
+
 It is important to realize that the information theoretic setup above has made no appeal to expected performance on unseen data.
 Verisimilitude and expected performance are different motivations for transparency, though they can be linked.
 If predictions and observed facts are compared using a sufficient statistic, a close link to information theory exists.
@@ -214,17 +239,11 @@ For each subset, the resulting model is then compared to the complement that was
 Of course, there is no strong reason to use a sufficient statistic for this comparison beyond its link to information theory.
 So researcher might differ in what they find to be a good prediction (replacing the Kullback–Leibler divergence with an arbitrary loss function) and we do not longer appeal to a concept of ground truth:
 
-$$
-\mathcal{L}(x, g(x|\theta))
-$$
 
-Again there exists some optimal $\theta_o$:
 
-$$
-\theta_{o} = \operatorname*{arg\,min}_\theta \mathcal{L}(x, g(\cdot|\theta))
-$$
 
-Choosing $\hat\theta(y)$ based on a
+
+Which we can estimate using cross-validation.
 
 ## A conceptual perspective
 

@@ -58,24 +58,25 @@ So the threshold of the deductive decision depends on a quantity that must be in
 <!--sometimes the use of induction is well justified-->
 Induction is necessary and, in the present case, innocuous for psychology as a science.
 Here, it is innocuous because the introduced bias can be accounted for and vanishes with increasing sample size, but we will see later that this is not always the case.
-In this specific example, we use a t-test instead of a z-test to account for the estimation of variance from data, and it is widely known that even without this correction, the z-test is a good approximation when sample sizes are large [@studentProbableErrorMean1908].
+In this specific example, we use a t-test instead of a z-test to account for variance estimation from data.
+It is widely known that even without this correction, the z-test is a good approximation when sample sizes are large [@studentProbableErrorMean1908].
 Induction is also necessary because it is almost unimaginable to ask psychological researchers to specify every detail, such as the variance, a priori from their theory.
 If they had to, there would probably be no psychological theory that could survive an empirical test.
 
 <!--necessity of induction-->
 In other words, induction gives our theories some slack to be imprecise and contain "blank" spaces, later to be filled with data.
-It allows researchers to concentrate on the essential statements of their theories and choose some of the assumptions so that they fit the data well.
+It allows researchers to concentrate on the essential statements of their theories and choose some of the assumptions to fit the data well.
 In some ways, it is the empirical researchers' answer to the Duhem–Quine problem [@duhemPhysicalTheoryExperiment1976; @vanormanquineTwoDogmasEmpiricism1976], which states that any empirical test of a theory is testing the conjunction of theory, auxiliary assumptions, and conjectures [@meehlTheoreticalRisksTabular1978; @meehlAppraisingAmendingTheories1990].
 By inducing some quantities, psychological researchers can remove them from the conjunction.
 If researchers use induction for some necessary but under the theory arbitrary assumptions, their theory will not be refuted because of these assumptions.
-Since empirical researcher often cannot derive every assumption from their theory, avoiding refutation because of those assumptions is a desirable property.
+Since empirical researchers often cannot derive every assumption from their theory, avoiding refutation because of those assumptions is a desirable property.
 
 <!--statistical induction can be dangerous-->
 By the same token, whole theories may escape refutation by replacing every ill-fitting statement deduced from theory with statements induced from data.
 Such a strategy of post hoc changing a theory in light of facts has been called "Lakatosian Defense" [@meehlAppraisingAmendingTheories1990].
-If pushed to the limit, we arrive at a "theory" that is governed by the data.
+If pushed to the limit, we arrive at a "theory" governed by the data.
 Such a theory, full of empirically induced statements, is almost empty of statements that have been empirically verified.
-The data used for induction, can not refute these statements, so they are not tested at all.
+The data used for induction can not refute these statements, so they are not tested at all.
 
 <!--the appraisal of "induced theories" should be low-->
 So what to think of such, yet untested, theory?
@@ -88,7 +89,7 @@ On the one hand, they need induction to test their imprecise theories.
 On the other hand, induction may render any test of a hypothesis ineffective.
 The problem, I argue, therefore, is not induction but making induction transparent.
 The replication crisis can be traced to a misjudgment of how much induction has been going on in psychology and hence, how well-tested the empirical claims are.
-The question of this dissertation is, therefore, what must be made transparent, and how can we make it transparent?
+Therefore, the question of this dissertation is what must be made transparent, and how can we make it transparent?
 
 <!--forshadow the main part-->
 The first question (the "what") is theoretical in nature.
@@ -106,27 +107,27 @@ The need for transparency is closely tied to the use of induction in the empiric
 There has been a long and vigorous debate about what it means to test a theory empirically.
 I do not attempt to rehash the debate about what constitutes an empirical test but aim to lay open the role of transparency in two frameworks that lend themselves to investigate induction.
 The first framework motivates transparency when the aim of an empirical test is to evaluate the verisimilitude ("truth likeness") of a theory.
-The second framework motivates transparency under a sciences that wants to select a theory according to its expected predictive performance.
+The second framework motivates transparency under a science that wants to select a theory according to its expected predictive performance.
 
-## An information theoretic perspective
+## An information-theoretic perspective
 
 Information theory provides a rigorous mathematical measure that can be understood as the verisimilitude of a theory.
 That is, how much information about the truth is lost when the theory is used to model reality.
-Expressed mathematically we have a function $f(x)$ that gives us the probability to observe the state of the world $x$ where $f$ represents the full reality.
-We are now interested, how much information is lost if we use $g(x)$, our theory, instead of $f(x)$, the reality, over all possible states $x$.
+Expressed mathematically, we have a function $f(x)$ that gives us the probability to observe the state of the world $x$ where $f$ represents the full reality.
+We are now interested in how much information is lost if we use $g(x)$, our theory, instead of $f(x)$, the reality, over all possible states $x$.
 Expressed as lost bits of information, a measure known as Kullback–Leibler divergence [@kullbackInformationSufficiency1951], we get:
 
 $$
 \mathcal{I}(f, g) = \mathbb{E}_x\left[log(f(x))\right] - \mathbb{E}_x\left[log(g(x))\right]
 $$
 
-Most readers will recognize, that this information theoretic setup and the derivation below follow closely @burnhamModelSelectionMultimodel2002, Ch. 7.2, in their derivation of the Akaike Information Criterion in its general form.
-What is of interest here, is not the derivation, but how this conceptualization can help us to understand what happens when data is simultaneously used to induce quantities of a theory and test the theory.
+Most readers will recognize that this information-theoretic setup and the derivation below follow closely @burnhamModelSelectionMultimodel2002, Ch. 7.2, in their derivation of the Akaike Information Criterion in its general form.
+What is of interest here is not the derivation but how this conceptualization can help us to understand what happens when data is simultaneously used to induce quantities of a theory and test the theory.
 
-This setup is of course highly theoretical.
+This setup is, of course, highly theoretical.
 $\mathcal{I}(f, g)$ is unknowable, since the truth is unobserved.
-This fact, however, does not impede us from getting closer to the truth because we still can compare two different theories relative to each other.
-Because the expectation for $f$ remains constant (left hand side) we only need to estimate the relative expected loss of information (right hand side) to make a comparative judgment.
+However, this fact does not impede us from getting closer to the truth because we can still compare two theories relative to each other.
+Because the expectation for $f$ remains constant (left-hand side), we only need to estimate the relative expected loss of information (right-hand side) to make a comparative judgment.
 To make a relative judgment about several competing theories it suffices to estimate:
 
 $$
@@ -134,17 +135,17 @@ $$
 $$
 
 To allow for quantities to be induced, we must assume that our theory is parametrized, e.g., $g(x|\theta)$.
-That means our theory implies a multitude of possible probability distribution that may describe reality.
-Though, this assumption may be lifted, we assume each implied version of the theory equally probable a priori.
+That means our theory implies a multitude of possible probability distributions that may describe reality.
+Though this assumption may be lifted, we assume each implied version of the theory is equally probable a priori.
 This parametrization captures the idea that some assumptions necessary for a theory to make testable statements are arbitrary.
-Of those arbitrary assumptions we want to find those that fit the reality with the least amount of information lost.
+Of those arbitrary assumptions, we want to find those that fit the reality with the least amount of information lost.
 The best parametrization is archived by:
 
 $$
 \theta_o = \operatorname*{arg\,min}_\theta \mathcal{I}(f, g(\cdot|\theta))
 $$
 
-The inference goal is therefore:
+The inference goal is, therefore:
 
 $$
 \mathbb{E}_x\left[log(g(x|\theta_o))\right]
@@ -152,9 +153,9 @@ $$
 
 Of course, we usually do not know $\theta_o$.
 That is why it is necessary to induce it from data, denoted as $\hat\theta(y)$.
-The crucial point here is to understand what happens, when we can not derive $\theta$, deductively, but must substitute it inductively with an estimate $\hat\theta(y)$.
+The crucial point here is to understand what happens when we can not derive $\theta$ deductively but must substitute it inductively with an estimate $\hat\theta(y)$.
 Any estimated parameters $\hat{\theta}(y)$ would almost surely not be equal to $\theta_o$.
-It follows that, almost surely:
+It follows that almost surely:
 
 $$
 \mathcal{I}(f, g(\cdot|\hat{\theta}(y)) > \mathcal{I}(f, g(\cdot|\theta_o))
@@ -166,18 +167,18 @@ $$
 \mathbb{E}_x[log(g(x|\hat{\theta}(y)))] > \mathbb{E}_x\left[log(g(x|\theta_o))\right] 
 $$
 
-That is to say, any induced estimate will be sub optimal.
+That is to say, any induced estimate will be sub-optimal.
 The inference goal, however, is to compare the theory $g$ to reality $f$, not to evaluate the estimates of $\hat\theta$.
 The point is to make a statement about the theory, not to make a statement about the data in combination with the theory.
-If the estimate of $\hat\theta(y)$, i.e., the inductive process, is unbiased we may form an expectation over the data $y$:
+If the estimate of $\hat\theta(y)$, i.e., the inductive process, is unbiased, we may form an expectation over the data $y$:
 
 $$
 \mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))]
 $$
 
-Forming this expectation over data is a crucial step, it requires us to think beyond the data we observed to all the data we could have observed.
+Forming this expectation over data is a crucial step; it requires us to think beyond the data we observed to all the data we could have observed.
 There are two ways to get at this expectation.
-One follows in this section, another is discussed in the next section.
+One follows in this section, and another is discussed in the next section.
 
 We might notice that we often get an unbiased estimate for $\mathbb{E}_x[log(g(x|\hat{\theta}(y)))]$, e.g., in maximum likelihood estimation.
 The expectation over the data together with Taylor series expansion yields:
@@ -203,9 +204,9 @@ We then can formally analyze the behavior and derive a mathematical expression f
 ## A future performance perspective
 
 In addition to closeness to truth, there is another line of argumentation about why transparency about the process of induction is important.
-Instead of verisimilitude one might be concerned with future performance.
+Instead of verisimilitude, one might be concerned with future performance.
 That is, how well does a theory do in predicting novel facts.
-Please note that the information theoretic setup above has made no appeal to expected performance on unseen data.
+Please note that the information-theoretic setup above has made no appeal to the expected performance on unseen data.
 Verisimilitude and expected performance are different motivations for transparency, though they can be linked.
 In the future performance setup, we do not appeal to ground truth, replace the Kullback–Leibler divergence with an arbitrary loss function, and no longer require $g(x)$ to return probabilities:
 
@@ -213,7 +214,7 @@ $$
 \mathcal{L}(y, g(y|\theta)) = \mathbb{E}_yL(y, g(y|\theta))
 $$
 
-Still the core problems of limited sample and inductive process remain.
+Still, the core problems of limited sample and inductive process remain.
 Again there exists only a sample $y$ over which we form the expectation, but now we must pay a little more attention to the individual elements, $i = 1, \dots,n$:
 
 <!--the unconscious statistician strikes again-->
@@ -223,9 +224,9 @@ $$
  = \sum_{i=1}^n L(y_i, g(y_i|\theta)) \frac{1}{n}
 $$
 
-Since, we allow arbitrary $L$, the trick of using the Taylor series expansion does not get us very far (because we simply end up with an undefined derivative).
-We can, however, repeatedly sample data and repeate the inductive process.
-That is, we make use of the cross-validatory where the data is partitioned and the inductive process is repeated on all permutations of a subset of the partitions.
+Since we allow arbitrary $L$, the trick of using the Taylor series expansion does not get us very far (because we simply end up with an undefined derivative).
+We can, however, repeatedly sample data and repeat the inductive process.
+That is, we make use of the cross-validatory where the data is partitioned, and the inductive process is repeated on all permutations of a subset of the partitions.
 For each subset, the resulting model is then compared to the complement that was not used for induction, which is indicated by $y_{-i} = y \diagdown \{y_i\}$.
 
 $$
@@ -233,28 +234,28 @@ $$
  = \sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i})))\frac{1}{n}
 $$
 
-If we reinstate Kullback-Leibler divergence as a loss function, we can estimate $\mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))]$ using the cross-validatory which connects the information theoretic setup with this approach [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].
-To make the link to the first approach even more clear we may define complexity in these terms [@hauensteinComputingAICBlackbox2018]:
+If we reinstate Kullback-Leibler divergence as a loss function, we can estimate $\mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))]$ using the cross-validatory which connects the information-theoretic setup with this approach [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].
+To make the link to the first approach even more clear, we may define complexity in these terms [@hauensteinComputingAICBlackbox2018]:
 
 $$
 \mathcal{C} = \frac{1}{n} \sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i}))) - L(y_i, g(y_i|\hat\theta))
 $$
 
-Instead of a formal analyses to derive $\mathcal{C}$, we can simple repeat the inductive process, i.e., using cross-validation.
-That drastically expands the set of inductive processes for which we can estimate the inductive bias, since it is considerably easier to repeat the process than to derive the complexity analytically.
+Instead of a formal analysis to derive $\mathcal{C}$, we can simply repeat the inductive process, i.e., using cross-validation.
+That drastically expands the set of inductive processes for which we can estimate the inductive bias since it is considerably easier to repeat the process than to derive the complexity analytically.
 
 ## A conceptual perspective
 
 Now that we have established the need for transparency about the inductive process, we can drop a few of the more technical details to get a more straightforward answer about the how.
 It bears repeating that simply laying open what has been done is not enough.
 Showing the inductive results instead of the process is insufficient to appraise the theory.
-On a conceptual level we want to compare:
+On a conceptual level, we want to compare:
 
 $$
 \mathcal{L}(\text{Theory}, \text{Reality})
 $$
 
-But to allow for induction to happen we replace theory by a model (not necessarily a statistical one), or put differently a multitude of implications about the data from the theory.
+But to allow for induction to happen, we replace theory with a model (not necessarily a statistical one) or, put differently, a multitude of implications about the data from the theory.
 This multitude is a result of arbitrary assumptions.
 
 $$
@@ -263,7 +264,7 @@ $$
 
 The idea is that we choose from the multitude the version of our theory that best fits reality.
 However, we are forced to rely on a limited sample of reality.
-We are mislead because these two factors, induction and limited sample size, interact.
+We are misled because these two factors, induction and limited sample size, interact.
 
 $$
 \mathcal{L}(\text{Model(Reality)}, \text{Reality}) > \mathcal{L}(\text{Model(Sample)}, \text{Sample})
@@ -273,15 +274,15 @@ $$
 \mathcal{L}(\text{Model(Reality)}, \text{Reality}) \approx \mathcal{L}(\text{Model(Sample)}, \text{Sample}) + \mathcal{C}
 $$
 
-Transparency is necessary because induction leaves researchers overly optimistic regarding their theories fit to the data.
-The extend of this optimism is dependent on the process of induction and, hence, researcher ought to make it transparent.
+Transparency is necessary because induction leaves researchers overly optimistic regarding their theories' fit to the data.
+The extent of this optimism depends on the induction process, and hence, researchers ought to make it transparent.
 
 # How to establish transparency
 
 The above sections aimed to motivate the observation that the apparent fit of a theory to data is almost always overly optimistic.
-This observations is only of limited use, if we do not now the extend of this optimism.
-However, both setups show that the extend of the optimism ($\mathcal{C}$) is closely related to the inductive process and give us two starting points for making this bias transparent.
-The first requires a formal analysis of the inductive process to compute the complexity (e.g., using information criteria), the second merely requires that the process is repeatable (e.g., using cross-validation).
+This observation is only of limited use if we do not now the extend of this optimism.
+However, both setups show that the extent of the optimism ($\mathcal{C}$) is closely related to the inductive process and give us two starting points for making this bias transparent.
+The first requires a formal analysis of the inductive process to compute the complexity (e.g., using information criteria), and the second merely requires that the process is repeatable (e.g., using cross-validation).
 Both approaches require researchers to make the process of induction transparent instead of merely publishing the results.
 
 To enable proper judgment of the whole theory, the imperative is simple: induce only what is necessary and what you induce should, if at all possible, be done formally.
@@ -295,7 +296,7 @@ Otherwise, the supposedly objective test of the theory using hard data must stil
 
 ## Limitations
 
-### Theorethical
+### Theoretical
 
 ### Practical
 

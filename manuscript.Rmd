@@ -1,5 +1,6 @@
 ---
-title: "Towards Transparency and Open Science: A Principled Perspective on Computational Reproducibility and Preregistration"
+title: "Towards Transparency and Open Science"
+subtitle: "A Principled Perspective on Computational Reproducibility and Preregistration"
 output:
   bookdown::pdf_document2:
     latex_engine: "xelatex"
@@ -97,7 +98,7 @@ Under this framework, induction is split into a process that can be formally ana
 <!--how it relates to the articles-->
 Based on this split, the articles answer the second question (the "how").
 I argue that transparency about statistical methods is enabled by computational reproducibility, while transparency about sociological factors is facilitated by preregistration.
-The conceptualization of computational reproducibility and preregistration as means for transparency is supplemented by practical guidance on how researchers may implement these tools in practice.
+The conceptualization of computational reproducibility and preregistration as means for transparency is supplemented by practical guidance on how researchers may implement these tools.
 
 # What necessitates transparency
 
@@ -135,7 +136,7 @@ $$
 To allow for quantities to be induced, we must assume that our theory is parametrized, e.g., $g(x|\theta)$.
 That means our theory implies a multitude of possible probability distribution that may describe reality.
 Though, this assumption may be lifted, we assume each implied version of the theory equally probable a priori.
-This parametrization captures the idea that some assumptions necessary in a theory to make testable statements are arbitrary.
+This parametrization captures the idea that some assumptions necessary for a theory to make testable statements are arbitrary.
 Of those arbitrary assumptions we want to find those that fit the reality with the least amount of information lost.
 The best parametrization is archived by:
 
@@ -186,27 +187,27 @@ $$
 $$
 
 The observed likelihood $log(g(x|\hat\theta(y)))$ is, therefore, a biased estimate of the distance to the truth.
-So substituting deduced quantities by induced estimates leads to some overconfidence about how close one is to the truth.
+Note that $tr[J(\theta_o)I(\theta_o)^{-1}]$ is usually negative definitive and, therefore, we may conclude that substituting deduced quantities by induced estimates leads to some overconfidence about how close one is to the truth.
+I will refer to this bias as the complexity of a model, denoted as $\mathcal{C}$, because it is closely related to how much the data is influencing the results and, hence, how detailed the model is representing the data.
+
+$$
+\mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))] \approx \mathbb{E}_x[log(g(x|\hat\theta(y)))] + \mathcal{C}
+$$
 
 If we want to induce quantities and correctly appraise a theory on the same data, we must know how much we have to correct our appraisal for the induction.
-Fortunately, this bias $tr[J(\theta_o)I(\theta_o)^{-1}]$ can be approximated under some conditions.
+Fortunately, it is possible to approximate the complexity of a model under some conditions.
 One condition is, since $\theta_o$ is unknown, that we know the properties of the inductive process that generated $\hat\theta$.
-That is, it is insufficient to know the end result of the induction, we must understand the inductive process that generated those estimates.
-That requires that the inductive process can be formally described, e.g., corrections for a large class of statistical models, most famously the class of linear models, are available.
+We then can formally analyze the behavior and derive a mathematical expression for $\mathcal{C}$, e.g., corrections for a large class of statistical models, most famously the class of linear models, are available.
 
-To summarize, what does this mean for researchers evaluating theories?
-A researcher who empirically evaluates a theory without inductive elements gets a good estimate how close they are to the truth (relative to other theories evaluated on the same data).
-If we believe they did not make any mistakes and that they are truthful, we may take their assessment at face value.
-We might still want transparency on how they did gather the data and how they compared it to the theories.
-However, it is a simple kind of transparency, about what did happen.
-If the researcher induces some quantities, transparency about what did happen is not enough; instead a transparency about what could have happened, had the data looked different, is required.
 
 ## A future performance perspective
 
 In addition to closeness to truth, there is another line of argumentation about why transparency about the process of induction is important.
 Instead of verisimilitude one might be concerned with future performance.
 That is, how well does a theory do in predicting novel facts.
-We dispense in this argument with an appeal to ground truth, replace the Kullback–Leibler divergence with an arbitrary loss function, and no longer require $g(x)$ to return probabilities:
+Please note that the information theoretic setup above has made no appeal to expected performance on unseen data.
+Verisimilitude and expected performance are different motivations for transparency, though they can be linked.
+In the future performance setup, we do not appeal to ground truth, replace the Kullback–Leibler divergence with an arbitrary loss function, and no longer require $g(x)$ to return probabilities:
 
 $$
 \mathcal{L}(y, g(y|\theta)) = \mathbb{E}_yL(y, g(y|\theta))
@@ -222,28 +223,25 @@ $$
  = \sum_{i=1}^n L(y_i, g(y_i|\theta)) \frac{1}{n}
 $$
 
-Since, we allow arbitrary $L$, the trick of using the Taylor series expansion does not get us very far.
-What we can do, however, is to make use of the cross-validatory, which is indicated by $y_{-i} = y \diagdown \{y_i\}$
+Since, we allow arbitrary $L$, the trick of using the Taylor series expansion does not get us very far (because we simply end up with an undefined derivative).
+We can, however, repeatedly sample data and repeate the inductive process.
+That is, we make use of the cross-validatory where the data is partitioned and the inductive process is repeated on all permutations of a subset of the partitions.
+For each subset, the resulting model is then compared to the complement that was not used for induction, which is indicated by $y_{-i} = y \diagdown \{y_i\}$.
 
 $$
 \mathbb{E}_y L(y, g(y|\hat\theta(y)))
  = \sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i})))\frac{1}{n}
 $$
 
-It is important to realize that the information theoretic setup above has made no appeal to expected performance on unseen data.
-Verisimilitude and expected performance are different motivations for transparency, though they can be linked.
-If predictions and observed facts are compared using a sufficient statistic, a close link to information theory exists.
-The expectation over data $\mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))]$, can be estimated by repeatedly sampling data and repeating the inductive process.
-This insight connects the information theoretic setup with cross validation, where the data is partitioned and the inductive process is repeated on all permutations of a subset of the partitions [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].
-For each subset, the resulting model is then compared to the complement that was not used for induction.
-Of course, there is no strong reason to use a sufficient statistic for this comparison beyond its link to information theory.
-So researcher might differ in what they find to be a good prediction (replacing the Kullback–Leibler divergence with an arbitrary loss function) and we do not longer appeal to a concept of ground truth:
+If we reinstate Kullback-Leibler divergence as a loss function, we can estimate $\mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))]$ using the cross-validatory which connects the information theoretic setup with this approach [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].
+To make the link to the first approach even more clear we may define complexity in these terms [@hauensteinComputingAICBlackbox2018]:
 
+$$
+\mathcal{C} = \frac{1}{n} \sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i}))) - L(y_i, g(y_i|\hat\theta))
+$$
 
-
-
-
-Which we can estimate using cross-validation.
+Instead of a formal analyses to derive $\mathcal{C}$, we can simple repeat the inductive process, i.e., using cross-validation.
+That drastically expands the set of inductive processes for which we can estimate the inductive bias, since it is considerably easier to repeat the process than to derive the complexity analytically.
 
 ## A conceptual perspective
 
@@ -266,20 +264,33 @@ $$
 The idea is that we choose from the multitude the version of our theory that best fits reality.
 However, we are forced to rely on a limited sample of reality.
 We are mislead because these two factors, induction and limited sample size, interact.
-There are two principled approaches for this problem.
-Choosing the version of our theory according to the best fit on one sample and use another sample to asses it:
-
-*Note, this is not strictly correct. No expectation over the inferred parameters is taken.*
 
 $$
-\mathcal{L}(\text{Model}(\text{Train}), \text{Test})
+\mathcal{L}(\text{Model(Reality)}, \text{Reality}) > \mathcal{L}(\text{Model(Sample)}, \text{Sample})
 $$
 
-Or use the same sample for both, but correct for the process of induction:
+$$
+\mathcal{L}(\text{Model(Reality)}, \text{Reality}) \approx \mathcal{L}(\text{Model(Sample)}, \text{Sample}) + \mathcal{C}
+$$
 
-$$
-\mathcal{L}(\text{Model}(\text{Train}), \text{Train}) + \mathcal{C}(\text{Model})
-$$
+Transparency is necessary because induction leaves researchers overly optimistic regarding their theories fit to the data.
+The extend of this optimism is dependent on the process of induction and, hence, researcher ought to make it transparent.
+
+# How to establish transparency
+
+The above sections aimed to motivate the observation that the apparent fit of a theory to data is almost always overly optimistic.
+This observations is only of limited use, if we do not now the extend of this optimism.
+However, both setups show that the extend of the optimism ($\mathcal{C}$) is closely related to the inductive process and give us two starting points for making this bias transparent.
+The first requires a formal analysis of the inductive process to compute the complexity (e.g., using information criteria), the second merely requires that the process is repeatable (e.g., using cross-validation).
+Both approaches require researchers to make the process of induction transparent instead of merely publishing the results.
+
+Using a formally defined inductive process to preemptively escape refutation differs in at least one important way from altering the hypothesis after refutation.
+Induction through statistical models can be formally analyzed and accounted for.
+Therefore, the researchers may adjust their appraisal of the partially induced hypothesis.
+Adjusting the appraisal for induction outside of statistical methods is much more uncertain.
+Here the process of induction can not be separated from the data itself, since we observe such induction only on a single dataset.
+To enable proper judgment of the whole theory, the imperative is simple: induce only what is necessary and what you induce should, if at all possible, be done formally.
+Otherwise, the supposedly objective test of the theory using hard data must still be judged subjectively.
 
 Where $\mathcal{C}$ denotes complexity or equivalently the extend to which data is influencing the results.
 To deal with this bias, I propose to split the term in complexity that can be formally described and a part that can only evaluated subjectively.
@@ -297,16 +308,6 @@ That is not to say that we have no basis to judge the informal induction.
 We can find the inductive decision reasonable and judge it unlikely that just about any variable would be added if the data suggests it.
 Or the opposite, we might find it not well justified on theoretical grounds and deem it a purely data driven decision, which implies higher complexity.
 What one can say, however, is that this judgment is debatable and, therefore, subjective.
-
-# How to establish transparency
-
-Using a formally defined inductive process to preemptively escape refutation differs in at least one important way from altering the hypothesis after refutation.
-Induction through statistical models can be formally analyzed and accounted for.
-Therefore, the researchers may adjust their appraisal of the partially induced hypothesis.
-Adjusting the appraisal for induction outside of statistical methods is much more uncertain.
-Here the process of induction can not be separated from the data itself, since we observe such induction only on a single dataset.
-To enable proper judgment of the whole theory, the imperative is simple: induce only what is necessary and what you induce should, if at all possible, be done formally.
-Otherwise, the supposedly objective test of the theory using hard data must still be judged subjectively.
 
 
 If this imperative is adopted, it still remains to make this process transparent to other researchers.

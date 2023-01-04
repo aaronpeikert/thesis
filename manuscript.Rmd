@@ -284,45 +284,10 @@ However, both setups show that the extend of the optimism ($\mathcal{C}$) is clo
 The first requires a formal analysis of the inductive process to compute the complexity (e.g., using information criteria), the second merely requires that the process is repeatable (e.g., using cross-validation).
 Both approaches require researchers to make the process of induction transparent instead of merely publishing the results.
 
-Using a formally defined inductive process to preemptively escape refutation differs in at least one important way from altering the hypothesis after refutation.
-Induction through statistical models can be formally analyzed and accounted for.
-Therefore, the researchers may adjust their appraisal of the partially induced hypothesis.
-Adjusting the appraisal for induction outside of statistical methods is much more uncertain.
-Here the process of induction can not be separated from the data itself, since we observe such induction only on a single dataset.
 To enable proper judgment of the whole theory, the imperative is simple: induce only what is necessary and what you induce should, if at all possible, be done formally.
 Otherwise, the supposedly objective test of the theory using hard data must still be judged subjectively.
 
-Where $\mathcal{C}$ denotes complexity or equivalently the extend to which data is influencing the results.
-To deal with this bias, I propose to split the term in complexity that can be formally described and a part that can only evaluated subjectively.
-Formal, in the strict sense means that the complexity can be mathematically derived and in a looser sense that the process can be repeated at will.
-If a researcher employs a linear model, the complexity is calculable and even if it were not, we could fit the linear model on a large set of other data to asses its inductive behavior.
-However, if the researchers reconsiders the model based on the results, and fits a model with, e.g., a predictor added or removed, the complexity can not be formally judged.
-We can not ask the researcher to repeat the process on all possible data sets nor is the behavior mathematically well defined.
-What we know, however, is that the resulting linear model is more complex than a linear regression formally implies.
-
-$$
-\mathcal{C}(\text{Model}) = \mathcal{C}(\text{formal}) +\mathcal{C}(\text{informal})
-$$
-
-That is not to say that we have no basis to judge the informal induction.
-We can find the inductive decision reasonable and judge it unlikely that just about any variable would be added if the data suggests it.
-Or the opposite, we might find it not well justified on theoretical grounds and deem it a purely data driven decision, which implies higher complexity.
-What one can say, however, is that this judgment is debatable and, therefore, subjective.
-
-
-If this imperative is adopted, it still remains to make this process transparent to other researchers.
-Not an easy feat as we will see.
-We, therefore, start with the part that is easier made transparent.
-The complexity due to the formally defined inductive process may be made transparent by employing computational reproducibility.
-For the more informally made inductive decisions, we have a more limited toolbox that includes preregistration.
-
 ## Transparency about statistical models: Computational Reproducibilibiltiy
-
-Even if the results stand at the end of a formal inductive process, this process must be made transparent to other researchers if they are to judge the empirical test.
-Such transparency can be achieved by computational reproducibility.
-Computational reproducibility is usually defined as the ability to recreate the same results from the same data set.
-This definition only suffices if the inductive process is strictly formal, that is the complexity can be calculated mathematically.
-If we must rely on repetition to assess the complexity, we must demand computational reproducibility to extent to other data sets.
 
 ## Transparency about human researcher: Preregistration
 
@@ -335,17 +300,5 @@ If we must rely on repetition to assess the complexity, we must demand computati
 ### Practical
 
 ## Future Research
-
-<!--you must pay the reaper-->
-Accounting for how much induction was used to deductively test a statement is necessary for correct appraisal of evidential support of a hypothesis.
-Researcher (and philosophers of science) differ considerably in what appraisal entails, e.g., judging the long-term performance (if they are frequentists), degrees of believe (if they are Bayesians), or probativeness [if they are severe testers, @mayoStatisticalInferenceSevere2018, p. 14] of a hypothesis.
-But whatever measure they subscribe to, induction can shield shield any hypothesis from refutation by data altogether.
-
-Assume that all auxiliary assumption, regarding proper quantification of behavior and situation in valid measurements, causality, individual differences, nuisance variables, distributional, etc, hold.
-
-While not using statistical methods would lead to the rejection of almost all psychological theories, pushed to the extreme statistical methods can shield theories from refutation altogether.
-Both situations are uninformative and, therefore, rather unhelpful for the generation of knowledge.
-The later situation, however, becomes less than helpful when one is under the impression that theories are well tested, when in fact there was little chance that the data could refute the theory if wrong.
-
 
 # References

@@ -125,7 +125,7 @@ Expressed as lost bits of information, a measure known as Kullback–Leibler div
 <!--x is a single state, X is the random variable, and \mathcal{X} is all possible outcomes of X-->
 
 $$
-\mathcal{L}_{KL}(f, g) =\int_{\mathcal{X}}f(x)\log\left(g(x)^{-1}\right) - \int_{\mathcal{X}}f(x)\log\left(f(x)^{-1}\right)
+\mathcal{L}_{KL}(f, g) =\int_{\mathcal{X}}f(x)\log\left(g(x)^{-1}\right)\mathrm{d}x - \int_{\mathcal{X}}f(x)\log\left(f(x)^{-1}\right)\mathrm{d}x
 $$
 
 $$
@@ -145,7 +145,7 @@ $$
 \mathbb{E}_{X \sim f}\left[\log(g(x))\right]
 $$
 
-To allow for quantities to be induced, we must assume that our theory is parametrized, e.g., $g(x|\theta)$.
+To allow for quantities to be induced, we must assume that our theory is parameterized, e.g., $g(x|\theta)$.
 That means our theory implies a multitude of possible probability distributions that may describe reality.
 Though this assumption may be lifted, we assume each implied version of the theory is equally probable a priori.
 This parametrization captures the idea that some assumptions necessary for a theory to make testable statements are arbitrary.

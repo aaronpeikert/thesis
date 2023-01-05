@@ -34,16 +34,21 @@ repro:
 <!--psychology has unique difficulties-->
 Psychology is a difficult science [@meehlTheoreticalRisksTabular1978].
 Though there might be some disagreement on why exactly this is the case, I doubt there is disagreement about the fact itself.
-Laying open the difficulties and attempting to overcome them is not a recent trend, though it has been invigorated by the so-called replication crisis in psychology [@ioannidisWhyMostPublished2005; @opensciencecollaborationEstimatingReproducibilityPsychological2015].
-The debates about psychology's shortcomings and remedies fall roughly into two categories: statistical methods [e.g., @bakanTestSignificancePsychological20060327; @benjaminRedefineStatisticalSignificance2018; @cohenEarth051994;  @gigerenzerMindlessStatistics2004; @wagenmakersWhyPsychologistsMust2011] and sociological factors [e.g., @simmonsFalsepositivePsychologyUndisclosed2011; @rosenthalFileDrawerProblem1979; @bakkerRulesGameCalled2012; @johnMeasuringPrevalenceQuestionable2012].
+Laying open the difficulties and attempting to overcome them is not a recent trend, though it has been invigorated by the so-called replication crisis in psychology [@ioannidisWhyMostPublished2005; @opensciencecollaborationEstimatingReproducibilityPsychological2015] that begins to ripple through other empirical sciences.
+As psychology grapples with this crisis of confidence in its empirical results, several causes and remedies have been proposed.
+We can roughly divide the causes into two categories: misuse of statistical methods [e.g., @bakanTestSignificancePsychological20060327; @benjaminRedefineStatisticalSignificance2018; @cohenEarth051994;  @gigerenzerMindlessStatistics2004; @wagenmakersWhyPsychologistsMust2011] and sociological factors [e.g., @simmonsFalsepositivePsychologyUndisclosed2011; @rosenthalFileDrawerProblem1979; @bakkerRulesGameCalled2012; @johnMeasuringPrevalenceQuestionable2012].
 
 <!--bla-transparency-bla-->
-I propose to view both categories through the lens of transparency about the inductive process.
-One side of transparency is that statistical methods make induction quantifiable; the other is that open science measures remove uncertainty about sociological factors in induction.
-Any science must be able to communicate how it generates its knowledge, but transparency has an outstanding role in psychology and other empirical sciences.
-To understand why transparency is crucial, we must understand that induction is integral to empirical sciences, formally using statistical procedures or informally as researchers' judgment.
-However, empirical statements lose their value without transparency about the inductive process that contributed to them.
-Therefore, transparency is more than a virtue that somewhat improves psychological sciences but is an indispensable property.
+In my view, both categories emerge from a lack of transparency about the inductive process in the empirical test of a theory.
+Testing a theory empirically is often viewed as deductive, since the theory is making statements about the data.
+Empirical scientists, however, often simultaneously engage in induction by deriving general statements from data leading to overconfidence in their empirical results.
+Some parts of their inductive process are well defined in the form of statistical methods, while other parts happen more informally.
+
+Statistical methods make induction quantifiable; while open science measures reduce uncertainty about sociological factors in induction.
+To understand why transparency is crucial, we must understand that these two forms of induction are integral to empirical sciences.
+Any science must be able to communicate how it generates its knowledge.
+However, transparency has an outstanding role in psychology and other empirical sciences, because empirical statements lose their value without transparency about the inductive process that contributed to them.
+Therefore, transparency is more than a virtue that somewhat improves empirical sciences but is an indispensable property.
 
 <!--induction is necessary for psychological science-->
 To function as a science, psychology must be able to make statements about the world that can be compared to the true conditions.
@@ -113,25 +118,31 @@ The second framework motivates transparency under a science that wants to select
 
 Information theory provides a rigorous mathematical measure that can be understood as the verisimilitude of a theory.
 That is, how much information about the truth is lost when the theory is used to model reality.
-Expressed mathematically, we have a function $f(x)$ that gives us the probability to observe the state of the world $x$ where $f$ represents the full reality.
-We are now interested in how much information is lost if we use $g(x)$, our theory, instead of $f(x)$, the reality, over all possible states $x$.
+Expressed mathematically, we have a function $f(x)$ that gives us the liklihood to observe the state of the world $x$ where $f$ represents the ground truth.
+We are now interested in how much information is lost if we use $g(x)$, our theory, instead of $f(x)$, the reality, over all possible states $\mathcal{X}$.
 Expressed as lost bits of information, a measure known as Kullback–Leibler divergence [@kullbackInformationSufficiency1951], we get:
 
+<!--x is a single state, X is the random variable, and \mathcal{X} is all possible outcomes of X-->
+
 $$
-\mathcal{I}(f, g) = \mathbb{E}_x\left[log(f(x))\right] - \mathbb{E}_x\left[log(g(x))\right]
+\mathcal{L}_{KL}(f, g) =\int_{\mathcal{X}}f(x)\log\left(g(x)^{-1}\right) - \int_{\mathcal{X}}f(x)\log\left(f(x)^{-1}\right)
+$$
+
+$$
+\mathcal{L}_{KL}(f, g) = \mathbb{E}_{X \sim f}\left[\log(f(x))\right] - \mathbb{E}_{X \sim f}\left[\log(g(x))\right]
 $$
 
 Most readers will recognize that this information-theoretic setup and the derivation below follow closely @burnhamModelSelectionMultimodel2002, Ch. 7.2, in their derivation of the Akaike Information Criterion in its general form.
 What is of interest here is not the derivation but how this conceptualization can help us to understand what happens when data is simultaneously used to induce quantities of a theory and test the theory.
 
 This setup is, of course, highly theoretical.
-$\mathcal{I}(f, g)$ is unknowable, since the truth is unobserved.
+$\mathcal{L}_{KL}(f, g)$ is unknowable, since the truth is unobserved.
 However, this fact does not impede us from getting closer to the truth because we can still compare two theories relative to each other.
-Because the expectation for $f$ remains constant (left-hand side), we only need to estimate the relative expected loss of information (right-hand side) to make a comparative judgment.
+Because the expectation for $f$ remains constant (left-hand expectation), we only need to estimate the relative expected loss of information (right-hand expectation) to make a comparative judgment.
 To make a relative judgment about several competing theories it suffices to estimate:
 
 $$
-\mathbb{E}_x\left[log(g(x))\right]
+\mathbb{E}_{X \sim f}\left[\log(g(x))\right]
 $$
 
 To allow for quantities to be induced, we must assume that our theory is parametrized, e.g., $g(x|\theta)$.
@@ -139,32 +150,32 @@ That means our theory implies a multitude of possible probability distributions 
 Though this assumption may be lifted, we assume each implied version of the theory is equally probable a priori.
 This parametrization captures the idea that some assumptions necessary for a theory to make testable statements are arbitrary.
 Of those arbitrary assumptions, we want to find those that fit the reality with the least amount of information lost.
-The best parametrization is archived by:
+The best parametrization is achieved by:
 
 $$
-\theta_o = \operatorname*{arg\,min}_\theta \mathcal{I}(f, g(\cdot|\theta))
+\theta_* = \operatorname*{arg\,min}_\theta \mathcal{L}_{KL}(f, g(\cdot|\theta))
 $$
 
 The inference goal is, therefore:
 
 $$
-\mathbb{E}_x\left[log(g(x|\theta_o))\right]
+\mathbb{E}_{X \sim f}\left[\log(g(x|\theta_*))\right]
 $$
 
-Of course, we usually do not know $\theta_o$.
-That is why it is necessary to induce it from data, denoted as $\hat\theta(y)$.
+Of course, we usually do not know $\theta_*$.
+That is why it is necessary to induce it from data, denoted as $\hat\theta(y)$, where $Y \sim f^n$, that is it follows the empirical distribution.
 The crucial point here is to understand what happens when we can not derive $\theta$ deductively but must substitute it inductively with an estimate $\hat\theta(y)$.
-Any estimated parameters $\hat{\theta}(y)$ would almost surely not be equal to $\theta_o$.
+Any estimated parameters $\hat{\theta}(y)$ would almost surely not be equal to $\theta_*$ (assuming $\theta$ may take an infinite number of values, i.e., is continues).
 It follows that almost surely:
 
 $$
-\mathcal{I}(f, g(\cdot|\hat{\theta}(y)) > \mathcal{I}(f, g(\cdot|\theta_o))
+\mathcal{L}_{KL}(f, g(\cdot|\hat{\theta}(y)) > \mathcal{L}_{KL}(f, g(\cdot|\theta_*))
 $$
 
-Or ignoring $f$ as constant:
+Or ignoring the constant:
 
 $$
-\mathbb{E}_x[log(g(x|\hat{\theta}(y)))] > \mathbb{E}_x\left[log(g(x|\theta_o))\right] 
+\mathbb{E}_{X \sim f}[log(g(x|\hat{\theta}(y)))] > \mathbb{E}_{X \sim f}\left[log(g(x|\theta_o))\right] 
 $$
 
 That is to say, any induced estimate will be sub-optimal.
@@ -173,33 +184,32 @@ The point is to make a statement about the theory, not to make a statement about
 If the estimate of $\hat\theta(y)$, i.e., the inductive process, is unbiased, we may form an expectation over the data $y$:
 
 $$
-\mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))]
+\mathbb{E}_{Y \sim f^n}\mathbb{E}_{X \sim f}[log(g(x|\hat\theta(y)))]
 $$
 
 Forming this expectation over data is a crucial step; it requires us to think beyond the data we observed to all the data we could have observed.
 There are two ways to get at this expectation.
-One follows in this section, and another is discussed in the next section.
+One is the use of Taylor series expansion, which follows in this section, and another is the use of cross-validation discussed in the next section.
 
-We might notice that we often get an unbiased estimate for $\mathbb{E}_x[log(g(x|\hat{\theta}(y)))]$, e.g., in maximum likelihood estimation.
+We might notice that we often get an unbiased estimate for $\mathbb{E}_{Y \sim f^n}[\log(g(y|\hat{\theta}(y)))]$, e.g., in maximum likelihood estimation.
 The expectation over the data together with Taylor series expansion yields:
 
 $$
-\mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))] \approx \mathbb{E}_x[log(g(x|\hat\theta(y)))] - tr[J(\theta_o)I(\theta_o)^{-1}]
+\mathbb{E}_{Y \sim f^n}\mathbb{E}_{X \sim f}[log(g(x|\hat\theta(y)))] \approx \mathbb{E}_{Y \sim f^n}[\log(g(y|\hat{\theta}(y)))] - tr[J(\theta_*)I(\theta_*)^{-1}]
 $$
 
 The observed likelihood $log(g(x|\hat\theta(y)))$ is, therefore, a biased estimate of the distance to the truth.
-Note that $tr[J(\theta_o)I(\theta_o)^{-1}]$ is usually negative definitive and, therefore, we may conclude that substituting deduced quantities by induced estimates leads to some overconfidence about how close one is to the truth.
+Note that $tr[J(\theta_*)I(\theta_*)^{-1}]$ is usually negative definitive and, therefore, we may conclude that substituting deduced quantities by induced estimates leads to some overconfidence about how close one is to the truth.
 I will refer to this bias as the complexity of a model, denoted as $\mathcal{C}$, because it is closely related to how much the data is influencing the results and, hence, how detailed the model is representing the data.
 
 $$
-\mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))] \approx \mathbb{E}_x[log(g(x|\hat\theta(y)))] + \mathcal{C}
+\mathbb{E}_Y\mathbb{E}_X[log(g(x|\hat\theta(y)))] \approx \mathbb{E}_X[log(g(x|\hat\theta(y)))] + \mathcal{C}
 $$
 
 If we want to induce quantities and correctly appraise a theory on the same data, we must know how much we have to correct our appraisal for the induction.
 Fortunately, it is possible to approximate the complexity of a model under some conditions.
-One condition is, since $\theta_o$ is unknown, that we know the properties of the inductive process that generated $\hat\theta$.
+One condition is, since $\theta_*$ is unknown, that we know the properties of the inductive process that generated $\hat\theta$.
 We then can formally analyze the behavior and derive a mathematical expression for $\mathcal{C}$, e.g., corrections for a large class of statistical models, most famously the class of linear models, are available.
-
 
 ## A future performance perspective
 
@@ -215,18 +225,17 @@ $$
 $$
 
 Still, the core problems of limited sample and inductive process remain.
-Again there exists only a sample $y$ over which we form the expectation, but now we must pay a little more attention to the individual elements, $i = 1, \dots,n$:
+Again there exists only a sample $y$ over which we form the expectation, but now we must pay a little more attention to the individual elements, $i = 1, \dots,n$ and take the expectation [@sochLawUnconsciousStatistician2020]:
 
 <!--the unconscious statistician strikes again-->
 
 $$
 \mathbb{E}_y L(y, g(y|\theta))
- = \sum_{i=1}^n L(y_i, g(y_i|\theta)) \frac{1}{n}
+ = \frac{1}{n}\sum_{i=1}^n L(y_i, g(y_i|\theta))
 $$
 
-Since we allow arbitrary $L$, the trick of using the Taylor series expansion does not get us very far (because we simply end up with an undefined derivative).
-We can, however, repeatedly sample data and repeat the inductive process.
-That is, we make use of the cross-validatory where the data is partitioned, and the inductive process is repeated on all permutations of a subset of the partitions.
+Instead of using the Taylor series expansion, we can repeatedly sample data and repeat the inductive process.
+That is, we make use of cross-validation where the data is partitioned, and the inductive process is repeated on all permutations of a subset of the partitions.
 For each subset, the resulting model is then compared to the complement that was not used for induction, which is indicated by $y_{-i} = y \diagdown \{y_i\}$.
 
 $$
@@ -234,7 +243,7 @@ $$
  = \sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i})))\frac{1}{n}
 $$
 
-If we reinstate Kullback-Leibler divergence as a loss function, we can estimate $\mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))]$ using the cross-validatory which connects the information-theoretic setup with this approach [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].
+As stated earlier, using cross-validation we can also estimate the If we reinstate Kullback-Leibler divergence as a loss function, we can estimate $\mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))]$ using the cross-validatory which connects the information-theoretic setup with this approach [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].
 To make the link to the first approach even more clear, we may define complexity in these terms [@hauensteinComputingAICBlackbox2018]:
 
 $$

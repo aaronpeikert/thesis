@@ -118,19 +118,17 @@ The second framework motivates transparency under a science that wants to select
 
 Information theory provides a rigorous mathematical measure that can be understood as the verisimilitude of a theory.
 That is, how much information about the truth is lost when the theory is used to model reality.
-Expressed mathematically, we have a function $f(x)$ that gives us the liklihood to observe the state of the world $x$ where $f$ represents the ground truth.
-We are now interested in how much information is lost if we use $g(x)$, our theory, instead of $f(x)$, the reality, over all possible states $\mathcal{X}$.
+Expressed mathematically, we have a random variable $X ~ f$, with values in $\mathcal{X}$, where the distribution $f$ represents the ground truth.
+We are now interested in how much information is lost if we use $g$, our theory, instead of $f$, the reality, to approximate $X$ over all possible states $\mathcal{X}$.
 Expressed as lost bits of information, a measure known as Kullback–Leibler divergence [@kullbackInformationSufficiency1951], we get:
 
 <!--x is a single state, X is the random variable, and \mathcal{X} is all possible outcomes of X-->
 
-$$
-\mathcal{L}_{KL}(f, g) =\int_{\mathcal{X}}f(x)\log\left(g(x)^{-1}\right) - \int_{\mathcal{X}}f(x)\log\left(f(x)^{-1}\right)
-$$
 
-$$
-\mathcal{L}_{KL}(f, g) = \mathbb{E}_{X \sim f}\left[\log(f(x))\right] - \mathbb{E}_{X \sim f}\left[\log(g(x))\right]
-$$
+\begin{align}
+\mathcal{L}_{KL}(f, g) &= \int_{\mathcal{X}}f(x)\log\left(f(x)\right) - \int_{\mathcal{X}}f(x)\log\left(g(x)\right)\\
+ &= \mathbb{E}_{X \sim f}\left[\log(f(x))\right] - \mathbb{E}_{X \sim f}\left[\log(g(x))\right]
+\end{align}
 
 Most readers will recognize that this information-theoretic setup and the derivation below follow closely @burnhamModelSelectionMultimodel2002, Ch. 7.2, in their derivation of the Akaike Information Criterion in its general form.
 What is of interest here is not the derivation but how this conceptualization can help us to understand what happens when data is simultaneously used to induce quantities of a theory and test the theory.

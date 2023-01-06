@@ -87,8 +87,8 @@ The data used for induction can not refute these statements, so they are not tes
 
 <!--the appraisal of "induced theories" should be low-->
 So what to think of such, yet untested, theory?
-Researchers and philosophers of science differ considerably their opinion about to appraise theories, e.g., judging the long-term performance (if they are frequentists), degrees of belief (if they are Bayesians), or probativeness [if they are severe testers, @mayoStatisticalInferenceSevere2018, p. 14] of a hypothesis.
-Whatever measure they subscribe to, an untested theory should not score very high on it.
+Researchers and philosophers of science differ considerably in their opinion about how to appraise theories, e.g., judging the long-term performance (if they are frequentists), degrees of belief (if they are Bayesians), or probativeness [if they are severe testers, @mayoStatisticalInferenceSevere2018, p. 14] of a hypothesis.
+Whatever measure they subscribe to, an untested theory should not score very high.
 
 <!--transparency about induction is required-->
 So empirical researchers find themselves in a pinch.

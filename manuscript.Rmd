@@ -116,6 +116,10 @@ I do not attempt to rehash the debate about what constitutes an empirical test b
 The first framework motivates transparency when the aim of an empirical test is to evaluate the verisimilitude ("truth likeness") of a theory.
 The second framework motivates transparency under a science that wants to select a theory according to its expected predictive performance.
 
+Both frameworks show how unaccounted induction leads to overconfidence in empirical results and give us some theoretical tools to asses and control this overconfidence.
+Because both are quite technical, they are followed by a more conceptual summary of these tools.
+These sections provide the basis to understand how computational reproducibility and preregistration enable a proper assessment of an empirical test on a conceptual level.
+
 ## An information-theoretic perspective
 
 Information theory provides a rigorous mathematical measure that can be understood as the verisimilitude of a theory.
@@ -149,10 +153,9 @@ $$
 
 To allow for quantities to be induced, we must assume that our theory is parameterized, e.g., $g(x|\theta)$.
 That means our theory implies a multitude of possible probability distributions that may describe reality.
-Though this assumption may be lifted, we assume each implied version of the theory is equally probable a priori.
-This parametrization captures the idea that some assumptions necessary for a theory to make testable statements are arbitrary.
+This parameterization captures the idea that some assumptions necessary for a theory to make testable statements are arbitrary.
 Of those arbitrary assumptions, we want to find those that fit the reality with the least amount of information lost.
-The best parametrization is achieved by:
+The best parameterization is achieved by:
 
 $$
 \theta_* = \operatorname*{arg\,min}_\theta \mathcal{L}_{KL}(f, g(\cdot|\theta))
@@ -208,7 +211,9 @@ For more details see of this derivation see @burnhamModelSelectionMultimodel2002
 
 The observed likelihood $log(g(x|\hat\theta(y)))$ is, therefore, a biased estimate of the distance to the truth.
 Note that $tr[J(\theta_*)I(\theta_*)^{-1}]$ is usually negative definitive and, therefore, we may conclude that substituting deduced quantities by induced estimates leads to some overconfidence about how close one is to the truth.
-I will refer to this bias as the complexity of a model, denoted as $\mathcal{C}$, because it is closely related to how much the data is influencing the results and, hence, how detailed the model is representing the data.
+This overconfidence is directly related to how much induction a model entails.
+This bias is often called the complexity or capacity of a model, i.e., how much the data is influencing the results and, hence, how detailed the model is representing the data [@goodfellowDeepLearning2016; @goodfellowCapacityOverfittingUnderfitting2016].
+I therefore denote it as as $\mathcal{C}$. 
 
 $$
 \mathbb{E}_{X \sim f}\mathbb{E}_{Y \sim f^n}[log(g(x|\hat\theta(y)))] \approx \mathbb{E}_{Y \sim f^n}[\log(g(y|\hat{\theta}(y)))] + \mathcal{C}
@@ -256,7 +261,7 @@ $$
  = \frac{1}{n}\sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i})))
 $$
 
-As stated earlier, using cross-validation we can also estimate \allowbreak $\mathbb{E}_{X \sim f}\mathbb{E}_{Y \sim f^n}[log(g(x|\hat\theta(y)))]$ which connects the information-theoretic setup with this approach [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].
+As stated earlier, using cross-validation it is possible to  estimate \linebreak[4] $\mathbb{E}_{X \sim f}\mathbb{E}_{Y \sim f^n}[log(g(x|\hat\theta(y)))]$ as well; which connects the information-theoretic setup with this approach [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].
 To make the link to the first approach even more clear, we may define complexity in these terms [@hauensteinComputingAICBlackbox2018]:
 
 $$
@@ -268,7 +273,7 @@ That drastically expands the set of inductive processes for which we can estimat
 
 ## A conceptual perspective
 
-Now that we have established the need for transparency about the inductive process, we can drop a few of the more technical details to get a more straightforward answer about the how.
+Now that we have established the need for transparency about the inductive process, we can drop a few of the more technical details to get a more straightforward about what we have to make transparent.
 It bears repeating that simply laying open what has been done is not enough.
 Showing the inductive results instead of the process is insufficient to appraise the theory.
 On a conceptual level, we want to compare:
@@ -278,7 +283,6 @@ $$
 $$
 
 But to allow for induction to happen, we replace theory with a model (not necessarily a statistical one) or, put differently, a multitude of implications about the data from the theory.
-This multitude is a result of arbitrary assumptions.
 
 $$
 \mathcal{L}(\text{Model(Reality)}, \text{Reality})
@@ -297,11 +301,13 @@ $$
 $$
 
 Transparency is necessary because induction leaves researchers overly optimistic regarding their theories' fit to the data.
-The extent of this optimism depends on the induction process, and hence, researchers ought to make it transparent.
+The extent of this optimism depends on the inductive process, not merely its results.
+Specifically, it depends on the complexity, i.e., the ability of the inductive process to adept to data.
+Without knowing the inductive process, researchers can not judge the overconfidence, so the inductive process ought to be made transparent.
 
 # How to establish transparency
 
-The above sections aimed to motivate the observation that the apparent fit of a theory to data is almost always overly optimistic.
+The above sections aimed to motivate the observation that the apparent fit of a theory to data is often overly optimistic.
 This observation is only of limited use if we do not now the extend of this optimism.
 However, both setups show that the extent of the optimism ($\mathcal{C}$) is closely related to the inductive process and give us two starting points for making this bias transparent.
 The first requires a formal analysis of the inductive process to compute the complexity (e.g., using information criteria), and the second merely requires that the process is repeatable (e.g., using cross-validation).

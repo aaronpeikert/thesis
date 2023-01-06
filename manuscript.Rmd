@@ -125,7 +125,7 @@ Expressed as lost bits of information, a measure known as Kullback–Leibler div
 <!--x is a single state, X is the random variable, and \mathcal{X} is all possible outcomes of X-->
 
 $$
-\mathcal{L}_{KL}(f, g) =\int_{\mathcal{X}}f(x)\log\left(g(x)^{-1}\right)\mathrm{d}x - \int_{\mathcal{X}}f(x)\log\left(f(x)^{-1}\right)\mathrm{d}x
+\mathcal{L}_{KL}(f, g) =\int_{\mathcal{X}}f(x)\log\left(f(x)\right)\mathrm{d}x - \int_{\mathcal{X}}f(x)\log\left(g(x)\right)\mathrm{d}x
 $$
 
 $$
@@ -163,7 +163,7 @@ $$
 $$
 
 Of course, we usually do not know $\theta_*$.
-That is why it is necessary to induce it from data, denoted as $\hat\theta(y)$, where $Y \sim f^n$, that is it follows the empirical distribution.
+That is why it is necessary to induce it from data, denoted as $\hat\theta(y)$, where $Y$ is independently sampled from $X\sim f$.
 The crucial point here is to understand what happens when we can not derive $\theta$ deductively but must substitute it inductively with an estimate $\hat\theta(y)$.
 Any estimated parameters $\hat{\theta}(y)$ would almost surely not be equal to $\theta_*$ (assuming $\theta$ may take an infinite number of values, i.e., is continues).
 It follows that almost surely:
@@ -175,13 +175,13 @@ $$
 Or ignoring the constant:
 
 $$
-\mathbb{E}_{X \sim f}[log(g(x|\hat{\theta}(y)))] > \mathbb{E}_{X \sim f}\left[log(g(x|\theta_o))\right] 
+\mathbb{E}_{X \sim f}\left[\log(g(x|\theta_*))\right] >\mathbb{E}_{X \sim f}[\log(g(x|\hat{\theta}(y)))] 
 $$
 
 That is to say, any induced estimate will be sub-optimal.
 The inference goal, however, is to compare the theory $g$ to reality $f$, not to evaluate the estimates of $\hat\theta$.
 The point is to make a statement about the theory, not to make a statement about the data in combination with the theory.
-If the estimate of $\hat\theta(y)$, i.e., the inductive process, is unbiased, we may form an expectation over the data $y$:
+If the estimate of $\hat\theta(y)$, i.e., the inductive process, is unbiased in the sense that it converges towards $\theta_*$, we may form an expectation over the data $Y$:
 
 $$
 \mathbb{E}_{Y \sim f^n}\mathbb{E}_{X \sim f}[log(g(x|\hat\theta(y)))]
@@ -191,19 +191,25 @@ Forming this expectation over data is a crucial step; it requires us to think be
 There are two ways to get at this expectation.
 One is the use of Taylor series expansion, which follows in this section, and another is the use of cross-validation discussed in the next section.
 
-We might notice that we often get an unbiased estimate for $\mathbb{E}_{Y \sim f^n}[\log(g(y|\hat{\theta}(y)))]$, e.g., in maximum likelihood estimation.
+We might notice that we often get an unbiased estimate for the observed distance on the data used to induce $\hat \theta$.
+With slight abuse of notation, $log(g(y|\theta)) \equiv \sum_{i = 1}^n log(g(y_i|\theta))$, so that $\mathbb{E}_{y \sim f^n}log(g(y|\hat\theta(y)))$ refers to the observed likelihood.
+The observed likelihood is often easy enough to obtain, e.g. in maximum likelihood estimation.
+
 The expectation over the data together with Taylor series expansion yields:
 
 $$
 \mathbb{E}_{Y \sim f^n}\mathbb{E}_{X \sim f}[log(g(x|\hat\theta(y)))] \approx \mathbb{E}_{Y \sim f^n}[\log(g(y|\hat{\theta}(y)))] - tr[J(\theta_*)I(\theta_*)^{-1}]
 $$
 
+Where $J$ is the Fisher information matrix with regard to $g$, and $I$ for $f$ respectively.
+For more details see of this derivation see @burnhamModelSelectionMultimodel2002, Ch. 7.2.
+
 The observed likelihood $log(g(x|\hat\theta(y)))$ is, therefore, a biased estimate of the distance to the truth.
 Note that $tr[J(\theta_*)I(\theta_*)^{-1}]$ is usually negative definitive and, therefore, we may conclude that substituting deduced quantities by induced estimates leads to some overconfidence about how close one is to the truth.
 I will refer to this bias as the complexity of a model, denoted as $\mathcal{C}$, because it is closely related to how much the data is influencing the results and, hence, how detailed the model is representing the data.
 
 $$
-\mathbb{E}_Y\mathbb{E}_X[log(g(x|\hat\theta(y)))] \approx \mathbb{E}_X[log(g(x|\hat\theta(y)))] + \mathcal{C}
+\mathbb{E}_{X \sim f}\mathbb{E}_{Y \sim f^n}[log(g(x|\hat\theta(y)))] \approx \mathbb{E}_{Y \sim f^n}[\log(g(y|\hat{\theta}(y)))] + \mathcal{C}
 $$
 
 If we want to induce quantities and correctly appraise a theory on the same data, we must know how much we have to correct our appraisal for the induction.
@@ -221,7 +227,7 @@ Verisimilitude and expected performance are different motivations for transparen
 In the future performance setup, we do not appeal to ground truth, replace the Kullback–Leibler divergence with an arbitrary loss function, and no longer require $g(x)$ to return probabilities:
 
 $$
-\mathcal{L}(y, g(y|\theta)) = \mathbb{E}_yL(y, g(y|\theta))
+\mathcal{L}(x, g(x|\theta)) = \mathbb{E}_xL(x, g(x|\theta))
 $$
 
 Still, the core problems of limited sample and inductive process remain.
@@ -239,8 +245,8 @@ That is, we make use of cross-validation where the data is partitioned, and the 
 For each subset, the resulting model is then compared to the complement that was not used for induction, which is indicated by $y_{-i} = y \diagdown \{y_i\}$.
 
 $$
-\mathbb{E}_y L(y, g(y|\hat\theta(y)))
- = \sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i})))\frac{1}{n}
+\mathbb{E}_{x \sim f} L(x, g(x|\hat\theta(y)))
+ = \frac{1}{n}\sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i})))
 $$
 
 As stated earlier, using cross-validation we can also estimate the If we reinstate Kullback-Leibler divergence as a loss function, we can estimate $\mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))]$ using the cross-validatory which connects the information-theoretic setup with this approach [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].

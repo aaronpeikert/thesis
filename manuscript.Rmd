@@ -224,32 +224,37 @@ Instead of verisimilitude, one might be concerned with future performance.
 That is, how well does a theory do in predicting novel facts.
 Please note that the information-theoretic setup above has made no appeal to the expected performance on unseen data.
 Verisimilitude and expected performance are different motivations for transparency, though they can be linked.
-In the future performance setup, we do not appeal to ground truth, replace the Kullback–Leibler divergence with an arbitrary loss function, and no longer require $g(x)$ to return probabilities:
+In the future performance setup, we do not appeal to ground truth, replace the Kullback–Leibler divergence with an arbitrary loss function, and no longer require $g(x)$ to return a likelihood:
 
 $$
 \mathcal{L}(x, g(x|\theta)) = \mathbb{E}_xL(x, g(x|\theta))
 $$
 
-Still, the core problems of limited sample and inductive process remain.
-Again there exists only a sample $y$ over which we form the expectation, but now we must pay a little more attention to the individual elements, $i = 1, \dots,n$ and take the expectation [@sochLawUnconsciousStatistician2020]:
+Again we can define the loss we have observed in the sample used to estimate $\hat\theta$ [@sochLawUnconsciousStatistician2020]:
 
 <!--the unconscious statistician strikes again-->
 
 $$
-\mathbb{E}_y L(y, g(y|\theta))
+\mathbb{E}_y L(y, g(y|\hat\theta(y)))
  = \frac{1}{n}\sum_{i=1}^n L(y_i, g(y_i|\theta))
 $$
 
+However, what we are interested in is not how well the theory did on data that informed it but on future, yet unseen, data:
+
+$$
+\mathbb{E}_x\mathbb{E}_yL(x, g(x|\hat\theta(y)))
+$$
+This expectation over, what is often called training and test data, is termed generalization error or expected prediction error [@bengioNoUnbiasedEstimator2004] and resembles the expectation over data discussed in the information-theoretic setup [@stoneAsymptoticEquivalenceChoice1977].
 Instead of using the Taylor series expansion, we can repeatedly sample data and repeat the inductive process.
 That is, we make use of cross-validation where the data is partitioned, and the inductive process is repeated on all permutations of a subset of the partitions.
 For each subset, the resulting model is then compared to the complement that was not used for induction, which is indicated by $y_{-i} = y \diagdown \{y_i\}$.
 
 $$
-\mathbb{E}_{x \sim f} L(x, g(x|\hat\theta(y)))
+\mathbb{E}_{x}\mathbb{E}_{y}  L(x, g(x|\hat\theta(y)))
  = \frac{1}{n}\sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i})))
 $$
 
-As stated earlier, using cross-validation we can also estimate the If we reinstate Kullback-Leibler divergence as a loss function, we can estimate $\mathbb{E}_y\mathbb{E}_x[log(g(x|\hat\theta(y)))]$ using the cross-validatory which connects the information-theoretic setup with this approach [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].
+As stated earlier, using cross-validation we can also estimate \nobreak\hfil\penalty0 \hfilneg $\mathbb{E}_{X \sim f}\mathbb{E}_{Y \sim f^n}[log(g(x|\hat\theta(y)))]$ which connects the information-theoretic setup with this approach [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].
 To make the link to the first approach even more clear, we may define complexity in these terms [@hauensteinComputingAICBlackbox2018]:
 
 $$

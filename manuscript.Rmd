@@ -41,9 +41,11 @@ We can roughly divide the causes into two categories: misuse of statistical meth
 <!--bla-transparency-bla-->
 In my view, both categories emerge from a lack of transparency about the inductive process in the empirical test of a theory.
 Testing a theory empirically is often viewed as deductive, since the theory is making statements about the data.
-Empirical scientists, however, often simultaneously engage in induction by deriving general statements from data leading to overconfidence in their empirical results.
-Some parts of their inductive process are well defined in the form of statistical methods, while other parts happen more informally.
+Empirical scientists, however, often simultaneously engage in induction by deriving general statements from data.
+The inductive element in the empirical test leads to overconfidence in the empirical results, if unaccounted.
+An accurate judgment of the empirical support of a theory is only possible if the inductive process is made transparent.
 
+The above distinction arises because some parts of the inductive process are well defined in the form of statistical methods, while other parts happen more informally.
 Statistical methods make induction quantifiable; while open science measures reduce uncertainty about sociological factors in induction.
 To understand why transparency is crucial, we must understand that these two forms of induction are integral to empirical sciences.
 Any science must be able to communicate how it generates its knowledge.
@@ -51,10 +53,10 @@ However, transparency has an outstanding role in psychology and other empirical 
 Therefore, transparency is more than a virtue that somewhat improves empirical sciences but is an indispensable property.
 
 <!--induction is necessary for psychological science-->
-To function as a science, psychology must be able to make statements about the world that can be compared to the true conditions.
+To function as an empirical science, psychology must be able to make statements about the world that can be compared to the true conditions.
 In psychology, this is not a purely deductive endeavor.
 Very few psychological theories are precise enough to derive testable statements.
-While it is tempting to claim that a theory makes testable claims by, e.g., implying a mean difference between two groups, such a statement is not testable on its own.
+While it is tempting to claim that a theory makes deductively testable claims by, e.g., implying a mean difference between two groups [@leePopperFalsificationCorroboration2021], such a statement is not testable on its own.
 Consider a simple t-test of mean differences.
 The decision to reject the null hypothesis still depends, besides true mean difference and sample size, on the observed variance.
 However, the variance is, of course, estimated from the data.
@@ -85,8 +87,8 @@ The data used for induction can not refute these statements, so they are not tes
 
 <!--the appraisal of "induced theories" should be low-->
 So what to think of such, yet untested, theory?
-Researchers (and philosophers of science) differ considerably in how they think theories should be appraised, e.g., judging the long-term performance (if they are frequentists), degrees of belief (if they are Bayesians), or probativeness [if they are severe testers, @mayoStatisticalInferenceSevere2018, p. 14] of a hypothesis.
-But whatever measure they subscribe to, their appraisal of the empirical support of a yet untested theory would be relatively low.
+Researchers and philosophers of science differ considerably their opinion about to appraise theories, e.g., judging the long-term performance (if they are frequentists), degrees of belief (if they are Bayesians), or probativeness [if they are severe testers, @mayoStatisticalInferenceSevere2018, p. 14] of a hypothesis.
+Whatever measure they subscribe to, an untested theory should not score very high on it.
 
 <!--transparency about induction is required-->
 So empirical researchers find themselves in a pinch.
@@ -254,7 +256,7 @@ $$
  = \frac{1}{n}\sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i})))
 $$
 
-As stated earlier, using cross-validation we can also estimate \nobreak\hfil\penalty0 \hfilneg $\mathbb{E}_{X \sim f}\mathbb{E}_{Y \sim f^n}[log(g(x|\hat\theta(y)))]$ which connects the information-theoretic setup with this approach [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].
+As stated earlier, using cross-validation we can also estimate \allowbreak $\mathbb{E}_{X \sim f}\mathbb{E}_{Y \sim f^n}[log(g(x|\hat\theta(y)))]$ which connects the information-theoretic setup with this approach [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].
 To make the link to the first approach even more clear, we may define complexity in these terms [@hauensteinComputingAICBlackbox2018]:
 
 $$

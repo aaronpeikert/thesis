@@ -307,14 +307,26 @@ Without knowing the inductive process, researchers can not judge the overconfide
 
 # How to establish transparency
 
-The above sections aimed to motivate the observation that the apparent fit of a theory to data is often overly optimistic.
+The above sections aimed to motivate the observation that the apparent fit of a theory to data is often overly optimistic, if it has inductive elements.
 This observation is only of limited use if we do not now the extend of this optimism.
 However, both setups show that the extent of the optimism ($\mathcal{C}$) is closely related to the inductive process and give us two starting points for making this bias transparent.
 The first requires a formal analysis of the inductive process to compute the complexity (e.g., using information criteria), and the second merely requires that the process is repeatable (e.g., using cross-validation).
 Both approaches require researchers to make the process of induction transparent instead of merely publishing the results.
 
+Even a casual consideration of the above formalization should strike anyone who has ever worked with empirical data as unrealistic.
+No one can actually expect researchers to be inductive only in ways that are formally analyzable or even strictly repeatable.
+The point is to set the goal post and have a yardstick to measure how well a method aimed at improving empirical sciences does.
+
+It is without question that researchers sometimes engage in inductive behavior that is neither formally analyzable nor repeatable.
+This fact implies that for theses situations the optimism bias can not be fully quantified and that full transparency can not be archived.
 To enable proper judgment of the whole theory, the imperative is simple: induce only what is necessary and what you induce should, if at all possible, be done formally.
 Otherwise, the supposedly objective test of the theory using hard data must still be judged subjectively.
+
+We, therefore, have two bounds that limit transparency about the inductive process.
+First, some things can not be made transparent in principle, in the sense that we can not estimate the optimism with certainty.
+Second, even formalized inductive processes only allow to estimate optimism theoretically but they have to be communicated effectively to do so in practice.
+
+In the following, I propose preregistration, as means to move induction into the formal domain, and computational reproducibility to make formal induction transparent.
 
 ## Transparency about statistical models: Computational Reproducibilibiltiy
 

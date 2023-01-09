@@ -323,7 +323,7 @@ To enable proper judgment of the whole theory, the imperative is simple: induce 
 Otherwise, the supposedly objective test of the theory using hard data must still be judged subjectively.
 
 We, therefore, have two bounds that limit transparency about the inductive process.
-First, some things can not be made transparent in principle, in the sense that we can not estimate the optimism with certainty.
+First, some things can not be made transparent in principle because some induction happens informally, in the sense that we can not estimate the optimism with certainty.
 Second, even formalized inductive processes only allow to estimate optimism theoretically but they have to be communicated effectively to do so in practice.
 
 In the following, I propose preregistration, as means to move induction into the formal domain, and computational reproducibility to make formal induction transparent.

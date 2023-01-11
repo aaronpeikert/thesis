@@ -8,6 +8,7 @@ output:
     number_sections: false
 header-includes:
    - \usepackage{libertine}
+   - \usepackage{pdfpages}
 fontsize: 12pt
 geometry: "left=3.9cm, right=3.3cm, top=2.5cm, bottom=3cm"
 papersize: a4
@@ -22,6 +23,7 @@ repro:
     - pgf
     - preview
     - libertine
+    - pdfpages
   apt:
     - git
     - rsync
@@ -340,5 +342,7 @@ In the following, I propose preregistration, as means to move induction into the
 ### Practical
 
 ## Future Research
+
+# Published Papers
 
 # References

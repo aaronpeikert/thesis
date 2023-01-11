@@ -1,5 +1,5 @@
 ---
-title: "Towards Transparency and Open Science"
+title: "\\includepdf{papers/workflow.pdf}Towards Transparency and Open Science"
 subtitle: "A Principled Perspective on Computational Reproducibility and Preregistration"
 output:
   bookdown::pdf_document2:
@@ -19,6 +19,7 @@ repro:
   files:
     - abstract.md
     - apa.csl
+    - papers/
   tlmgr:
     - pgf
     - preview

@@ -8,4 +8,3 @@ Denn wahrlich, ich sage euch:
 Bis Himmel und Erde vergehen, wird nicht vergehen der kleinste Buchstabe noch ein 
 Tüpfelchen vom Gesetz, bis es alles geschieht. Wer nun 
 eines von diesen kleinsten Geboten auflöst und lehrt die Leute so, der wird der Kleinste heißen im Himmelreich; wer es aber tut und lehrt, der wird groß heißen im Himmelreich.
-Denn ich sage euch: Wenn eure Gerechtigkeit nicht besser ist als die der Schriftgelehrten und Pharisäer, so werdet ihr nicht in das Himmelreich kommen.

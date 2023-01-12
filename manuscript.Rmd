@@ -24,7 +24,7 @@ linestretch: 1.2
 geometry: "left=3.6cm, right=3.6cm, top=4cm, bottom=4cm, bindingoffset=5mm"
 papersize: a4
 bibliography: references.bib
-abstract: "`r paste0(c('English:', readLines('abstract.md'), '\\\\par Deutsch:\\\\textgerman{', readLines('zusammenfassung.md'), '}\\\\newpage'), collapse = ' ')`"
+abstract: "`r paste0(c('\\\\setstretch{1.0}English:', readLines('abstract.md'), '\\\\par Deutsch:\\\\textgerman{', readLines('zusammenfassung.md'), '}\\\\newpage'), collapse = ' ')`"
 csl: apa.csl
 repro:
   files:

@@ -79,10 +79,11 @@ Testing a theory empirically is often viewed as deductive, since the theory is m
 Empirical scientists, however, often simultaneously engage in induction by deriving general statements from data.
 I will argue that the inductive element in the empirical test leads to overconfidence in the empirical results, if unaccounted.
 The extent of this bias depends on the inductive process.
-Without transparency about the inductive process, researchers are unable to judge the empirical support of a theory.
+The inductive process therefore have to be transparent to other researcher because they are otherwise unable to  judge the empirical support of a theory.
 
-The above distinction arises because some parts of the inductive process are well defined in the form of statistical methods, while researcher also engage in more informal inductive behavior.
-Statistical methods make the inductive bias quantifiable; while open science measures reduce some uncertainty about remaining informal sources of inductive bias.
+The above distinction, between statistical and sociological countermeasures, arises arises from two different kinds of induction.
+On the one hand, we have inductive processes that are well defined in the form of statistical methods, on the other hand researcher also engage in more informal inductive behavior outside of well defined models.
+They require different countermeasures because statistical methods make the inductive bias quantifiable; while open science measures reduce some uncertainty about the remaining informal sources of inductive bias.
 To understand why transparency is crucial, we must understand that formal and informal induction are integral to empirical sciences.
 Any science must be able to communicate how it generates its knowledge.
 However, transparency has an outstanding role in psychology and other empirical sciences, because empirical statements lose their value without transparency about the inductive process that contributed to them.
@@ -116,7 +117,7 @@ Since empirical researchers often cannot derive every assumption from their theo
 
 <!--statistical induction can be dangerous-->
 By the same token, whole theories may escape refutation by replacing every ill-fitting statement deduced from theory with statements induced from data.
-If strictly applied to auxiliary assumptions, such strategy of post hoc changing a theory in light of facts has been called "Lakatosian Defense" [@meehlAppraisingAmendingTheories1990].
+If applied to auxiliary assumptions, such strategy of post hoc changing a theory in light of facts has been called "Lakatosian Defense" [@meehlAppraisingAmendingTheories1990].
 If pushed to the limit, we arrive at a "theory" governed by the data.
 Such a theory, full of empirically induced statements, is almost empty of statements that have been empirically verified.
 The data used for induction can not refute these statements, so they they never have been subject of an empierical test.
@@ -147,7 +148,7 @@ The conceptualization of computational reproducibility and preregistration as me
 # What necessitates transparency
 
 The need for transparency is closely tied to the use of induction in the empirical test of a theory.
-There has been a long and vigorous debate about what it means to test a theory empirically (xxx).
+There has been a long and vigorous debate about what it means to test a theory empirically [@popperLogicScientificDiscovery2002; Ch. 5 Experience as a Method].
 I do not attempt to rehash the debate about what constitutes an empirical test but aim to lay open the role of transparency in two frameworks that lend themselves to investigate induction.
 The first framework motivates transparency when the aim of an empirical test is to evaluate the verisimilitude ("closeness to truth") of a theory.
 The second framework motivates transparency under a science that wants to select a theory according to its expected predictive performance.
@@ -169,7 +170,7 @@ Expressed as lost bits of information, a measure known as Kullback–Leibler div
 &= \mathbb{E}_{X \sim f}\left[\log(f(x))\right] - \mathbb{E}_{X \sim f}\left[\log(g(x))\right]\label{eq:klexp}
 \end{align}
 
-Most readers will recognize that this information-theoretic setup and the derivation below follow closely @burnhamModelSelectionMultimodel2002, Ch. 7.2, in their derivation of the Akaike Information Criterion (XXX) in its general form.
+Most readers will recognize that this information-theoretic setup and the derivation below follow closely @burnhamModelSelectionMultimodel2002, Ch. 7.2, in their derivation of the Akaike Information Criterion [@hirotuguakaikeInformationTheoryExtension1971] in its general form.
 What is of interest here is not the derivation but how this conceptualization can help us to understand what happens when data is simultaneously used to induce quantities of a theory and test the theory.
 
 This setup is, of course, highly theoretical.
@@ -195,7 +196,7 @@ The inference goal is for comparing other theories to $g(x)$ is, therefore:
 \mathbb{E}_{X \sim f}\left[\log(g(x|\theta_*))\right]
 \end{equation}
 Of course, we usually do not know $\theta_*$.
-That is why it is necessary to induce it from data, denoted as $\hat\theta(y)$, where $Y$ is independently sampled from $X\sim f$.
+That is why it is necessary to induce it from data, denoted as $\hat\theta(y)$, where $Y$ are $n$ independent samples from $X\sim f$.
 
 The crucial point here is to understand what happens when we can not derive $\theta$ deductively but must substitute it inductively with an estimate $\hat\theta(y)$.
 Any estimated parameters $\hat{\theta}(y)$ would almost surely not be equal to $\theta_*$ (assuming $\theta$ may take an infinite number of values, i.e., is continues).
@@ -230,12 +231,12 @@ The expectation over the data together with Taylor series expansion yields:
 \end{equation}
 
 Where $J$ is the Fisher information matrix with regard to $g$, and $I$ for $f$ respectively.
-For more details see of this derivation see @burnhamModelSelectionMultimodel2002, Ch. 7.2.
+For more details about this derivation see @burnhamModelSelectionMultimodel2002, Ch. 7.2.
 
 The observed likelihood $log(g(x|\hat\theta(y)))$ is, therefore, a biased estimate of the distance to the truth.
-Note that $tr[J(\theta_*)I(\theta_*)^{-1}]$ is usually negative definitive and, therefore, we may conclude that substituting deduced quantities by induced estimates leads to some overconfidence about how close one is to the truth.
+We may conclude that substituting deduced quantities by induced estimates leads to some overconfidence about how close one is to the truth.
 This overconfidence is directly related to how much induction a model entails.
-This bias is often called the complexity or capacity of a model, i.e., how much the data is influencing the results and, hence, how detailed the model is representing the data [@goodfellowDeepLearning2016; @goodfellowCapacityOverfittingUnderfitting2016].
+This bias is often called the complexity or capacity of a model, i.e., how much the data is influencing the results and, hence, how detailed the model is representing the data [@goodfellowCapacityOverfittingUnderfitting2016].
 I therefore denote it as as $\mathcal{C}$.
 \begin{equation}
 \mathbb{E}_{X \sim f}\mathbb{E}_{Y \sim f^n}[log(g(x|\hat\theta(y)))] \approx \mathbb{E}_{Y \sim f^n}[\log(g(y|\hat{\theta}(y)))] + \mathcal{C}
@@ -244,7 +245,7 @@ I therefore denote it as as $\mathcal{C}$.
 If we want to induce quantities and correctly appraise a theory on the same data, we must know how much we have to correct our appraisal for the induction.
 Fortunately, it is possible to approximate the complexity of a model under some conditions.
 One condition is, since $\theta_*$ is unknown, that we know the properties of the inductive process that generated $\hat\theta$.
-We then can formally analyze the behavior and derive a mathematical expression for $\mathcal{C}$, e.g., corrections for a large class of statistical models, most famously the class of linear models, are well known (XXX).
+We then can formally analyze the behavior and derive a mathematical expression for $\mathcal{C}$, e.g., corrections for a large class of statistical models, most famously the class of linear models, are well known [@boisbunonAkaikeInformationCriterion2014].
 
 ## A future performance perspective
 
@@ -253,7 +254,7 @@ Instead of verisimilitude, one might be concerned with future performance.
 That is, how well does a theory do in predicting novel facts.
 Please note that the information-theoretic setup above has made no appeal to the expected performance on unseen data.
 Verisimilitude and expected performance are different motivations for transparency, though they can be linked.
-In the future performance setup, we do not appeal to ground truth, replace the Kullback–Leibler divergence with an arbitrary loss function, and no longer require $g(x)$ to return a likelihood:
+In the future performance setup, we do not appeal to ground truth, replace the Kullback–Leibler divergence with an arbitrary loss function, and no longer require $g(x)$ to return a likelihood ($\mathcal{L}$ stands for a arbitrary loss function):
 \begin{equation}
 \mathcal{L}(x, g(x|\theta)) = \mathbb{E}_xL(x, g(x|\theta))
 \end{equation}
@@ -303,9 +304,11 @@ To allow for induction to happen, we replace theory with a model (not necessaril
 \begin{equation}
 \mathcal{L}(\text{Model(Reality)}, \text{Reality})
 \end{equation}
-The idea is that we choose from the multitude the version of our theory that best fits reality.
+The idea is that we choose the version of our theory that best fits reality.
 However, we are forced to rely on a limited sample of reality.
 We are misled because these two factors, induction and limited sample size, interact.
+Choosing the best version of our theory, based on a sample, is almost surely suboptimal.
+The observed loss, therefore, is an overconfident estimate of the loss in the future and closeness to truth.
 \begin{equation}
 \mathcal{L}(\text{Model(Reality)}, \text{Reality}) > \mathcal{L}(\text{Model(Sample)}, \text{Sample})
 \end{equation}

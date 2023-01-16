@@ -372,36 +372,37 @@ I argue that both practices are ultimately aimed at providing transparency to ju
 
 ## Transparency about statistical models: Computational Reproducibilibiltiy
 
-Assume for a moment that a researcher only engaged in formal induction while testing a theory empirically.
+Assume that a researcher only engaged in formal induction while testing a theory empirically.
 If other researchers want to judge this empirical test properly, the inductive process must be communicated to them.
 In other words, having formal induction is not enough, the induction still must be made transparent.
 Such transparency can be achieved by computational reproducibility.
 Computational reproducibility is usually defined as the ability to recreate the same results from the same data set.
 However, through the lens of transparency about the inductive process, we may further refine our view on computational reproducibility.
 
-Consider a software that delivers the same results upon input of the same data, i.e., its reproducible.
+Consider software that delivers the same results upon input of the same data, i.e., it is reproducible.
 However, place two restrictions on the software.
 First, while able to compute results based on data, the software can not be understood by human researcher, e.g., because it is a binary program.
 Second, when the data set changes, the software does not work anymore.
 The first condition rules out that the software can be analyzed formally.
-The second condition prevents us from changing the data in any way and observe the results.
-We, therefore, have no means to assess the complexity of the inductive process and can not judge the empirical support.
-It follows that to provide transparency about the complexity of an inductive process the definition of computational reproducibility must be broadened, i.e., we have to rule out one of the above conditions.
+The second condition prevents us from changing the data and observing the results.
+Therefore, we have no means to assess the complexity of the inductive process and can not judge the empirical support.
+It follows that to provide transparency about the complexity of an inductive process, the definition of computational reproducibility must be broadened, i.e., we have to rule out one of the above conditions.
 
-If we relax the second condition and have a "black box" that is nerveless repeatable on other data, we still have transparency about the inductive process, in the sense, that we can estimate the complexity of the inductive process.
+Suppose we relax the second condition and have a "black box" that is repeatable on other data.
+In that case, we still have transparency about the inductive process in the sense that we can estimate the complexity of the inductive process.
 Relaxing the first condition most likely leads to relaxing the second condition as well.
-If the inductive process can be understood by humans, complexity can either be calculated analytically or the process can be reimplemented to work on other similar data.
+If humans can understand the inductive process, complexity can either be calculated analytically or the process can be reimplemented to work on other similar data.
 The most minimal extension of computational reproducibility is, therefore, to require additionally that the process can be repeated on other similar data.
 
 To provide transparency, computational reproducibility must satisfy two requirements.
 First, computational reproducibility must show that the results have been the product of the proposed inductive process, i.e., the same data leads to the same results.
-Second, computational reproducibility must enable that the inductive process can be repeated on similar data.
+Second, computational reproducibility must enable the inductive process to be repeated on similar data.
 
 These two requirements are not easy to meet in practice.
 In @peikertReproducibleDataAnalysis2021, I proposed a workflow that unifies both requirements under the objective of automating the full process from data to manuscript.
-Removing the human from the loop enables to formally verify that the first requirement is met, and drastically reduces the burden of the second requirement.
-While this workflow provides transparency and facilitates that the recipients of the work can judge the inductive process easily, it asks a lot from the researchers who create the work.
-To address this problem, and make the application of the workflow easier I developed the R package `repro` [@R-repro].
+Removing the human from the loop enables researchers to verify formally that the first requirement is met and drastically reduces the burden of the second requirement.
+While this workflow provides transparency and facilitates that the recipients of the work can judge the inductive process quickly, it asks a lot from the researchers who create the work.
+To address this problem and simplify the workflow's application in practice, I developed the R package `repro` [@R-repro].
 I further refined and simplified the workflow to make it more accessible in @peikertReproducibleResearchTutorial2021 and contributed to @vanlissaWORCSWorkflowOpen2021's manuscript and the there presented software `worcs`.
 
 To address the problem of making transparent how the data led to the results, these works divide it into four sub problems.
@@ -410,14 +411,12 @@ This can be ensured by employing dynamic document creation.
 Second, the version of the software that is used to generate the results must be known.
 This can be ensured by documenting the version using software management.
 Third, the version of the author written code (and possibly text) must be tracked using version control systems.
-Fourth, how the data relates to software and computing infrastructure must be managed by e.g. workflow automation.
+Fourth, how the data relates to software and computing infrastructure must be managed by e.g., workflow automation.
 
-Addressing these four problems through automation lowers the barrier to understand, and hence make transparent, the inductive process.
-However, it also addresses the here proposed additional requirement for computational reproducibility, that the process can be repeated on similar data, as it effectively allows to scale the process across many data sets.
+Addressing these four problems through automation lowers the barrier to understanding, making the inductive process transparent.
+However, it also addresses the proposed additional requirement for computational reproducibility, that the process can be repeated on similar data, as it effectively allows to scale the process across many data sets.
 
 ## Transparency about human researchers: Preregistration
-
-
 
 # Discussion
 

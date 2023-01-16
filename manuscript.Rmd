@@ -292,16 +292,16 @@ That drastically expands the set of inductive processes for which we can estimat
 
 ## A conceptual perspective
 
-Now that we have established the need for transparency about the inductive process, we can drop a few of the more technical details to get a more straightforward about what we have to make transparent.
+Now that we have established the need for transparency about the inductive process, we can drop a few more technical details to clarify what we have to make transparent.
 It bears repeating that simply laying open what has been done is not enough.
 Merely showing the inductive results instead of the process that generated them is insufficient to appraise the theory.
-On a conceptual level, we want to compare:
+On a conceptual level, we want to compare the following:
 \begin{equation}
 \mathcal{L}(\text{Theory}, \text{Reality})
 \end{equation}
 
-Where, $\mathcal{L}$ stands for loss function, i.e., how to compare predictions and reality.
-To allow for induction to happen, we replace theory with a model (not necessarily a statistical one) or, put differently, a multitude of implications about the data from the theory.
+Where $\mathcal{L}$ stands for the loss function, i.e., how to compare predictions and reality.
+To allow for induction, we replace theory with a model (not necessarily a statistical one) or, put differently, a multitude of implications about the data from the theory.
 
 \begin{equation}
 \mathcal{L}(\text{Model(Reality)}, \text{Reality})
@@ -309,8 +309,8 @@ To allow for induction to happen, we replace theory with a model (not necessaril
 The idea is that we choose the version of our theory that best fits reality.
 However, we are forced to rely on a limited sample of reality.
 We are misled because these two factors, induction and limited sample size, interact.
-Choosing the best version of our theory, based on a sample, is almost surely suboptimal.
-The observed loss, therefore, is an overconfident estimate of the loss in the future and closeness to truth.
+Choosing the best version of our theory based on a sample is almost surely suboptimal.
+Therefore, the observed loss is an overconfident estimate of the loss in the future and closeness to the truth.
 \begin{equation}
 \mathcal{L}(\text{Model(Reality)}, \text{Reality}) > \mathcal{L}(\text{Model(Sample)}, \text{Sample})
 \end{equation}
@@ -320,55 +320,57 @@ The observed loss, therefore, is an overconfident estimate of the loss in the fu
 
 Transparency is necessary because induction leaves researchers overly optimistic regarding their theories' fit to the data.
 The extent of this optimism depends on the inductive process, not merely its results.
-Specifically, it depends on the complexity, i.e., the ability of the inductive process to adept to data.
+Specifically, it depends on the complexity, i.e., the ability of the inductive process to adapt to data.
 Without knowing the inductive process, researchers can not judge the overconfidence, so the inductive process ought to be made transparent.
 
 # How to establish transparency
 
-The above sections aimed to motivate the observation that the apparent fit of a theory to data is often overly optimistic, if it has inductive elements.
-This observation is only of limited use if we do not know the extend of this optimism.
-However, both setups show that the extent of the optimism  is closely related to the complexity of the inductive process ($\mathcal{C}$), and give us two starting points for making this bias transparent.
+The above sections aimed to motivate the observation that the apparent fit of a theory to data is often overly optimistic if it has inductive elements.
+This observation is only useful if we know the extent of this optimism.
+However, both setups show that the extent of the optimism is closely related to the complexity of the inductive process ($\mathcal{C}$) and give us two starting points for making this bias transparent.
 The first requires a formal analysis of the inductive process to compute the complexity (e.g., using information criteria), and the second merely requires that the process is repeatable (e.g., using cross-validation).
-Both approaches require researchers to make the process of induction transparent instead of merely publishing the results.
+Both approaches require researchers to make the inductive process transparent instead of merely publishing the results.
 
 Even a casual consideration of the above formalization should strike anyone who has ever worked with empirical data as unrealistic.
-No one can actually expect researchers to be inductive only in ways that are formally analyzable or even strictly repeatable.
-The point is to set the goal post and have a yardstick to measure how well a method aimed at improving empirical sciences does.
+No one can expect researchers to be inductive only in formally analyzable or strictly repeatable ways.
+The point is to set the goalpost and have a yardstick to measure how well a method aimed at improving empirical sciences does.
 
-What we can do is to split $\mathcal{C}$ in complexity that can be formally described and a part that can only be evaluated subjectively.
-Formal, in the strict sense means that the complexity can be mathematically derived and in a looser sense that the process can be repeated at will.
-If a researcher employs a linear model, the complexity is calculable and even if it were not, we could fit the linear model on a large set of other data to asses its inductive behavior.
-However, if the researcher reconsiders the model based on the results, and fits a model with, e.g., a predictor added or removed, the complexity can not be formally judged because the induction is partly done by the researcher themselves.
-We can not ask the researcher to repeat the process on all possible data sets nor is the behavior mathematically well defined.
-What we know, however, is that the resulting linear model is more complex than a linear regression formally implies.
+However, we can split $\mathcal{C}$ in complexity that can be formally described and a part that can only be evaluated subjectively.
+Formal, in the strict sense, means that the complexity can be mathematically derived and in a looser sense that the process can be repeated at will.
+If a researcher employs a linear model, the complexity is calculable.
+Even if it were not, we could fit the linear model on a large set of other data to asses its inductive behavior.
+However, suppose the researcher reconsiders the model based on the results and fits a model with, e.g., a predictor added or removed.
+In that case, the complexity can not be formally judged because the researcher is part of the inductive process.
+We can not ask the researcher to repeat the process on all possible data sets, nor is the behavior mathematically well-defined.
+However, we know that the resulting linear model is more complex than a linear regression formally implies.
 
 $$
 \mathcal{C}(\text{Model}) = \mathcal{C}(\text{formal}) +\mathcal{C}(\text{informal})
 $$
 
-That is not to say that we have no basis to judge the informal induction.
+That is not to say that we have no basis for judging the informal induction.
 We can find the inductive decision reasonable and judge it unlikely that just about any variable would be added if the data suggests it.
-Or the opposite, we might find it not well justified on theoretical grounds and deem it a purely data driven decision, which implies higher complexity.
+Or the opposite, we might find it not well justified on theoretical grounds and deem it a purely data-driven decision, which implies higher complexity.
 What one can say, however, is that this judgment is debatable and, therefore, subjective.
 
 It is without question that researchers sometimes engage in inductive behavior that is neither formally analyzable nor repeatable.
-This fact implies that for theses situations the complexity and hence the optimism bias can not be fully quantified.
-The second best thing to transparency about the complexity is to communicate the uncertainty about the complexity clearly.
-However, judging the informal complexity $\mathcal{C}(\text{informal})$ must remain an subjective exercise.
+This fact implies that for these situations, the complexity and hence the optimism bias can not be fully quantified.
+The second best thing to transparency about complexity is to communicate the uncertainty about the complexity clearly.
+However, judging the informal complexity $\mathcal{C}(\text{informal})$ must remain a subjective exercise.
 
-To enable proper judgment of the whole theory, the imperative is simple: induce only what is necessary and what you induce should, if at all possible, be done formally.
+The imperative to enable proper judgment of theories is simple: induce only what is necessary and what you induce should, if at all possible, be done formally.
 Otherwise, the supposedly objective test of the theory using hard data must be judged more subjectively than necessary.
 
 To summarise, I separate complexity $\mathcal{C}$ according to the transparency that can theoretically be achieved.
 Formal inductive processes allow full transparency in the sense that $\mathcal{C}$ can be objectively quantified.
-Informal inductive processes allow only a limited transparency and must be subjectively judged.
+Informal inductive processes allow only limited transparency and must be subjectively judged.
 
-We, therefore, have two bounds that limit transparency about the inductive process.
-First, some things can not be made transparent in principle because some induction happens informally, in the sense that we can not estimate the optimism with certainty.
-Second, even formalized inductive processes only allow to estimate optimism theoretically but they have to be communicated effectively to do so in practice.
+Therefore, we have two bounds that limit transparency about the inductive process.
+First, some things can not be made transparent in principle because some induction happens informally, so we can not estimate the complexity with certainty.
+Second, even formalized inductive processes only allow estimating optimism theoretically, but they have to be communicated effectively to do so in practice.
 
-In the following, I propose preregistration, as means to move induction into the formal domain, and computational reproducibility to make formal induction transparent.
-I argue that both practices are ultimately aimed at providing transparency to judge empirical support for theories, though they may have secondary benefits for science.
+In the following, I propose preregistration as means to move induction into the formal domain and computational reproducibility to make formal induction transparent.
+I argue that both practices should ultimately provide transparency to judge empirical support for theories, though they may have secondary benefits for science.
 
 ## Transparency about statistical models: Computational Reproducibilibiltiy
 

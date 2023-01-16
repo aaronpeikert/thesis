@@ -56,7 +56,9 @@ repro:
 \null
 \clearpage
 
+\begin{spacing}{1}
 \tableofcontents
+\end{spacing}
 
 \newpage
 \clearpage

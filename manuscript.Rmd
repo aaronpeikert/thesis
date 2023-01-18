@@ -71,7 +71,7 @@ repro:
 <!--psychology has unique difficulties-->
 Psychology is a difficult science [@meehlTheoreticalRisksTabular1978].
 Although there is some disagreement on why exactly this is the case, I doubt there is disagreement about the fact itself.
-Laying open the difficulties and attempting to overcome them are not a recent trends, though they have been invigorated by the so-called replication crisis in psychology [@ioannidisWhyMostPublished2005; @opensciencecollaborationEstimatingReproducibilityPsychological2015] that also begins to ripple through other empirical sciences.
+Laying open the difficulties and attempting to overcome them are not recent trends, though they have been invigorated by the so-called replication crisis in psychology [@ioannidisWhyMostPublished2005; @opensciencecollaborationEstimatingReproducibilityPsychological2015] that also begins to ripple through other empirical sciences.
 As psychology grapples with this crisis of confidence in its empirical results, several causes and remedies have been proposed.
 We can roughly divide the proposed countermeasures into two categories, those that aim to increase the correct use of statistical methods [e.g., @bakanTestSignificancePsychological20060327; @benjaminRedefineStatisticalSignificance2018; @cohenEarth051994;  @gigerenzerMindlessStatistics2004; @wagenmakersWhyPsychologistsMust2011] and those that aim to counteract sociological and psychological biases [e.g., @simmonsFalsepositivePsychologyUndisclosed2011; @rosenthalFileDrawerProblem1979; @bakkerRulesGameCalled2012; @johnMeasuringPrevalenceQuestionable2012].
 
@@ -107,7 +107,7 @@ Here, it is innocuous because the introduced bias can be accounted for and vanis
 A t-test accounts for the estimation of variance by having somewhat wider tails than a z-test which assumes that the variance is known, i.e., the hurdle to reach significance is higher for a t-test (the critical value for a one sided test with α-level set to 1% and degrees of freedom set to 10, is t≈`r round(qt(.99, 10), 2)` vs. z≈`r round(qnorm(.99), 2)`).
 It is widely known that even without this correction, the z-test is a good approximation when sample sizes are large [@studentProbableErrorMean1908].
 Induction is also necessary because it is virtually impossible to ask psychological researchers to specify every detail, such as the variance, a priori from their theory.
-If they had to, there would probably be no psychological theory that could be subject of an empirical test.
+If they had to, there would probably be no psychological theory that could be subjected to an empirical test.
 
 <!--necessity of induction-->
 In other words, induction gives our theories some slack to be imprecise and contain "blank" spaces, later to be filled based on observation.
@@ -156,7 +156,7 @@ The first framework motivates transparency when the aim of an empirical test is 
 The second framework motivates transparency under a science that wants to select a theory according to its expected predictive performance.
 
 Both frameworks show how unaccounted induction leads to overconfidence in empirical results and give us some theoretical tools to asses and control this overconfidence.
-Because both are quite technical, they are followed by a more conceptual summary of these tools.
+Because both frameworks are quite technical, they are followed by a more conceptual summary of these tools.
 These sections provide the basis to understand how computational reproducibility and preregistration enable a proper assessment of an empirical test on a conceptual level.
 
 ## An information-theoretic perspective
@@ -256,7 +256,7 @@ Instead of verisimilitude, one might be concerned with future performance.
 That is, how well does a theory do in predicting novel facts.
 Please note that the information-theoretic setup above has made no appeal to the expected performance on unseen data.
 Verisimilitude and expected performance are different motivations for transparency, though they can be linked.
-In the future performance setup, we do not appeal to ground truth, replace the Kullback–Leibler divergence with an arbitrary loss function, and no longer require $g(x)$ to return a likelihood ($\mathcal{L}$ stands for a arbitrary loss function):
+In the future performance setup, we do not appeal to ground truth, replace the Kullback–Leibler divergence with an arbitrary loss function, and no longer require $g(x)$ to return a likelihood ($\mathcal{L}$ stands for an arbitrary loss function):
 \begin{equation}
 \mathcal{L}(x, g(x|\theta)) = \mathbb{E}_xL(x, g(x|\theta))
 \end{equation}
@@ -333,9 +333,12 @@ Both approaches require researchers to make the inductive process transparent in
 
 Even a casual consideration of the above formalization should strike anyone who has ever worked with empirical data as unrealistic.
 No one can expect researchers to be inductive only in formally analyzable or strictly repeatable ways.
-The point is to set the goalpost and have a yardstick to measure how well a method aimed at improving empirical sciences does.
+The point is to set the goalpost and have a yardstick to measure how well we can judge empierical support.
+Without induction, there is no bias to correct for.
+With only formal induction, the bias can be quantified.
+The issue of how to deal with informal induction remains.
 
-However, we can split $\mathcal{C}$ in complexity that can be formally described and a part that can only be evaluated subjectively.
+As a first step, we can note that one may split $\mathcal{C}$ in complexity that can be formally described and a part that can only be evaluated subjectively.
 Formal, in the strict sense, means that the complexity can be mathematically derived and in a looser sense that the process can be repeated at will.
 If a researcher employs a linear model, the complexity is calculable.
 Even if it were not, we could fit the linear model on a large set of other data to asses its inductive behavior.
@@ -378,7 +381,7 @@ Assume that a researcher only engaged in formal induction while testing a theory
 If other researchers want to judge this empirical test properly, the inductive process must be communicated to them.
 In other words, having formal induction is not enough, the induction still must be made transparent.
 Such transparency can be achieved by computational reproducibility.
-Computational reproducibility is usually defined as the ability to recreate the same results from the same data set.
+Computational reproducibility is usually defined as the ability to recreate the same results from the same data set [@claerboutElectronicDocumentsGive1992].
 However, through the lens of transparency about the inductive process, we may further refine our view on computational reproducibility.
 
 Consider software that delivers the same results upon input of the same data, i.e., it is reproducible.
@@ -390,19 +393,21 @@ The second condition prevents us from changing the data and observing the result
 Therefore, we have no means to assess the complexity of the inductive process and can not judge the empirical support.
 It follows that to provide transparency about the complexity of an inductive process, the definition of computational reproducibility must be broadened, i.e., we have to rule out one of the above conditions.
 
-Suppose we relax the second condition and have a "black box" that is repeatable on other data.
+Suppose we relax the second condition, then we have a "black box" that is repeatable on other data.
 In that case, we still have transparency about the inductive process in the sense that we can estimate the complexity of the inductive process.
-Relaxing the first condition most likely leads to relaxing the second condition as well.
+Relaxing the first condition, intransparency to human researchers, most likely leads to relaxing the second condition, repeatability on other data, as well.
 If humans can understand the inductive process, complexity can either be calculated analytically or the process can be reimplemented to work on other similar data.
 The most minimal extension of computational reproducibility is, therefore, to require additionally that the process can be repeated on other similar data.
 
-To provide transparency, computational reproducibility must satisfy two requirements.
+We can therefore conclude that to provide transparency, computational reproducibility must satisfy two requirements.
 First, computational reproducibility must show that the results have been the product of the proposed inductive process, i.e., the same data leads to the same results.
 Second, computational reproducibility must enable the inductive process to be repeated on similar data.
 
 These two requirements are not easy to meet in practice.
 In @peikertReproducibleDataAnalysis2021, I proposed a workflow that unifies both requirements under the objective of automating the full process from data to manuscript.
 Removing the human from the loop enables researchers to verify formally that the first requirement is met and drastically reduces the burden of the second requirement.
+Given enough computing power, automation enables to run the same analysis on many data sets.
+
 While this workflow provides transparency and facilitates that the recipients of the work can judge the inductive process quickly, it asks a lot from the researchers who create the work.
 To address this problem and simplify the workflow's application in practice, I developed the R package `repro` [@R-repro].
 I further refined and simplified the workflow to make it more accessible in @peikertReproducibleResearchTutorial2021 and contributed to @vanlissaWORCSWorkflowOpen2021's manuscript and the there presented software `worcs`.
@@ -415,45 +420,56 @@ This can be ensured by documenting the version using software management.
 Third, the version of the author written code (and possibly text) must be tracked using version control systems.
 Fourth, how the data relates to software and computing infrastructure must be managed by e.g., workflow automation.
 
-Addressing these four problems through automation lowers the barrier to understanding, making the inductive process transparent.
+Addressing these four problems through automation lowers the barrier for assessing the inductive process.
 However, it also addresses the proposed additional requirement for computational reproducibility, that the process can be repeated on similar data, as it effectively allows to scale the process across many data sets.
 
 ## Transparency about human researchers: Preregistration
 
+Computational reproducibility enables transparency about formal inductive processes.
+However, informal inductive processes deprive us of full transparency.
+It is therefore prudent to replace informal induction with formal induction as much as possible.
+If a researcher makes every effort to only employ formal inductive reasoning in a reproducible manner, they still must persuade their readers of this fact.
+
+The problem is that formal inductive reasoning can be part of an informal process.
+A perfectly reproducible linear regression is from the outside indistinguishable from one that was cherry picked from hundreds of possible regressions.
+However, our expectation regarding verisimilitude and future performance between the cherry picked and the simple regression should vary substantially.
+
+So what would constitute a persuasive argument that the data has not influenced the results above and beyond the complexity of the formal inductive process?
+We could simply trust the researchers.
+In fact, we would have to trust them on two accounts.
+First, we must put faith in their honesty.
+Second, we must trust their competence in deciding what to disclose how.
+This is not an easy task, because we need to know what they did, as well as what they did not do, e.g., that they did not cherry pick, and what they would have done had the data looked different.
+This goes back to the idea that simply knowing the outcome of an inductive process is not enough to judge the complexity.
+To judge the complexity, the process must be transparent to the researcher, i.e., how would the results change if the data looked different.
+
+Relying on trust for this judgment is not entirely unreasonable.
+However, while this type of trust is a requirement to judge the informal complexity, it does not distinguish a formal from an informal inductive process.
+Simply trusting that researchers know about the pitfalls of informal induction and disclose the required information is a subjective judgment.
+Relying on a subjective judgment would mean to surrender the advantage a formal inductive process provides; instead of quantification of complexity, the complexity must be judged with a considerable amount of uncertainty.
+
+A clearer distinction between formal and informal can be provided by specifying the formal inductive process before any data is available.
+Such practice is called registration [@riceCurtailingUsePreregistration2019] or preregistration [@nosekPreregistrationRevolution2018]. 
+Registration is a strong argument that the data has not influenced the results more than the complexity of the formal inductive process implies.
+If the data does not yet exist, it can not influence the results.
+Note that preregistration is about the flow of information, i.e., the data used for induction, and not about the temporal order.
+Information can simply not travel backward in time, which makes registration before data acquisition so appealing.
+
+Having no access to the data when specifying the analysis forces the researcher to think about the process of induction.
+They have to reason about all the possible data patterns they might encounter.
+While this makes registration so difficult, it is exactly the information we need.
+The expectation of the inductive process over all possible data is what we are trying to estimate, when we adjusting for the complexity of the inductive process.
+
 # Discussion
 
-## Limitations
+## From theorie to model
 
-### Theorethical
+## Comparing predictions to reality
 
-### Practical
+Subjectivity
 
-## Future Research
+## The issue of trust
 
-<!--you must pay the reaper-->
-Accounting for how much induction was used to deductively test a statement is necessary for correct appraisal of evidential support of a hypothesis.
-Researcher (and philosophers of science) differ considerably in what appraisal entails, e.g., judging the long-term performance (if they are frequentists), degrees of believe (if they are Bayesians), or probativeness [if they are severe testers, @mayoStatisticalInferenceSevere2018, p. 14] of a hypothesis.
-But whatever measure they subscribe to, induction can shield shield any hypothesis from refutation by data altogether.
-
-Assume that all auxiliary assumption, regarding proper quantification of behavior and situation in valid measurements, causality, individual differences, nuisance variables, distributional, etc, hold.
-
-While not using statistical methods would lead to the rejection of almost all psychological theories, pushed to the extreme statistical methods can shield theories from refutation altogether.
-Both situations are uninformative and, therefore, rather unhelpful for the generation of knowledge.
-The later situation, however, becomes less than helpful when one is under the impression that theories are well tested, when in fact there was little chance that the data could refute the theory if wrong.
-
-## Transparency about statistical models: Computational Reproducibilibiltiy
-
-## Transparency about human researcher: Preregistration
-
-# Discussion
-
-## Limitations
-
-### Theoretical
-
-### Practical
-
-## Future Research
 
 # Articles
 

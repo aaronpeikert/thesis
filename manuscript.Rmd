@@ -6,15 +6,25 @@ output:
     latex_engine: "xelatex"
     toc: true
     number_sections: false
+    keep_tex:  true
 header-includes: |
   \usepackage{libertine}
   \usepackage{pdfpages}
   
-  \usepackage{titling}
+  % below works well with hyperref, but spacing is standard (to large)
+  %\usepackage{sectsty}
+  %\sectionfont{\Large\normalfont\scshape\raggedright}
+  %\subsectionfont{\large\normalfont\scshape\raggedright}
+  
+    % titlesec does not play nice with RMarkdown, so hack:
   \let\paragraph\oldparagraph
   \let\subparagraph\oldsubparagraph
   \usepackage[sc, compact, raggedright]{titlesec}
+  % titlesec does not play nice with hyperref, so hack:
+  \newcommand{\sectionbreak}{\phantomsection}
+  \newcommand{\subsectionbreak}{\phantomsection}
 
+  \usepackage{titling}
   \pretitle{
      \begin{minipage}{\textwidth}
      \includepdf[offset=5mm 0mm]{cover.pdf}

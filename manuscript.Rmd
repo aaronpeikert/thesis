@@ -9,7 +9,12 @@ output:
 header-includes: |
   \usepackage{libertine}
   \usepackage{pdfpages}
+  
   \usepackage{titling}
+  \let\paragraph\oldparagraph
+  \let\subparagraph\oldsubparagraph
+  \usepackage[sc, compact, raggedright]{titlesec}
+
   \pretitle{
      \begin{minipage}{\textwidth}
      \includepdf[offset=5mm 0mm]{cover.pdf}

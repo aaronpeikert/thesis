@@ -41,7 +41,7 @@ header-includes: |
   \usepackage{polyglossia}
   \setmainlanguage[]{english}
   \setotherlanguage[]{german}
-fontsize: 12pt
+fontsize: 11.5pt
 linestretch: 1.2
 # https://practicaltypography.com/page-margins.html
 # 3.81 to 5.08cm or 45-90 characters or 2-3 alphabets

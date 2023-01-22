@@ -25,8 +25,8 @@ header-includes: |
   \let\subparagraph\oldsubparagraph
   \usepackage[sc, compact, raggedright]{titlesec}
   % titlesec does not play nice with hyperref, so hack:
-  \newcommand{\sectionbreak}{\phantomsection}
-  \newcommand{\subsectionbreak}{\phantomsection}
+  \newcommand{\sectionbreak}{}
+  \newcommand{\subsectionbreak}{}
 
   \usepackage{titling}
   \pretitle{
@@ -553,8 +553,6 @@ The annex to § 6, para. 2 of the Doctoral Degree Regulations of the Faculty of 
 
 ## A Reproducible Data Analysis Workflow With R Markdown, Git, Make, and Docker
 
-\phantomsection
-
 The following article is reprinted from the following source under the conditions of the [Creative Commons Attribution (CC BY) 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
 Peikert, A., & Brandmaier, A. M. (2021). A Reproducible Data Analysis Workflow With
@@ -564,7 +562,7 @@ R Markdown, Git, Make, and Docker. *Quantitative and Computational Methods in Be
 
 ## Reproducible Research in R: A Tutorial on How to Do the Same Thing More Than Once
 
-\phantomsection
+
 
 The following article is reprinted from the following source under the conditions of the [Creative Commons Attribution (CC BY) 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
@@ -574,7 +572,7 @@ Peikert, A., van Lissa, C. J., & Brandmaier, A. M. (2021). Reproducible Research
 
 ## Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.
 
-\phantomsection
+
 
 The following article is prepared to be submitted to *Philosophical Psychology*.
 The following preprint is reprinted from the following source under the conditions of the [Creative Commons Public Domain Dedication (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/).

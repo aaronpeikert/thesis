@@ -9,6 +9,10 @@ output:
     keep_tex:  true
 header-includes: |
   \usepackage{libertine}
+  %\usepackage{ebgaramond}
+  %\usepackage{garamondlibre}
+  %\usepackage{CormorantGaramond}
+  %\usepackage{MinionPro}
   \usepackage{pdfpages}
   
   % below works well with hyperref, but spacing is standard (to large)

@@ -534,9 +534,44 @@ Based on the computational reproducible workflow, I proposed preregistration as 
 
 ## From theorie to model
 
+My consideration of transparency centers around the use of induction to test imprecise theories.
+A theory is imprecise, in the sense that it is undetermined and must use data to make testable statements.
+I conceptualize induction to derive testable statements as choosing among a set of implications of the theory.
+Such a set of possible implications and the process of choosing among them according to a loss function is what I understand as a model.
+However, this conceptualization may be criticized.
+It is not entirely clear how to chose the process of selecting the best fitting version of the theory.
+Should the process of induction depend on the theory?
+Is the application of mathematically or computationally convenient methods, as is usual in statistical modeling, sufficient?
+Must we account for the arbitrariness of the selection process?
+
+Implicit in the conceptualization of complexity was the assumption of unbiasedness (the inductive process converges towards $\theta_*$), i.e., an ideal inductive process.
+Such assumptions implies a perfect match of the set of implications of the theories and the statistical method as well as optimality of the statistical method.
+Such optimality requirement is difficult to verify.
+Most proofs regarding optimality make restrictive assumptions, i.e., optimality depends on the data, and rely on large sample behavior.
+
+In practice, researchers are restricted by the statistical models that are available to them.
+A certain statistical method may imply a set of possible implications that only partially overlaps with the theory.
+Developing more powerful inductive algorithms is a very active field of research in the machine learning community.
+However, having more and more powerful tools for induction simply means that more and more vague theories may be tested.
+It does not necessarily lead to the development of statistical methods that fit the theories researchers are interested in.
+
+It might happen that in the end, more than one inductive process may be applicable and no criterium makes one preferable over the other, i.e., from the point of the researcher the decision is arbitrary.
+We have dealed with arbitrary assumption by choosing an inductive process and forming the expectation over all possible data.
+A possible direction for future research is to explore if forming the expectation over inductive processes is similar fruitful.
+One suggestion in such a direction is a method called multiverse analysis [@steegenIncreasingTransparencyMultiverse2016], where many different data analytic decisions are systematically explored.
+
 ## Comparing predictions to reality
 
-Subjectivity
+To complicate matters further, any statistical model is optimizing some specific loss function.
+However, the choice of loss function may be highly consequential for the appraisal of a theory.
+Not only is this choice consequential but it is easily imaginable that researchers can not agree on a metric to judge the theory.
+
+One important example of loss functions that are necessarily subjective are a priori believes.
+So even researcher who agree on a general class of metriken, e.g., posterior probability of a theory, would appraise theories differently.
+Allowing loss functions to vary between researchers also implies that the complexity of the inductive process varies.
+It follows that the correction for complexity can not be done by the authors for all their readers universally, if the loss function and complexity may depend on the researcher assessing the theory.
+This again highlights the importance of making the process transparent.
+Because if the process is transparent, the readers might change the loss function and calculate complexity accordingly.
 
 ## The issue of trust
 

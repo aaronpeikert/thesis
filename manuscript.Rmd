@@ -25,8 +25,8 @@ header-includes: |
   \let\subparagraph\oldsubparagraph
   \usepackage[sc, compact, raggedright]{titlesec}
   % titlesec does not play nice with hyperref, so hack:
-  \newcommand{\sectionbreak}{}
-  \newcommand{\subsectionbreak}{}
+  \newcommand{\sectionbreak}{\phantomsection}
+  \newcommand{\subsectionbreak}{\phantomsection}
 
   \usepackage{titling}
   \pretitle{

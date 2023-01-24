@@ -3,7 +3,7 @@ title: "Towards Transparency and Open Science"
 subtitle: "A Principled Perspective on Computational Reproducibility and Preregistration"
 output:
   bookdown::pdf_document2:
-    latex_engine: "xelatex"
+    latex_engine: "lualatex"
     toc: true
     number_sections: false
     keep_tex:  true
@@ -27,6 +27,10 @@ header-includes: |
   % titlesec does not play nice with hyperref, so hack:
   \newcommand{\sectionbreak}{}
   \newcommand{\subsectionbreak}{}
+  
+  %https://arthur.maheo.net/beautifying-latex-paper-with-practical-typography/
+  \SetTracking{
+    encoding={OT1,T1,T2A,LY1,OT4,QX,T5,TS1,EU1,EU2,TU}, }{1000}
 
   \usepackage{titling}
   \pretitle{
@@ -45,7 +49,7 @@ header-includes: |
   \usepackage{polyglossia}
   \setmainlanguage[]{english}
   \setotherlanguage[]{german}
-fontsize: 11.5pt
+fontsize: 11pt
 linestretch: 1.2
 # https://practicaltypography.com/page-margins.html
 # 3.81 to 5.08cm or 45-90 characters or 2-3 alphabets

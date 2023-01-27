@@ -128,7 +128,7 @@ On the one hand, we have inductive processes that are well-defined in the form o
 These different kinds of induction require different countermeasures.
 Statistical methods make the inductive bias quantifiable, while open science measures reduce some uncertainty about the remaining informal sources of inductive bias.
 To understand why transparency is crucial, it is important to understand that formal and informal induction are integral to empirical sciences.
-Any science must be able to communicate how it generates its knowledge.
+Any science must be able to communicate how its knowledge is generated.
 However, transparency has an outstanding role in psychology and other empirical sciences because empirical statements lose their value without transparency about the inductive process that contributed to them.
 Therefore, transparency is more than a virtue that may improve knowledge gains in empirical sciences but is an indispensable property.
 

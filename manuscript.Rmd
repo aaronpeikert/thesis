@@ -201,7 +201,7 @@ However, I aim to emphasize the role of transparency in two frameworks that lend
 The first framework promotes transparency when an empirical test aims to evaluate a theory's verisimilitude ("closeness to truth").
 The second framework promotes transparency under a science that wants to select a theory according to its expected predictive performance.
 
-Both frameworks show how unaccounted induction leads to overconfidence in empirical results and give us some theoretical tools to asses and control this overconfidence.
+Both frameworks show how unaccounted induction leads to overconfidence in empirical results and suggest some theoretical tools to asses and control this overconfidence.
 Because both frameworks are quite technical, they are followed by a more conceptual summary of these ideas.
 These sections provide the basis for understanding how computational reproducibility and preregistration enable a proper assessment of an empirical test on a conceptual level.
 

@@ -198,8 +198,8 @@ The need for transparency is closely tied to the use of induction in the empiric
 There has been a long and vigorous debate about what it means to test a theory empirically [@popperLogicScientificDiscovery2002, Ch.\ 5 Experience as a Method].
 I do not attempt to rehash the debate about what constitutes an empirical test.
 However, I aim to emphasize the role of transparency in two frameworks that lend themselves to investigate induction.
-The first framework motivates transparency when an empirical test aims to evaluate a theory's verisimilitude ("closeness to truth").
-The second framework motivates transparency under a science that wants to select a theory according to its expected predictive performance.
+The first framework promotes transparency when an empirical test aims to evaluate a theory's verisimilitude ("closeness to truth").
+The second framework promotes transparency under a science that wants to select a theory according to its expected predictive performance.
 
 Both frameworks show how unaccounted induction leads to overconfidence in empirical results and give us some theoretical tools to asses and control this overconfidence.
 Because both frameworks are quite technical, they are followed by a more conceptual summary of these ideas.

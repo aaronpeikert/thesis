@@ -190,7 +190,7 @@ Under this framework, induction is split into a process that can be formally ana
 <!--how it relates to the articles-->
 Based on this distinction, the articles answer the second question (the *how*).
 I argue that transparency in statistical methods is enabled by computational reproducibility, while transparency about sociological factors is facilitated by preregistration.
-The conceptualization of computational reproducibility and preregistration as means for transparency is supplemented by practical guidance on how researchers may implement these approaches.
+The conceptualization of computational reproducibility and preregistration in regard of transparency is supplemented by practical guidance on how researchers may implement these approaches.
 
 # What necessitates transparency
 

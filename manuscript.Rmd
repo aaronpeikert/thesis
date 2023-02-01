@@ -274,7 +274,7 @@ The observed likelihood is, therefore, often available, e.g., in maximum likelih
 With slight abuse of notation, $\log(g(y|\theta)) \equiv \sum_{i = 1}^n \log(g(y_i|\theta))$, so that $\mathbb{E}_{y \sim f^n}\log(g(y|\hat\theta(y)))$ refers to the observed likelihood.
 
 
-The expectation over the data together with Taylor series expansion yields:
+The expectation over the data complemented by the Taylor series expansion yields:
 \begin{equation}
 \mathbb{E}_{Y \sim f^n}\mathbb{E}_{X \sim f}[\log(g(x|\hat\theta(y)))] \approx \mathbb{E}_{Y \sim f^n}[\log(g(y|\hat{\theta}(y)))] - tr[J(\theta_*)I(\theta_*)^{-1}]
 \end{equation}

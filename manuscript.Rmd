@@ -197,7 +197,7 @@ The conceptualization of computational reproducibility and preregistration in re
 The need for transparency is closely tied to the use of induction in the empirical test of a theory.
 There has been a long and vigorous debate about what it means to test a theory empirically [@popperLogicScientificDiscovery2002, Ch.\ 5 Experience as a Method].
 I do not attempt to rehash the debate about what constitutes an empirical test.
-However, I aim to lay open the role of transparency in two frameworks that lend themselves to investigate induction.
+However, I aim to emphasize the role of transparency in two frameworks that lend themselves to investigate induction.
 The first framework motivates transparency when an empirical test aims to evaluate a theory's verisimilitude ("closeness to truth").
 The second framework motivates transparency under a science that wants to select a theory according to its expected predictive performance.
 

@@ -210,7 +210,7 @@ These sections provide the basis for understanding how computational reproducibi
 Information theory provides a rigorous mathematical measure that can be understood as the verisimilitude of a theory [@niiniluotoVerisimilitudeThirdPeriod1998].
 We can formalize the distance to the truth in terms of how much information about the truth is lost when the theory is used to model reality [@rosenkrantzMeasuringTruthlikeness1980].
 Expressed mathematically, assume the existence of a function $f(x)$ that yields the likelihood of observing the state of the world $x$ where $f$ represents the ground truth.
-We are now interested in how much information is lost if we use $g(x)$, our theory, instead of $f(x)$, the reality, over all possible states $\mathcal{X}$.
+When interested in how much information is lost if we use $g(x)$, our theory, instead of $f(x)$, the reality, over all possible states $\mathcal{X}$.
 Expressed as lost bits of information, a measure known as Kullback–Leibler divergence [@kullbackInformationSufficiency1951], we get:
 <!--x is a single state, X is the random variable, and \mathcal{X} is all possible outcomes of X-->
 \begin{align} 

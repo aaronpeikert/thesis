@@ -128,7 +128,7 @@ On the one hand, we have inductive processes that are well-defined in the form o
 These different kinds of induction require different countermeasures.
 Statistical methods make the inductive bias quantifiable, while open science measures reduce some uncertainty about the remaining informal sources of inductive bias.
 To understand why transparency is crucial, it is important to understand that formal and informal induction are integral to empirical sciences.
-Any science must be able to communicate how it generates its knowledge.
+Any science must be able to communicate how its knowledge is generated.
 However, transparency has an outstanding role in psychology and other empirical sciences because empirical statements lose their value without transparency about the inductive process that contributed to them.
 Therefore, transparency is more than a virtue that may improve knowledge gains in empirical sciences but is an indispensable property.
 
@@ -178,7 +178,7 @@ Whatever measure they subscribe to, they would agree on a low appraisal of an un
 So empirical researchers find themselves in a pinch.
 On the one hand, they need induction to test their imprecise theories.
 On the other hand, induction may render any test of a hypothesis ineffective.
-Therefore, I argue the problem is not induction but making transparent where and to what extent induction is used in the inferential process.
+Therefore, I argue that the problem is not induction but making transparent where and to what extent induction is used in the inferential process.
 The replication crisis can be traced to a misjudgment of how much induction has been going on in psychology and hence, how well-tested the empirical claims, as reported in the literature, actually are.
 Therefore, the question of this dissertation is *what* must be made transparent, and *how* to best make it transparent?
 
@@ -189,28 +189,28 @@ Under this framework, induction is split into a process that can be formally ana
 
 <!--how it relates to the articles-->
 Based on this distinction, the articles answer the second question (the *how*).
-I argue that transparency about statistical methods is enabled by computational reproducibility, while transparency about sociological factors is facilitated by preregistration.
-The conceptualization of computational reproducibility and preregistration as means for transparency is supplemented by practical guidance on how researchers may implement these approaches.
+I argue that transparency in statistical methods is enabled by computational reproducibility, while transparency about sociological factors is facilitated by preregistration.
+The conceptualization of computational reproducibility and preregistration in regard of transparency is supplemented by practical guidance on how researchers may implement these approaches.
 
 # What necessitates transparency
 
 The need for transparency is closely tied to the use of induction in the empirical test of a theory.
 There has been a long and vigorous debate about what it means to test a theory empirically [@popperLogicScientificDiscovery2002, Ch.\ 5 Experience as a Method].
 I do not attempt to rehash the debate about what constitutes an empirical test.
-However, I aim to lay open the role of transparency in two frameworks that lend themselves to investigate induction.
-The first framework motivates transparency when an empirical test aims to evaluate a theory's verisimilitude ("closeness to truth").
-The second framework motivates transparency under a science that wants to select a theory according to its expected predictive performance.
+However, I aim to emphasize the role of transparency in two frameworks that lend themselves to investigate induction.
+The first framework promotes transparency when an empirical test aims to evaluate a theory's verisimilitude ("closeness to truth").
+The second framework promotes transparency under a science that wants to select a theory according to its expected predictive performance.
 
-Both frameworks show how unaccounted induction leads to overconfidence in empirical results and give us some theoretical tools to asses and control this overconfidence.
+Both frameworks show how unaccounted induction leads to overconfidence in empirical results and suggest some theoretical tools to asses and control this overconfidence.
 Because both frameworks are quite technical, they are followed by a more conceptual summary of these ideas.
 These sections provide the basis for understanding how computational reproducibility and preregistration enable a proper assessment of an empirical test on a conceptual level.
 
 ## An information-theoretic perspective
 
 Information theory provides a rigorous mathematical measure that can be understood as the verisimilitude of a theory [@niiniluotoVerisimilitudeThirdPeriod1998].
-We can formalize the distance to the truth in terms of how much information about the truth is lost when the theory is used to model reality [@rosenkrantzMeasuringTruthlikeness1980].
+The distance to the truth can be formalized in terms of how much information about the truth is lost when the theory is used to model reality [@rosenkrantzMeasuringTruthlikeness1980].
 Expressed mathematically, assume the existence of a function $f(x)$ that yields the likelihood of observing the state of the world $x$ where $f$ represents the ground truth.
-We are now interested in how much information is lost if we use $g(x)$, our theory, instead of $f(x)$, the reality, over all possible states $\mathcal{X}$.
+When interested in how much information is lost if we use $g(x)$, our theory, instead of $f(x)$, the reality, over all possible states $\mathcal{X}$.
 Expressed as lost bits of information, a measure known as Kullback–Leibler divergence [@kullbackInformationSufficiency1951], we get:
 <!--x is a single state, X is the random variable, and \mathcal{X} is all possible outcomes of X-->
 \begin{align} 
@@ -219,7 +219,7 @@ Expressed as lost bits of information, a measure known as Kullback–Leibler div
 \end{align}
 
 Most readers will recognize that this information-theoretic setup and the derivation below follow closely @burnhamModelSelectionMultimodel2002, Ch. 7.2, in their derivation of the Akaike Information Criterion [@hirotuguakaikeInformationTheoryExtension1971] in its general form.
-What is of interest here is not the derivation but how this conceptualization may help us to understand what happens when data is simultaneously used to induce quantities of a theory and test the theory.
+What is of interest here is not the derivation but how this conceptualization may help us to understand what happens when data is simultaneously used to induce quantities of a theory and to test the theory.
 
 This setup is, of course, highly theoretical.
 $\mathcal{L}_{KL}(f, g)$ is unknowable, since the truth is unobserved.
@@ -274,7 +274,7 @@ The observed likelihood is, therefore, often available, e.g., in maximum likelih
 With slight abuse of notation, $\log(g(y|\theta)) \equiv \sum_{i = 1}^n \log(g(y_i|\theta))$, so that $\mathbb{E}_{y \sim f^n}\log(g(y|\hat\theta(y)))$ refers to the observed likelihood.
 
 
-The expectation over the data together with Taylor series expansion yields:
+The expectation over the data complemented by the Taylor series expansion yields:
 \begin{equation}
 \mathbb{E}_{Y \sim f^n}\mathbb{E}_{X \sim f}[\log(g(x|\hat\theta(y)))] \approx \mathbb{E}_{Y \sim f^n}[\log(g(y|\hat{\theta}(y)))] - tr[J(\theta_*)I(\theta_*)^{-1}]
 \end{equation}
@@ -285,7 +285,7 @@ For more details about this derivation, see @burnhamModelSelectionMultimodel2002
 The observed likelihood $\log(g(y|\hat\theta(y)))$ is, therefore, a biased estimate of the distance to the truth.
 We may conclude that substituting deduced quantities with induced estimates leads to some overconfidence about how close one is to the truth.
 This overconfidence is directly related to how much induction a model entails.
-This bias is often called the complexity or capacity of a model, i.e., how much the data is influencing the results and, hence, how detailed the model is representing the data [@goodfellowCapacityOverfittingUnderfitting2016; @mikkelsonComplexityVerisimilitudeRealism2001].
+This bias is often called the complexity or capacity of a model, i.e., how much the data is influencing the results, hence, how detailed the model is representing the data [@goodfellowCapacityOverfittingUnderfitting2016; @mikkelsonComplexityVerisimilitudeRealism2001].
 I therefore denote it as as $\mathcal{C}$.
 \begin{equation}
 \mathbb{E}_{X \sim f}\mathbb{E}_{Y \sim f^n}[log(g(x|\hat\theta(y)))] \approx \mathbb{E}_{Y \sim f^n}[\log(g(y|\hat{\theta}(y)))] + \mathcal{C}

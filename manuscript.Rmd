@@ -537,7 +537,7 @@ Dissolving the distinction between formal and informal induction would mean surr
 A clear distinction between formal and informal can be provided by specifying the formal inductive process before any data is available.
 Such practice is called registration [@riceCurtailingUsePreregistration2019] or preregistration [@nosekPreregistrationRevolution2018]. 
 Registration is a strong argument that the data has not influenced the results more than the complexity of the formal inductive process implies.
-If the data does not yet exist, it can not influence the results.
+If the data does not yet exist, it cannot influence the results.
 Note that registration is about the flow of information, i.e., the data used for induction, and not the temporal order.
 Information can simply not travel backward in time, which makes registration before data acquisition so appealing.
 

@@ -188,7 +188,7 @@ Induction is also necessary because it is virtually impossible to ask psychologi
 If they had to, there would be no psychological theory that could be subjected to an empirical test.
 
 <!--necessity of induction-->
-In other words, induction gives our theories some slack to be imprecise and contain "blank" spaces, later to be filled based on observation.
+In other words, induction gives theories some slack to be imprecise and contain "blank" spaces, later to be filled based on observation.
 It allows researchers to concentrate on the essential statements of their theories and choose some of the assumptions to fit the data well.
 In some ways, it is the empirical researchers' answer to the Duhem–Quine problem [@duhemPhysicalTheoryExperiment1976; @vanormanquineTwoDogmasEmpiricism1976], which states that any empirical test of a theory is testing the conjunction of theory, auxiliary assumptions, and conjectures [@meehlTheoreticalRisksTabular1978; @meehlAppraisingAmendingTheories1990].
 Auxiliary assumptions are necessary to test a theory but do not follow from the theory itself.

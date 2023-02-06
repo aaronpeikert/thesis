@@ -487,7 +487,7 @@ Relaxing the first condition, missing transparency for human researchers, most l
 If humans can understand the inductive process, complexity can either be calculated analytically or the process can be reimplemented to work on other similar data.
 Therefore, the traditional definition of computational reproducibility has to be extended and further it is required that the process can be repeated on other similar data.
 
-Therefore, to provide transparency, computational reproducibility must satisfy two requirements.
+Therefore, to provide transparency, computational reproducibility has to satisfy two requirements.
 First, computational reproducibility must ensure that the same data lead to the same results.
 Second, computational reproducibility must make the inductive process repeatable on similar data.
 

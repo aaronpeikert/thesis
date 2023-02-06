@@ -455,7 +455,7 @@ Formal inductive processes allow full transparency in the sense that $\mathcal{C
 Informal inductive processes allow only limited transparency and must be subjectively judged.
 
 Therefore, there is a theoretical bound that limits transparency about the inductive process.
-Some things can not be made transparent in principle because some induction happens informally, so we can not estimate the complexity with certainty.
+Some things cannot be made transparent in principle because some induction happens informally, so we cannot estimate the complexity with certainty.
 However, there is another bound that restricts transparency further.
 That is how well the inductive process, be it formal or informal, is communicated to the intended recipient.
 To achieve transparency about the inductive process and ultimately about the empirical support of a theory, we must increase both bounds. 

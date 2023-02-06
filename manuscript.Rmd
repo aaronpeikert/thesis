@@ -481,11 +481,11 @@ The second condition prevents from changing the data and observing the results.
 Therefore, there are no means to assess the complexity of the inductive process and the empirical support cannot be judged.
 It follows that to provide transparency about the complexity of an inductive process, the definition of computational reproducibility must be broadened, i.e., it has to be ruled out one of the above conditions.
 
-Suppose we relax the second condition; then we have a "black box" that is repeatable on other data.
-In that case, we still have transparency about the inductive process because we can estimate the complexity of the inductive process, i.e., using cross-validation.
+Suppose the second condition is relaxed; then there is a "black box" that is repeatable on other data.
+In that case, there still is transparency about the inductive process because the complexity of the inductive process can be estimated, i.e., using cross-validation.
 Relaxing the first condition, missing transparency for human researchers, most likely leads to relaxing the second condition, repeatability on other data, as well.
 If humans can understand the inductive process, complexity can either be calculated analytically or the process can be reimplemented to work on other similar data.
-Therefore, we must extend the traditional definition of computational reproducibility and at least also require that the process can be repeated on other similar data.
+Therefore, the traditional definition of computational reproducibility has to be extended and further it is required that the process can be repeated on other similar data.
 
 Therefore, to provide transparency, computational reproducibility must satisfy two requirements.
 First, computational reproducibility must ensure that the same data lead to the same results.

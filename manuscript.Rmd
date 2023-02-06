@@ -356,8 +356,8 @@ This expectation over, what is often called training and test data, is termed ge
 Note that both training ($y$) and test ($x$) data vary in this expectation.
 Therefore, it is closely related to the expectation over data shown in Eq.\ \@ref(eq:dataexp) in the information-theoretic setup [@stoneAsymptoticEquivalenceChoice1977].
 
-Instead of using the Taylor series expansion, we can repeatedly sample data and repeat the inductive process.
-That is, we use cross-validation where the data is partitioned in $n$ subsets of size $n-1$ and the inductive process is repeated on each subset.
+Instead of using the Taylor series expansion, data can be repeatedly sampled and the inductive process can be repeated.
+That is, using cross-validation where the data is partitioned in $n$ subsets of size $n-1$ and the inductive process is repeated on each subset.
 For each subset, the resulting model is then compared to the complement that was not used for induction, which is indicated by $y_{-i} = y \diagdown \{y_i\}$.
 \begin{equation}
 \mathbb{E}_{x}\mathbb{E}_{y}  L(x, g(x|\hat\theta(y)))

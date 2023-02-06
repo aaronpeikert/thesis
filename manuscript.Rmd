@@ -406,7 +406,7 @@ The extent of this optimism depends on the inductive process, not merely its res
 Specifically, it depends on the complexity, i.e., the ability of the inductive process to adapt to data.
 The ability to adapt to data is independent of the specific data that was observed.
 Complexity is a function of the model, i.e., $\mathcal{C}(\text{model})$, not of the data.
-Without knowing the inductive process, researchers can not judge the overconfidence, so the inductive process ought to be made transparent.
+Without knowing the inductive process, researchers cannot judge the overconfidence, so the inductive process ought to be made transparent.
 
 # How to establish transparency
 

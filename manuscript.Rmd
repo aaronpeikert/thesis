@@ -523,7 +523,7 @@ However, the expectations regarding verisimilitude and future performance betwee
 
 So what would constitute a persuasive argument that the data has not influenced the results above and beyond the complexity of the formal inductive process?
 Researchers could simply try to explain the inductive process after the fact.
-This task is not easy because we need to know what they did, as well as what they did not do, e.g., that they did not cherry-pick, and what they would have done had the data looked different.
+This task is not easy because it needs to be known what they did, as well as what they did not do, e.g., that they did not cherry-pick, and what they would have done had the data looked different.
 This goes back to the idea that simply knowing the outcome of an inductive process is not enough to judge the complexity.
 For researchers to judge the complexity, the process must be transparent to the researcher, i.e., how would the results change if the data look different.
 

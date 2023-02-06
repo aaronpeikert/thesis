@@ -567,7 +567,7 @@ When the data is gathered, the results are updated to reflect the actual data.
 To answer the second question of how to account for informal induction, I investigate the objective of registration and how it may be separated from the objective of confirmatory science in XXX.
 Particularly, I propose to formalize the objective of registration as reduction of uncertainty about theoretical risk.
 Being able to account for uncertainty is indispensable for the question of how to deal with informal induction.
-If induction cannot be repeated at will nor formally analyzed, we are uncertain about the complexity of the inductive process.
+If induction cannot be repeated at will nor formally analyzed, there is uncertainty about the complexity of the inductive process.
 Theoretical risk is conceptually related to the here discussed concept of complexity but put into the context of Bayesian philosophy of science.
 Specifically, instead of the arbitrary loss functions considered here, the loss functions in XXX are restricted to those that apply to binary evidence, and that satisfy the statistical relevancy condition (the loss function rewards the observation of evidence in favor of the theory if the evidence is more likely under the theory).
 For this class of loss functions, I show how to account for uncertainty caused by informal induction and that a reduction in uncertainty due to preregistration is universally beneficial for those loss functions.

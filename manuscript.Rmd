@@ -375,8 +375,8 @@ That drastically expands the set of inductive processes for which the inductive 
 
 ## A conceptual perspective
 
-Now that we have established the need for transparency about the inductive process, we can drop a few more technical details to clarify what we have to make transparent.
-It bears repeating that simply laying open what has been done is not enough.
+Now that the need for transparency about the inductive process has been established, a few more technical details can be droped to clarify what we have to make transparent.
+It bears repeating that making public what has been done is not enough.
 Merely showing the inductive results instead of the process that generated them is insufficient to appraise the theory.
 On a conceptual level, we want to compare the following:
 \begin{equation}

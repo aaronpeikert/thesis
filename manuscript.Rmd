@@ -317,7 +317,7 @@ Where $J$ is the Fisher information matrix with regard to $g$, and $I$ for $f$, 
 For more details about this derivation, see @burnhamModelSelectionMultimodel2002, Ch. 7.2.
 
 The observed likelihood $\log(g(y|\hat\theta(y)))$ is, therefore, a biased estimate of the distance to the truth.
-We may conclude that substituting deduced quantities with induced estimates leads to some overconfidence about how close one is to the truth.
+This leads to the conclusion that substituting deduced quantities with induced estimates leads to some overconfidence on how close one is to the truth.
 This overconfidence is directly related to how much induction a model entails.
 This bias is often called the complexity or capacity of a model, i.e., how much the data is influencing the results, hence, how detailed the model is representing the data [@goodfellowCapacityOverfittingUnderfitting2016; @mikkelsonComplexityVerisimilitudeRealism2001].
 I therefore denote it as as $\mathcal{C}$.

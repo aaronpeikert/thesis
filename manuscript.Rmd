@@ -412,7 +412,7 @@ Without knowing the inductive process, researchers cannot judge the overconfiden
 
 The above sections aimed to motivate the observation that the apparent fit of a theory to data is often overly optimistic if it has inductive elements.
 This observation is only useful if we know the extent of this optimism.
-However, both setups show that the extent of the optimism is closely related to the complexity of the inductive process ($\mathcal{C}(\text{model})$) and give us two starting points for making this bias transparent.
+However, both setups show that the extent of the optimism is closely related to the complexity of the inductive process ($\mathcal{C}(\text{model})$) and suggest two starting points for making this bias transparent.
 The first requires a formal analysis of the inductive process to compute the complexity (e.g., using information criteria), and the second merely requires that the process is repeatable (e.g., using cross-validation).
 Both approaches require researchers to make the inductive process transparent instead of merely publishing the results.
 

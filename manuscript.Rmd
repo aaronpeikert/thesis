@@ -616,7 +616,7 @@ However, having more and more powerful tools for induction simply means that mor
 It does not necessarily lead to the development of statistical methods that fit the theories researchers are interested in.
 
 It might happen that in the end, more than one inductive process may be applicable, and no criterium makes one preferable over the other, i.e., from the point of the researcher, the decision is arbitrary.
-We have dealt with arbitrary assumptions by choosing an inductive process and forming the expectation over all possible data.
+It has been dealt with arbitrary assumptions by choosing an inductive process and forming the expectation over all possible data.
 A possible direction for future research is to explore if forming the expectation over inductive processes is similarly fruitful.
 One suggestion in such a direction is a method called multiverse analysis [@steegenIncreasingTransparencyMultiverse2016], where many different data analytic decisions are systematically explored.
 

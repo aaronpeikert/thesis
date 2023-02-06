@@ -146,7 +146,7 @@ that the principles of Humboldt-Universität zu Berlin for ensuring good academi
 <!--psychology has unique difficulties-->
 Psychology is a difficult science [@meehlTheoreticalRisksTabular1978].
 Although there is some disagreement on why exactly this is the case, I doubt there is disagreement about the fact itself.
-Highlighting the difficulties and attempting to overcome them are not recent trends, though they have been invigorated by the so-called replication crisis in psychology that also begins to ripple through other empirical sciences [@ioannidisWhyMostPublished2005; @opensciencecollaborationEstimatingReproducibilityPsychological2015].
+Highlighting the difficulties and attempting to overcome them are no recent trends, though they have been invigorated by the so-called replication crisis in psychology that also begins to ripple through other empirical sciences [@ioannidisWhyMostPublished2005; @opensciencecollaborationEstimatingReproducibilityPsychological2015].
 As psychology grapples with this crisis of confidence in its empirical results, several causes and remedies have been proposed.
 We can roughly divide the proposed countermeasures into two categories, those that aim to increase the correct use of statistical methods [e.g., @bakanTestSignificancePsychological20060327; @benjaminRedefineStatisticalSignificance2018; @cohenEarth051994;  @gigerenzerMindlessStatistics2004; @wagenmakersWhyPsychologistsMust2011] and those that aim to counteract sociological and psychological biases [e.g., @simmonsFalsepositivePsychologyUndisclosed2011; @rosenthalFileDrawerProblem1979; @bakkerRulesGameCalled2012; @johnMeasuringPrevalenceQuestionable2012].
 

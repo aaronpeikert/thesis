@@ -519,7 +519,7 @@ If a researcher makes every effort only to employ formal inductive reasoning in 
 
 The problem is that formal inductive reasoning can be part of an informal process.
 A perfectly reproducible linear regression is, from the outside, indistinguishable from one that was cherry-picked from hundreds of possible regressions.
-However, our expectations regarding verisimilitude and future performance between the cherry-picked and the simple regression should vary substantially.
+However, the expectations regarding verisimilitude and future performance between the cherry-picked and the simple regression should vary substantially.
 
 So what would constitute a persuasive argument that the data has not influenced the results above and beyond the complexity of the formal inductive process?
 Researchers could simply try to explain the inductive process after the fact.

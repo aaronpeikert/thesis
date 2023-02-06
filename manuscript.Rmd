@@ -325,10 +325,10 @@ I therefore denote it as as $\mathcal{C}$.
 \mathbb{E}_{X \sim f}\mathbb{E}_{Y \sim f^n}[log(g(x|\hat\theta(y)))] \approx \mathbb{E}_{Y \sim f^n}[\log(g(y|\hat{\theta}(y)))] + \mathcal{C}
 \end{equation}
 
-If we want to induce quantities and correctly appraise a theory on the same data, we must know how much we have to correct our appraisal for the induction.
+When aiming to induce quantities and correctly appraise a theory on the same data, one must know how much the appraisal for the induction has to be corrected.
 Fortunately, it is possible to approximate the complexity of a model under some conditions.
-One condition is, since $\theta_*$ is unknown, that we know the properties of the inductive process that generated $\hat\theta$.
-We then can formally analyze the behavior and derive a mathematical expression for $\mathcal{C}$, e.g., corrections for a large class of statistical models, most famously the class of linear models, are well known [@boisbunonAkaikeInformationCriterion2014].
+One condition is, since $\theta_*$ is unknown, to know the properties of the inductive process that generated $\hat\theta$.
+Then it is possible to formally analyze the behavior and derive a mathematical expression for $\mathcal{C}$, e.g., corrections for a large class of statistical models, most famously the class of linear models, are well known [@boisbunonAkaikeInformationCriterion2014].
 
 ## A future performance perspective
 

@@ -477,9 +477,9 @@ However, place two restrictions on the software.
 First, while able to compute results based on data, the software cannot be understood by human researchers, e.g., because it is a binary program.
 Second, when the data set changes, the software does not work anymore.
 The first condition rules out that the software can be analyzed formally.
-The second condition prevents us from changing the data and observing the results.
-Therefore, we have no means to assess the complexity of the inductive process and can not judge the empirical support.
-It follows that to provide transparency about the complexity of an inductive process, the definition of computational reproducibility must be broadened, i.e., we have to rule out one of the above conditions.
+The second condition prevents from changing the data and observing the results.
+Therefore, there are no means to assess the complexity of the inductive process and the empirical support cannot be judged.
+It follows that to provide transparency about the complexity of an inductive process, the definition of computational reproducibility must be broadened, i.e., it has to be ruled out one of the above conditions.
 
 Suppose we relax the second condition; then we have a "black box" that is repeatable on other data.
 In that case, we still have transparency about the inductive process because we can estimate the complexity of the inductive process, i.e., using cross-validation.

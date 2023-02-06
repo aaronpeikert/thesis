@@ -629,7 +629,7 @@ Not only is this choice consequential, but it is easily imaginable that research
 One important example of loss functions that are necessarily subjective are prior beliefs.
 So even researchers who agree on a general class of metrics, e.g., the posterior probability of a theory, would appraise theories differently.
 Allowing loss functions to vary between researchers also implies that the complexity of the inductive process varies.
-It follows that the correction for complexity can not be done by the authors for all their readers universally if the loss function and complexity may depend on the researcher assessing the theory.
+It follows that the correction for complexity cannot be done by the authors for all their readers universally if the loss function and complexity may depend on the researcher assessing the theory.
 This again highlights the importance of making the process transparent.
 If the process is transparent, the readers might change the loss function and calculate complexity accordingly.
 

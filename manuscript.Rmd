@@ -513,7 +513,7 @@ Fourth, how the data relates to software and computing infrastructure must be ma
 ## Transparency about human researchers: Preregistration
 
 Computational reproducibility enables transparency about formal inductive processes.
-However, informal inductive processes deprive us of complete transparency.
+However, informal inductive processes deprive of complete transparency.
 Therefore, it is prudent to replace informal induction with formal induction as much as possible.
 If a researcher makes every effort only to employ formal inductive reasoning in a reproducible manner, they still must persuade their readers that they have not engaged in informal induction.
 

@@ -174,7 +174,7 @@ Very few psychological theories are precise enough to derive testable statements
 While it is tempting to claim that a theory makes deductively testable claims by, e.g., implying a mean difference between two groups [@leePopperFalsificationCorroboration2021], such a statement is not testable on its own.
 Making inferences about a mean difference requires knowledge about the variance.
 Either the variance is known, or it has to be estimated from data.
-Consider a placebo and an experimental group, where we hypothesize and test a mean difference using a simple t-test.
+Consider a placebo and an experimental group, it is possible to hypothesize and test a mean difference using a simple t-test.
 The decision to reject the null hypothesis (groups have equal means) depends, besides true mean difference and sample size, on the observed variance.
 However, the variance needs to be induced from the data.
 So the threshold of the deductive decision depends on a quantity that must be induced.

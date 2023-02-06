@@ -303,7 +303,7 @@ Forming this expectation over data is a crucial step; it requires thinking beyon
 There are two ways to get at this expectation.
 One is the use of Taylor series expansion, which follows in this section, and another is cross-validation, discussed in the next section.
 
-We usually favor procedures to induce $\hat \theta$ that promise unbiased estimates for the observed likelihood, given that their assumptions are met.
+Usually procedures inducing $\hat \theta$, that promise unbiased estimates for the observed likelihood, are favored, given that their assumptions are met.
 The observed likelihood is, therefore, often available, e.g., in maximum likelihood estimation.
 With slight abuse of notation, $\log(g(y|\theta)) \equiv \sum_{i = 1}^n \log(g(y_i|\theta))$, so that $\mathbb{E}_{y \sim f^n}\log(g(y|\hat\theta(y)))$ refers to the observed likelihood.
 

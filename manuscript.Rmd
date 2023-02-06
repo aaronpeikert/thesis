@@ -264,8 +264,8 @@ To make a relative judgment about several competing theories, it suffices to est
 \mathbb{E}_{X \sim f}\left[\log(g(x))\right]
 \end{equation}
 
-To allow quantities to be induced, we must assume that our theory is parameterized, e.g., $g(x|\theta)$.
-That means our theory implies a family of possible probability distributions that may describe reality.
+To allow quantities to be induced, we must assume that the theory is parameterized, e.g., $g(x|\theta)$.
+That means the theory implies a family of possible probability distributions that may describe reality.
 This parameterization captures the idea that some assumptions necessary for a theory to make testable statements are arbitrary.
 Of those arbitrary assumptions, we want to find those that fit the reality with the least amount of information lost.
 The best parameterization is achieved by:

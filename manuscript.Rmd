@@ -333,7 +333,7 @@ Then it is possible to formally analyze the behavior and derive a mathematical e
 ## A future performance perspective
 
 In addition to closeness to truth, there is another line of argumentation about why transparency about the process of induction is important.
-Instead of verisimilitude, one might be concerned with future performance.
+Instead of verisimilitude, there could be concerns with future performance.
 That is, how well does a theory do in predicting novel facts?
 Please note that the information-theoretic setup above has not appealed to the expected performance on unseen data.
 Verisimilitude and expected performance are different motivations for transparency, though they can be linked.

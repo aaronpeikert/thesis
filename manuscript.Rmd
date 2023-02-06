@@ -474,7 +474,7 @@ However, through the lens of transparency about the inductive process, it may be
 
 Consider software that delivers the same results upon input of the same data, i.e., it is reproducible.
 However, place two restrictions on the software.
-First, while able to compute results based on data, the software can not be understood by human researchers, e.g., because it is a binary program.
+First, while able to compute results based on data, the software cannot be understood by human researchers, e.g., because it is a binary program.
 Second, when the data set changes, the software does not work anymore.
 The first condition rules out that the software can be analyzed formally.
 The second condition prevents us from changing the data and observing the results.

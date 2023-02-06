@@ -299,7 +299,7 @@ If the estimate of $\hat\theta(y)$, i.e., the inductive process, is unbiased in 
 \mathbb{E}_{Y \sim f^n}\mathbb{E}_{X \sim f}[\log(g(x|\hat\theta(y)))]\label{eq:dataexp}
 \end{equation}
 
-Forming this expectation over data is a crucial step; it requires us to think beyond the data we observed to all the data we could have observed.
+Forming this expectation over data is a crucial step; it requires thinking beyond the observed data, of all the data we could have observed.
 There are two ways to get at this expectation.
 One is the use of Taylor series expansion, which follows in this section, and another is cross-validation, discussed in the next section.
 

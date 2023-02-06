@@ -601,7 +601,7 @@ Such a set of possible implications and the process of choosing among them accor
 It is not entirely clear how to chose the process of selecting the best fitting version of the theory.
 Should the process of induction depend on the theory?
 Is the application of mathematically or computationally convenient methods, as is usual in statistical modeling, sufficient?
-Must we account for the arbitrariness of the selection process?
+Does the arbitrariness of the selection process needs to be accounted for?
 
 Implicit in the conceptualization of complexity was the assumption of unbiasedness (the inductive process converges towards $\theta_*$), i.e., an ideal inductive process.
 Such an assumption implies a perfect match of the set of implications of the theories and the statistical method.

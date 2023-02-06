@@ -647,7 +647,7 @@ Which must be further substantiated?
 I expect that the conceptual frameworks I have employed to address the question of transparency about the inductive process may be enormously fruitful to apply there as well.
 Applying statistical theory to the philosophy of science has a long tradition.
 However, I hope we might abandon the tradition of analyzing scientific practices only after they have been long established.
-Instead we should analyze new practices of science, such as computational reproducibility or preregistration, as they emerge.
+Instead the aim should be to analyze new practices of science, such as computational reproducibility or preregistration, as they emerge.
 That way, theoretical insight may shape application.
 
 # Articles

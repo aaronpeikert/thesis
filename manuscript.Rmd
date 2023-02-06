@@ -543,7 +543,7 @@ Information can simply not travel backward in time, which makes registration bef
 
 Having no access to the data when specifying the analysis forces the researcher to think about the process of induction.
 They have to reason about all the possible data patterns they might encounter.
-While this makes registration so difficult, it is exactly the information we need and from which we may derive the complexity of the inductive process.
+While this makes registration so difficult, it is exactly the information we need and from which the complexity of the inductive process might be derived.
 
 Note that requiring induction to be provably formal (analytically analyzable or repeatable), does not imply that induction itself is limited in its extend.
 In other words, researchers still might be very unsure how the data will look and therefore rely on induction to fill in the blanks.

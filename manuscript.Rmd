@@ -277,7 +277,7 @@ The inference goal for comparing other theories to $g(x)$ is, therefore:
 \begin{equation}
 \mathbb{E}_{X \sim f}\left[\log(g(x|\theta_*))\right]
 \end{equation}
-Of course, we usually do not know $\theta_*$.
+Usually $\theta_*$ is unknown.
 That is why it is necessary to induce it from data, denoted as $\hat\theta(y)$, where $Y$ are $n$ independent samples from $X\sim f$.
 
 The crucial point here is to understand what happens when we can not derive $\theta$ deductively but must substitute it inductively with an estimate $\hat\theta(y)$.

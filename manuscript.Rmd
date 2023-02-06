@@ -282,7 +282,7 @@ That is why it is necessary to induce it from data, denoted as $\hat\theta(y)$, 
 
 The crucial point is to understand what happens when $\theta$ cannot be derive deductively but must be substituted inductively with an estimate $\hat\theta(y)$.
 Any estimated parameters $\hat{\theta}(y)$ would almost surely not be equal to $\theta_*$ (assuming $\theta$ may take an infinite number of values, i.e., is continues).
-It follows, almost surely, that we lose information:
+It follows, almost surely, that information is lost:
 \begin{equation}
 \mathcal{L}_{KL}(f, g(\cdot|\hat{\theta}(y)) > \mathcal{L}_{KL}(f, g(\cdot|\theta_*))
 \end{equation}

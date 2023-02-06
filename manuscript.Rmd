@@ -470,7 +470,7 @@ If other researchers want to judge this empirical test properly, the inductive p
 In other words, more than having formal induction is needed, the induction still must be made transparent in practice.
 Such transparency can be achieved by computational reproducibility.
 Computational reproducibility is usually defined as the ability to recreate the same results from the same data set [@claerboutElectronicDocumentsGive1992].
-However, through the lens of transparency about the inductive process, we may further refine our view on computational reproducibility.
+However, through the lens of transparency about the inductive process, it may be possible to further refine our view on computational reproducibility.
 
 Consider software that delivers the same results upon input of the same data, i.e., it is reproducible.
 However, place two restrictions on the software.

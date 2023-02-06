@@ -256,7 +256,7 @@ Expressed as lost bits of information, a measure known as Kullback–Leibler div
 Most readers will recognize that this information-theoretic setup and the derivation below follow closely @burnhamModelSelectionMultimodel2002, Ch. 7.2, in their derivation of the Akaike Information Criterion [@hirotuguakaikeInformationTheoryExtension1971] in its general form.
 What is of interest here is not the derivation but how this conceptualization may help us to understand what happens when data is simultaneously used to induce quantities of a theory and to test the theory.
 
-This setup is, of course, highly theoretical.
+This setup is highly theoretical.
 $\mathcal{L}_{KL}(f, g)$ is unknowable, since the truth is unobserved.
 However, this fact does not impede us from getting closer to the truth because we can still compare the two theories relative to each other.
 Because the expectation for $f$ remains constant (left-hand expectation in Eq.\ \@ref(eq:klexp)), we only need to estimate the relative expected loss of information (right-hand expectation in Eq.\ \@ref(eq:klexp)) to make a comparative judgment.

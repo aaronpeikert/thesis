@@ -365,7 +365,7 @@ For each subset, the resulting model is then compared to the complement that was
 \end{equation}
 
 As stated earlier, using cross-validation, it is possible to estimate \linebreak[4] $\mathbb{E}_{X \sim f}\mathbb{E}_{Y \sim f^n}[log(g(x|\hat\theta(y)))]$ as well; which connects the information-theoretic setup with this approach [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].
-To make the link to the first approach even more clear, we may define complexity in these terms [@hauensteinComputingAICBlackbox2018]:
+To make the link to the first approach even more clear, complexity may be defined in these terms [@hauensteinComputingAICBlackbox2018]:
 \begin{equation}
 \mathcal{C} = \frac{1}{n} \sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i}))) - L(y_i, g(y_i|\hat\theta(y)))
 \end{equation}

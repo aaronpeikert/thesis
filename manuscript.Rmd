@@ -439,8 +439,8 @@ $$
 
 That is not to say that there is no basis for judging the informal induction.
 The inductive decision can be thought of as reasonable, thus found unlikely that just about any variable would be added if the data suggests it.
-Or the opposite, we might find it not well justified on theoretical grounds and deem it a purely data-driven decision, which implies higher complexity.
-What one can say, however, is that this judgment is debatable and, therefore, subjective.
+Or the opposite, it might not seem well justified on theoretical grounds and deemed a purely data-driven decision, which implies higher complexity.
+What can be said, however, is that this judgment is debatable and, therefore, subjective.
 
 It is without question that researchers sometimes engage in inductive behavior that is neither formally analyzable nor repeatable.
 This fact implies that for these situations, the complexity and, hence, the optimism bias can not be fully quantified.

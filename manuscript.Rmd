@@ -455,10 +455,10 @@ Formal inductive processes allow full transparency in the sense that $\mathcal{C
 Informal inductive processes allow only limited transparency and must be subjectively judged.
 
 Therefore, there is a theoretical bound that limits transparency about the inductive process.
-Some things cannot be made transparent in principle because some induction happens informally, so we cannot estimate the complexity with certainty.
+Some things cannot be made transparent in principle because some induction happens informally, so the complexity cannot be estimated with certainty.
 However, there is another bound that restricts transparency further.
 That is how well the inductive process, be it formal or informal, is communicated to the intended recipient.
-To achieve transparency about the inductive process and ultimately about the empirical support of a theory, we must increase both bounds. 
+To achieve transparency about the inductive process and ultimately about the empirical support of a theory, both bounds have to be increased. 
 
 In the following, I propose preregistration to move induction into the formal domain (pushing the first bound) and computational reproducibility to make formal induction transparent (pushing the second bond).
 I argue that both practices should ultimately provide transparency to judge empirical support for theories, though they may have secondary benefits for science.

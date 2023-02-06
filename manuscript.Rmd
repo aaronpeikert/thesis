@@ -348,7 +348,7 @@ Again the loss observed in the sample used to estimate $\hat\theta$ [@sochLawUnc
  = \frac{1}{n}\sum_{i=1}^n L(y_i, g(y_i|\hat\theta(y)))
 \end{equation}
 
-However, what we are interested in is not how well the theory did on data that informed it but on future, yet unseen, data:
+However, it is not of interest how well the theory did on data that informed it but on future, yet unseen, data:
 \begin{equation}
 \mathbb{E}_x\mathbb{E}_yL(x, g(x|\hat\theta(y)))
 \end{equation}

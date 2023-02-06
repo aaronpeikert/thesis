@@ -389,10 +389,10 @@ To allow for induction, the theory gets replaced with a model (not necessarily a
 \begin{equation}
 \mathcal{L}(\text{Model(Reality)}, \text{Reality})
 \end{equation}
-The idea is that we choose the version of our theory that best fits reality.
-However, we are forced to rely on a limited sample of reality.
-We are misled because these two factors, induction and limited sample size, interact.
-Choosing the best version of our theory based on a sample is almost surely suboptimal.
+The idea is that the version of our theory gets chosen that best fits reality.
+However, it is necessary to rely on a limited sample of reality.
+This is misleading because these two factors, induction and limited sample size, interact.
+Choosing the best version of the theory based on a sample is almost surely suboptimal.
 Therefore, the observed loss is an overconfident estimate of the loss in the future and closeness to the truth.
 \begin{equation}
 \mathcal{L}(\text{Model(Reality)}, \text{Reality}) > \mathcal{L}(\text{Model(Sample)}, \text{Sample})

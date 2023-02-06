@@ -370,8 +370,8 @@ To make the link to the first approach even more clear, complexity may be define
 \mathcal{C} = \frac{1}{n} \sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i}))) - L(y_i, g(y_i|\hat\theta(y)))
 \end{equation}
 
-Instead of a formal analysis to derive $\mathcal{C}$, we can simply repeat the inductive process, i.e., using cross-validation.
-That drastically expands the set of inductive processes for which we can estimate the inductive bias since it is considerably easier to repeat the process than to derive the complexity analytically.
+Instead of a formal analysis to derive $\mathcal{C}$, it is possible to repeat the inductive process, i.e., using cross-validation.
+That drastically expands the set of inductive processes for which the inductive bias can be estimated, since it is considerably easier to repeat the process than to derive the complexity analytically.
 
 ## A conceptual perspective
 

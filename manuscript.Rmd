@@ -423,15 +423,15 @@ Without induction, there is no bias to correct for.
 With only formal induction, the bias can be quantified.
 The issue of how to deal with informal induction remains.
 
-As a first step, we can note that one may split $\mathcal{C}$ in complexity that can be formally described and a part that can only be evaluated subjectively.
+As a first step, it can be noted that one may split $\mathcal{C}$ in complexity that can be formally described and a part that can only be evaluated subjectively.
 Formal, in the strict sense, means that the complexity can be mathematically derived and in a looser sense that the process can be repeated at will.
 If a researcher employs a linear model, the complexity is calculable.
-Even if it were not, we could fit the linear model on a large set of other data to asses its inductive behavior.
+Even if it were not, the linear model could be fitted on a large set of other data to asses its inductive behavior.
 However, suppose the researcher reconsiders the model based on the results and their internal model.
 For example, based on worse-than-expected results and their intuition, they decided to add a predictor to the model.
 In that case, the complexity can not be formally judged because the researcher is an intractable part of the inductive process.
-We can not ask the researcher to repeat the process on all possible data sets, nor is the behavior mathematically well-defined.
-However, we know that the resulting linear model is more complex than a linear regression formally implies.
+The researcher cannot be asked to repeat the process on all possible data sets, nor is the behavior mathematically well-defined.
+However, it is known that the resulting linear model is more complex than a linear regression formally implies.
 
 $$
 \mathcal{C}(\text{Model}) = \mathcal{C}(\text{formal}) +\mathcal{C}(\text{informal})

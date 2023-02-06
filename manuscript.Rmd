@@ -437,8 +437,8 @@ $$
 \mathcal{C}(\text{Model}) = \mathcal{C}(\text{formal}) +\mathcal{C}(\text{informal})
 $$
 
-That is not to say that we have no basis for judging the informal induction.
-We can find the inductive decision reasonable and judge it unlikely that just about any variable would be added if the data suggests it.
+That is not to say that there is no basis for judging the informal induction.
+The inductive decision can be thought of as reasonable, thus found unlikely that just about any variable would be added if the data suggests it.
 Or the opposite, we might find it not well justified on theoretical grounds and deem it a purely data-driven decision, which implies higher complexity.
 What one can say, however, is that this judgment is debatable and, therefore, subjective.
 

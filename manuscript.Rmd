@@ -342,7 +342,7 @@ In the future performance setup, it is not appealed to ground truth (I drop $\si
 \mathcal{L}(x, g(x|\theta)) = \mathbb{E}_xL(x, g(x|\theta))
 \end{equation}
 
-Again we can define the loss we have observed in the sample used to estimate $\hat\theta$ [@sochLawUnconsciousStatistician2020]:
+Again the loss observed in the sample used to estimate $\hat\theta$ [@sochLawUnconsciousStatistician2020] can be defined:
 \begin{equation}
 \mathbb{E}_y L(y, g(y|\hat\theta(y)))
  = \frac{1}{n}\sum_{i=1}^n L(y_i, g(y_i|\hat\theta(y)))

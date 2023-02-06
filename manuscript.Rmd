@@ -598,7 +598,6 @@ My consideration of transparency centers around the use of induction to test imp
 A theory is imprecise because it must be refined using data to make testable statements.
 I conceptualize induction to derive testable statements as choosing among a set of implications of the theory.
 Such a set of possible implications and the process of choosing among them according to a loss function is what I understand as a model.
-However, this conceptualization may be criticized.
 It is not entirely clear how to chose the process of selecting the best fitting version of the theory.
 Should the process of induction depend on the theory?
 Is the application of mathematically or computationally convenient methods, as is usual in statistical modeling, sufficient?

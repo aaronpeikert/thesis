@@ -531,7 +531,7 @@ Trusting a post hoc explanation of an inductive process is not entirely unreason
 However, post hoc, formal and informal induction are indistinguishable unless the account is comprehensive.
 Again, not only comprehensive for the data that was observed but also for all possible data.
 This task is challenging to accomplish in practice.
-After all, researchers would have to lay open the process that led to the induction, i.e., their thoughts and full mental model.
+After all, researchers would have to publish the process that led to the induction, i.e., their thoughts and full mental model.
 Dissolving the distinction between formal and informal induction would mean surrendering the advantage a formal inductive process provides; instead of quantifying complexity, the complexity must be judged with considerable uncertainty.
 
 A clear distinction between formal and informal can be provided by specifying the formal inductive process before any data is available.

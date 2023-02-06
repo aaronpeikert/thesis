@@ -624,7 +624,7 @@ One suggestion in such a direction is a method called multiverse analysis [@stee
 
 To complicate matters further, any statistical model optimizes some specific loss function.
 However, the choice of loss function may be highly consequential for the appraisal of a theory.
-Not only is this choice consequential, but it is easily imaginable that researchers can not agree on a metric to judge the theory.
+Not only is this choice consequential, but it is easily imaginable that researchers cannot agree on a metric to judge the theory.
 
 One important example of loss functions that are necessarily subjective are prior beliefs.
 So even researchers who agree on a general class of metrics, e.g., the posterior probability of a theory, would appraise theories differently.

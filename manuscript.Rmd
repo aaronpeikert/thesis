@@ -454,7 +454,7 @@ To summarise, I separate complexity $\mathcal{C}$ according to the transparency 
 Formal inductive processes allow full transparency in the sense that $\mathcal{C}$ can be objectively quantified.
 Informal inductive processes allow only limited transparency and must be subjectively judged.
 
-Therefore, we have a theoretical bound that limits transparency about the inductive process.
+Therefore, there is a theoretical bound that limits transparency about the inductive process.
 Some things can not be made transparent in principle because some induction happens informally, so we can not estimate the complexity with certainty.
 However, there is another bound that restricts transparency further.
 That is how well the inductive process, be it formal or informal, is communicated to the intended recipient.

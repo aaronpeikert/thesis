@@ -447,7 +447,7 @@ This fact implies that for these situations, the complexity and, hence, the opti
 Though full transparency remains out of reach, researchers may do their best to provide a good basis for assessing complexity.
 However, judging the informal complexity $\mathcal{C}(\text{informal})$ must remain a subjective exercise.
 
-The imperative to enable proper judgment of theories is simple: induce only what is necessary and what you induce should, if possible, be done formally.
+The imperative to enable proper judgment of theories is simple: induce only what is necessary and what is induced should, if possible, be done formally.
 Otherwise, the supposedly objective test of the theory using hard data must be judged more subjectively than necessary.
 
 To summarise, I separate complexity $\mathcal{C}$ according to the transparency that can theoretically be achieved.

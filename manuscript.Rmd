@@ -103,7 +103,42 @@ Insight must precede application.
 \newpage
 \clearpage
 \thispagestyle{empty}
-\null
+
+# Legal matters
+
+## Digital copy of the work {.unlisted .unnumbered}
+
+This work is made available online under the following source under the terms of the [Creative Commons Universal Public Domain Dedication | CC0](https://creativecommons.org/publicdomain/zero/1.0/):  
+<https://aaronpeikert.github.io/thesis/manuscript.pdf>
+
+## Acknowledgement {.unlisted .unnumbered}
+
+During the work on their dissertation, Aaron Peikert was a pre-doctoral fellow of the [International Max Planck Research School on Computational Methods in Psychiatry and Ageing Research (IMPRS COMP2PSYCH)](https://www.mps-ucl-centre.mpg.de/comp2psych) of
+the Max Planck Institute for Human Development, Berlin, Germany and University College London, United Kingdom.
+
+## Used resources and aids
+
+I used several digital aids to improve the writing (not the content), including grammerly.com, deepl.com, and mentor.duden.de.
+Also, to aid with the clarity of the writing, I asked Andreas Brandmaier, Carli Ochs, Leo Richter, Leonie Haggitte, and Caroline Gahrmann for feedback.
+Furthermore, I asked Leo Richter and Maximilian Ernst for help with mathematical notation and typesetting.
+I also prompted `ChatGPT` to write a song about reproducibility; while it was amusing, it was not funny enough to make an appearance in the text.
+
+## Declaration of independent work {.unlisted .unnumbered}
+
+I hereby declare that I completed the doctoral thesis independently based on the stated resources and
+aids.
+I have not applied for a doctoral degree elsewhere and do not have a corresponding doctoral degree.
+I have not submitted the doctoral thesis, or parts of it, to another academic institution and the thesis has not been accepted or rejected.
+I declare that I have acknowledged the Doctoral Degree Regulations which underlie the procedure of the
+Faculty of Life Sciences of Humboldt-Universität zu Berlin, as amended on 5th March 2015.
+Furthermore, I declare that no collaboration with commercial doctoral degree supervisors took place, and
+that the principles of Humboldt-Universität zu Berlin for ensuring good academic practice were abided by.
+
+\vspace{.5cm}
+
+\hfill{}Aaron Peikert
+
+\newpage
 \clearpage
 
 # Introduction

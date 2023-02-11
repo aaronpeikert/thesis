@@ -145,51 +145,51 @@ that the principles of Humboldt-Universität zu Berlin for ensuring good academi
 
 <!--psychology has unique difficulties-->
 Psychology is a difficult science [@meehlTheoreticalRisksTabular1978].
-Although there is some disagreement on why exactly this is the case, I doubt there is disagreement about the fact itself.
-Highlighting the difficulties and attempting to overcome them are no recent trends, though they have been invigorated by the so-called replication crisis in psychology that also begins to ripple through other empirical sciences [@ioannidisWhyMostPublished2005; @opensciencecollaborationEstimatingReproducibilityPsychological2015].
-As psychology grapples with this crisis of confidence in its empirical results, several causes and remedies have been proposed.
-We can roughly divide the proposed countermeasures into two categories, those that aim to increase the correct use of statistical methods [e.g., @bakanTestSignificancePsychological20060327; @benjaminRedefineStatisticalSignificance2018; @cohenEarth051994;  @gigerenzerMindlessStatistics2004; @wagenmakersWhyPsychologistsMust2011] and those that aim to counteract sociological and psychological biases [e.g., @simmonsFalsepositivePsychologyUndisclosed2011; @rosenthalFileDrawerProblem1979; @bakkerRulesGameCalled2012; @johnMeasuringPrevalenceQuestionable2012].
+Although there is some disagreement on why exactly this is the case, I doubt there is disagreement about the claim itself.
+Highlighting the difficulties and trying to overcome them are no recent trends, though they have been invigorated by the so-called replication crisis in psychology; a crisis that has also begun to ripple through other empirical sciences [@ioannidisWhyMostPublished2005; @opensciencecollaborationEstimatingReproducibilityPsychological2015].
+As psychology grapples with this crisis of confidence in its empirical findings, several causes have been identified and respective remedies have been proposed.
+The proposed countermeasures can be broadly categorized into those that aim to increase the correct use of statistical methods [e.g., @bakanTestSignificancePsychological20060327; @benjaminRedefineStatisticalSignificance2018; @cohenEarth051994;  @gigerenzerMindlessStatistics2004; @wagenmakersWhyPsychologistsMust2011] and those that are designed to counteract sociological and psychological biases [e.g., @simmonsFalsepositivePsychologyUndisclosed2011; @rosenthalFileDrawerProblem1979; @bakkerRulesGameCalled2012; @johnMeasuringPrevalenceQuestionable2012].
 
 <!--bla-transparency-bla-->
-In my view, both categories try to address a lack of transparency about the inductive process in the empirical test of a theory.
-Testing a theory empirically is often viewed as deductive since the theory is making statements about the data.
-Empirical scientists, however, often simultaneously engage in induction by deriving general statements from data.
-I will argue that the inductive element in the empirical test leads to overconfidence in the empirical results if unaccounted for.
-The extent of this bias depends on the inductive process.
-The inductive process, therefore, must be transparent to other researchers because they are otherwise unable to judge the empirical support of a theory.
+In my view, both categories try to address a lack of transparency about the inductive process in the empirical test of a theory [@leePopperFalsificationCorroboration2021].
+Testing a theory empirically is often viewed as deductive since the theory is making statements about future observations.
+Empirical scientists, however, often simultaneously engage in induction by deriving general statements from past observation.
+I will argue that the inductive element in empirical tests leads to overconfidence in the empirical results if unaccounted for.
+The extent of this bias depends on properties of the inductive process.
+The induction, therefore, must be transparent to other researchers in order for them to be able to judge the empirical support of a theory.
 
-The above distinction, between statistical and sociological countermeasures, arises from two different kinds of induction.
-On the one hand, we have inductive processes that are well-defined in the form of statistical methods; on the other hand, researchers also engage in more informal inductive behavior outside of well-defined models.
-These different kinds of induction require different countermeasures.
-Statistical methods make the inductive bias quantifiable, while open science measures reduce some uncertainty about the remaining informal sources of inductive bias.
-To understand why transparency is crucial, it is important to understand that formal and informal induction are integral to empirical sciences.
+The above distinction, between statistical and sociological countermeasures, arises from two sources of inductive bias.
+On the one hand, we have inductive processes that are well-defined in the form of statistical methods, while on the other, researchers also engage in more informal inductive behavior outside of well-defined models.
+These different kinds of inductive behavior require different countermeasures.
+When rigorously applied, statistical methods make the inductive bias quantifiable, while open science measures reduce some uncertainty about the remaining informal sources of inductive bias.
+To understand why transparency is crucial, it is important to comprehend how integral formal and informal induction are for empirical sciences.
 Any science must be able to communicate how it generates its knowledge.
-However, transparency has an outstanding role in psychology and other empirical sciences because empirical statements lose their value without transparency about the inductive process that contributed to them.
-Therefore, transparency is more than a virtue that may improve knowledge gains in empirical sciences but is an indispensable property.
+However, transparency has an outstanding role in psychology and other empirical sciences because empirical statements lose their value without transparency about the inductive processes involved.
+Therefore, transparency is more than a virtue that may improve empirical sciences somewhat but is an indispensable property.
 
 <!--induction is necessary for psychological science-->
-To function as an empirical science, psychology must be able to make statements about the world that can be compared to the actual conditions of the world.
-In psychology, this is not a purely deductive endeavor.
-Very few psychological theories are precise enough to derive testable statements.
-While it is tempting to claim that a theory makes deductively testable claims by, e.g., implying a mean difference between two groups [@leePopperFalsificationCorroboration2021], such a statement is not testable on its own.
+In order to function as an empirical science, psychology must be able to make statements about the world that can be compared to the actual conditions of the world.
+In psychology, this is not a purely deductive endeavor [@hitchcockPredictionAccommodationRisk2004; @meehlAppraisingAmendingTheories1990].
+Very few psychological theories are precise enough to derive testable statements [@friedTheoriesModelsWhat2020; @vanrooijTheoryDevelopmentRequires2020].
+While it is tempting to claim that a theory makes deductively testable claims [@leePopperFalsificationCorroboration2021] by, for example, implying a mean difference between two groups, such a statement is not testable on its own.
 Making inferences about a mean difference requires knowledge about the variance.
-Either the variance is known, or it has to be estimated from data.
-Consider a placebo and an experimental group, it is possible to hypothesize and test a mean difference using a simple t-test.
-The decision to reject the null hypothesis (groups have equal means) depends, besides true mean difference and sample size, on the observed variance.
+Either the variance is known, than a purely deductive test is possible, or it has to be estimated from data, making induction part of the empirical test.
+Consider a placebo and an experimental group; there is possible to hypothesize and test a mean difference using a simple t-test.
+The decision to reject the null hypothesis (groups have equal means) depends on, besides true mean difference and sample size, the observed variance.
 However, the variance needs to be induced from the data.
 So the threshold of the deductive decision depends on a quantity that must be induced.
 
 <!--sometimes the use of induction is well justified-->
-Induction is necessary and, in the present case, innocuous for psychology as a science.
+Induction is necessary and, in the present case, harmless for psychology as a science.
 In this case, it is innocuous because the bias from inducing the variance can be accounted for.
-A t-test accounts for the estimation of variance by having somewhat wider tails than a z-test which assumes that the variance is known, i.e., the hurdle to reach significance is higher for a t-test (the critical value for a one-sided test with α-level set to 1% and degrees of freedom set to 10, is t≈`r round(qt(.99, 10), 2)` vs. z≈`r round(qnorm(.99), 2)`).
-It is widely known that even without this correction, the z-test is a good approximation when sample sizes are large [@studentProbableErrorMean1908].
+A t-test accounts for the estimation of variance by having somewhat wider tails than a z-test which assumes that the variance is known, i.e., threshold of significance is higher for a t-test (the critical value for a one-sided test with α-level set to 1% and degrees of freedom set to 10, is t≈`r round(qt(.99, 10), 2)` vs. z≈`r round(qnorm(.99), 2)`).
+It has been widely known for decades that even without this correction, the z-test is a good approximation when sample sizes are large [@studentProbableErrorMean1908], i.e., the inductive bias vanishes with increasing sample size.
 Induction is also necessary because it is virtually impossible to ask psychological researchers to specify every detail, such as the variance, a priori from their theory.
-If they had to, there would be no psychological theory that could be subjected to an empirical test.
+If they had to, there would be currently very few psychological theory that could be subjected to an empirical test [@muthukrishnaProblemTheory2019].
 
 <!--necessity of induction-->
-In other words, induction gives theories some slack to be imprecise and contain "blank" spaces, later to be filled based on observation.
-It allows researchers to concentrate on the essential statements of their theories and choose some of the assumptions to fit the data well.
+In other words, induction gives theories some leeway to be imprecise and contain "blank" spaces, filled in later based on observation.
+It allows researchers to focus on the essential statements of their theories and choose to leave some parts (such as auxiliary assumptions) to be determined inductively.
 In some ways, it is the empirical researchers' answer to the Duhem–Quine problem [@duhemPhysicalTheoryExperiment1976; @vanormanquineTwoDogmasEmpiricism1976], which states that any empirical test of a theory is testing the conjunction of theory, auxiliary assumptions, and conjectures [@meehlTheoreticalRisksTabular1978; @meehlAppraisingAmendingTheories1990].
 Auxiliary assumptions are necessary to test a theory but do not follow from the theory itself.
 If such assumptions do not hold, they may lead to empirical falsification even though the theory holds.
@@ -210,42 +210,42 @@ Researchers and philosophers of science differ considerably in their opinion abo
 Whatever measure they subscribe to, they would agree on a low appraisal of an untested theory.
 
 <!--transparency about induction is required-->
-So empirical researchers find themselves in a pinch.
+So empirical researchers find themselves in a predicament.
 On the one hand, they need induction to test their imprecise theories.
 On the other hand, induction may render any test of a hypothesis ineffective.
-Therefore, I argue the problem is not induction but making transparent where and to what extent induction is used in the inferential process.
+Therefore, I argue that the problem is not induction but making transparent where and to what extent induction is used in the inferential process.
 The replication crisis can be traced to a misjudgment of how much induction has been going on in psychology and hence, how well-tested the empirical claims, as reported in the literature, actually are.
 Therefore, the question of this dissertation is *what* must be made transparent, and *how* to best make it transparent?
 
 <!--forshadow the main part-->
 The first question (the *what*) is theoretical in nature.
 It is addressed in the synopsis, which supplies the theoretical framework of the articles written as part of the dissertation.
-Under this framework, induction is split into a process that can be formally analyzed (statistical methods) and a part that is much more difficult to judge (sociological factors).
+Under this framework, induction is split into a process that can be formally analyzed (statistical methods) and a part that is much more difficult to judge in current research practice (sociological factors).
 
 <!--how it relates to the articles-->
-Based on this distinction, the articles answer the second question (the *how*).
-I argue that transparency about statistical methods is enabled by computational reproducibility, while transparency about sociological factors is facilitated by preregistration.
-The conceptualization of computational reproducibility and preregistration as means for transparency is supplemented by practical guidance on how researchers may implement these approaches.
+Based on this distinction, my research articles that are part of this dissertation answer the second question (the *how*).
+I argue that transparency in statistical methods is enabled by computational reproducibility, while transparency about sociological factors is facilitated by preregistration.
+The conceptualization of computational reproducibility and preregistration in regard of transparency is supplemented by practical guidance on how researchers may implement these approaches.
 
 # What necessitates transparency
 
 The need for transparency is closely tied to the use of induction in the empirical test of a theory.
 There has been a long and vigorous debate about what it means to test a theory empirically [@popperLogicScientificDiscovery2002, Ch.\ 5 Experience as a Method].
 I do not attempt to rehash the debate about what constitutes an empirical test.
-However, I aim to lay open the role of transparency in two frameworks that lend themselves to investigate induction.
+However, I aim to examine the role of transparency in two frameworks that lend themselves to investigate the sources of inductive bias.
 The first framework motivates transparency when an empirical test aims to evaluate a theory's verisimilitude ("closeness to truth").
 The second framework motivates transparency under a science that wants to select a theory according to its expected predictive performance.
 
-Both frameworks show how unaccounted induction leads to overconfidence in empirical results and give us some theoretical tools to asses and control this overconfidence.
+Both frameworks show how unaccounted induction leads to overconfidence in empirical results and imply some theoretical tools on how to disclose induction so that this overconfidence can be assessed and controlled.
 Because both frameworks are quite technical, they are followed by a more conceptual summary of these ideas.
 These sections provide the basis for understanding how computational reproducibility and preregistration enable a proper assessment of an empirical test on a conceptual level.
 
 ## An information-theoretic perspective
 
 Information theory provides a rigorous mathematical measure that can be understood as the verisimilitude of a theory [@niiniluotoVerisimilitudeThirdPeriod1998].
-We can formalize the distance to the truth in terms of how much information about the truth is lost when the theory is used to model reality [@rosenkrantzMeasuringTruthlikeness1980].
+The distance to the truth can be formalized in terms of how much information about the truth is lost when the theory is used to model reality [@rosenkrantzMeasuringTruthlikeness1980].
 Expressed mathematically, assume the existence of a function $f(x)$ that yields the likelihood of observing the state of the world $x$ where $f$ represents the ground truth.
-We are now interested in how much information is lost if we use $g(x)$, our theory, instead of $f(x)$, the reality, over all possible states $\mathcal{X}$.
+The quantity of interst is how much information is lost if we use $g(x)$, our theory as description of the world..., instead of $f(x)$, the reality, over all possible states $\mathcal{X}$.
 Expressed as lost bits of information, a measure known as Kullback–Leibler divergence [@kullbackInformationSufficiency1951], we get:
 <!--x is a single state, X is the random variable, and \mathcal{X} is all possible outcomes of X-->
 \begin{align} 
@@ -253,20 +253,19 @@ Expressed as lost bits of information, a measure known as Kullback–Leibler div
 &= \mathbb{E}_{X \sim f}\left[\log(f(x))\right] - \mathbb{E}_{X \sim f}\left[\log(g(x))\right]\label{eq:klexp}
 \end{align}
 
-Most readers will recognize that this information-theoretic setup and the derivation below follow closely @burnhamModelSelectionMultimodel2002, Ch. 7.2, in their derivation of the Akaike Information Criterion [@hirotuguakaikeInformationTheoryExtension1971] in its general form.
-What is of interest here is not the derivation but how this conceptualization may help us to understand what happens when data is simultaneously used to induce quantities of a theory and test the theory.
+Many readers will recognize that this information-theoretic setup and the derivation below follow closely @burnhamModelSelectionMultimodel2002, Ch. 7.2, in their derivation of the Akaike Information Criterion [@hirotuguakaikeInformationTheoryExtension1971] in its general form.
+What is of interest here is not the derivation but how this conceptualization may help us to understand what happens when data is simultaneously used to induce quantities of a theory and to test the theory.
 
-This setup is, of course, highly theoretical.
-$\mathcal{L}_{KL}(f, g)$ is unknowable, since the truth is unobserved.
-However, this fact does not impede us from getting closer to the truth because we can still compare the two theories relative to each other.
+Note that in practice, $\mathcal{L}_{KL}(f, g)$ is unknowable, since the full truth is unobservable.
+However, this fact does not impede us from getting closer to the truth because we can still compare the competing theories relative to each other.
 Because the expectation for $f$ remains constant (left-hand expectation in Eq.\ \@ref(eq:klexp)), we only need to estimate the relative expected loss of information (right-hand expectation in Eq.\ \@ref(eq:klexp)) to make a comparative judgment.
 To make a relative judgment about several competing theories, it suffices to estimate for any theory $g(x)$:
 \begin{equation}
 \mathbb{E}_{X \sim f}\left[\log(g(x))\right]
 \end{equation}
 
-To allow quantities to be induced, we must assume that our theory is parameterized, e.g., $g(x|\theta)$.
-That means our theory implies a family of possible probability distributions that may describe reality.
+To allow quantities to be induced, we must assume that the theory is parameterized, e.g., $g(x|\theta)$.
+That means the theory implies a family of possible probability distributions that may describe reality.
 This parameterization captures the idea that some assumptions necessary for a theory to make testable statements are arbitrary.
 Of those arbitrary assumptions, we want to find those that fit the reality with the least amount of information lost.
 The best parameterization is achieved by:
@@ -281,9 +280,9 @@ The inference goal for comparing other theories to $g(x)$ is, therefore:
 Of course, we usually do not know $\theta_*$.
 That is why it is necessary to induce it from data, denoted as $\hat\theta(y)$, where $Y$ are $n$ independent samples from $X\sim f$.
 
-The crucial point here is to understand what happens when we can not derive $\theta$ deductively but must substitute it inductively with an estimate $\hat\theta(y)$.
+The crucial point is to understand what happens when $\theta$ cannot be derive deductively but must be substituted inductively with an estimate $\hat\theta(y)$.
 Any estimated parameters $\hat{\theta}(y)$ would almost surely not be equal to $\theta_*$ (assuming $\theta$ may take an infinite number of values, i.e., is continues).
-It follows, almost surely, that we lose information:
+It follows, almost surely, that information is lost:
 \begin{equation}
 \mathcal{L}_{KL}(f, g(\cdot|\hat{\theta}(y)) > \mathcal{L}_{KL}(f, g(\cdot|\theta_*))
 \end{equation}
@@ -294,13 +293,13 @@ Or ignoring the constant:
 
 That is to say, any induced estimate will be sub-optimal.
 The inference goal, however, is to compare the theory $g$ to reality $f$, not to evaluate the estimates of $\hat\theta$.
-The point is to make a statement about the theory, not to make a statement about the data in combination with the theory.
+The point is to make a statement about the theory, not to make a statement about the data in light of the theory.
 If the estimate of $\hat\theta(y)$, i.e., the inductive process, is unbiased in the sense that it converges towards $\theta_*$, we may form an expectation over the data $Y$:
 \begin{equation}
 \mathbb{E}_{Y \sim f^n}\mathbb{E}_{X \sim f}[\log(g(x|\hat\theta(y)))]\label{eq:dataexp}
 \end{equation}
 
-Forming this expectation over data is a crucial step; it requires us to think beyond the data we observed to all the data we could have observed.
+Forming this expectation over data is a crucial step; it requires thinking beyond the observed data, of all the data we could have observed.
 There are two ways to get at this expectation.
 One is the use of Taylor series expansion, which follows in this section, and another is cross-validation, discussed in the next section.
 
@@ -320,30 +319,30 @@ For more details about this derivation, see @burnhamModelSelectionMultimodel2002
 The observed likelihood $\log(g(y|\hat\theta(y)))$ is, therefore, a biased estimate of the distance to the truth.
 We may conclude that substituting deduced quantities with induced estimates leads to some overconfidence about how close one is to the truth.
 This overconfidence is directly related to how much induction a model entails.
-This bias is often called the complexity or capacity of a model, i.e., how much the data is influencing the results and, hence, how detailed the model is representing the data [@goodfellowCapacityOverfittingUnderfitting2016; @mikkelsonComplexityVerisimilitudeRealism2001].
+This bias is often called the complexity or capacity of a model, i.e., how much the data are influencing the results, hence, how detailed the model is representing the data [@goodfellowCapacityOverfittingUnderfitting2016; @mikkelsonComplexityVerisimilitudeRealism2001].
 I therefore denote it as as $\mathcal{C}$.
 \begin{equation}
 \mathbb{E}_{X \sim f}\mathbb{E}_{Y \sim f^n}[log(g(x|\hat\theta(y)))] \approx \mathbb{E}_{Y \sim f^n}[\log(g(y|\hat{\theta}(y)))] + \mathcal{C}
 \end{equation}
 
-If we want to induce quantities and correctly appraise a theory on the same data, we must know how much we have to correct our appraisal for the induction.
+If we want to induce quantities and correctly appraise a theory on the same data, we must know how much we have to correct our appraisal for how the data influences the theory.
 Fortunately, it is possible to approximate the complexity of a model under some conditions.
 One condition is, since $\theta_*$ is unknown, that we know the properties of the inductive process that generated $\hat\theta$.
-We then can formally analyze the behavior and derive a mathematical expression for $\mathcal{C}$, e.g., corrections for a large class of statistical models, most famously the class of linear models, are well known [@boisbunonAkaikeInformationCriterion2014].
+We then can formally analyze the behavior and derive a mathematical expression for $\mathcal{C}$, e.g., corrections for a large class of statistical models, most famously the class of linear models, are well known, e.g., adjusted R² [@olkinUnbiasedEstimationCertain1958], Stein's Unbiased Risk Estimator [@steinInadmissibilityUsualEstimator1956; @steinEstimationMeanMultivariate1981], Mallow's Cp [@olkinUnbiasedEstimationCertain1958; @boisbunonAkaikeInformationCriterion2014] and information criteria [@gelmanUnderstandingPredictiveInformation2014; @konoshiGeneralisedInformationCriteria1996].
 
 ## A future performance perspective
 
 In addition to closeness to truth, there is another line of argumentation about why transparency about the process of induction is important.
-Instead of verisimilitude, one might be concerned with future performance.
+Instead of verisimilitude, one might be concerned with future performance [@yarkoniChoosingPredictionExplanation2017].
 That is, how well does a theory do in predicting novel facts?
 Please note that the information-theoretic setup above has not appealed to the expected performance on unseen data.
 Verisimilitude and expected performance are different motivations for transparency, though they can be linked.
-In the future performance setup, we do not appeal to ground truth (I drop $\sim f$, though the samples still follow some distribution), replace the Kullback–Leibler divergence with an arbitrary loss function, and no longer require $g(x)$ to return a likelihood ($L$ stands for an arbitrary loss function):
+In the future performance setup, we do not appeal to ground truth (I drop $\sim{}f$, though the samples still follow some distribution), replace the Kullback–Leibler divergence with an arbitrary loss function, and no longer require $g(x)$ to return a likelihood ($L$ stands for an arbitrary loss function):
 \begin{equation}
 \mathcal{L}(x, g(x|\theta)) = \mathbb{E}_xL(x, g(x|\theta))
 \end{equation}
 
-Again we can define the loss we have observed in the sample used to estimate $\hat\theta$ [@sochLawUnconsciousStatistician2020]:
+Again the loss observed in the sample used to estimate $\hat\theta$ [@sochLawUnconsciousStatistician2020] can be defined:
 \begin{equation}
 \mathbb{E}_y L(y, g(y|\hat\theta(y)))
  = \frac{1}{n}\sum_{i=1}^n L(y_i, g(y_i|\hat\theta(y)))
@@ -366,18 +365,20 @@ For each subset, the resulting model is then compared to the complement that was
 \end{equation}
 
 As stated earlier, using cross-validation, it is possible to estimate \linebreak[4] $\mathbb{E}_{X \sim f}\mathbb{E}_{Y \sim f^n}[log(g(x|\hat\theta(y)))]$ as well; which connects the information-theoretic setup with this approach [@stoneAsymptoticEquivalenceChoice1977; @stoneCrossValidatoryChoiceAssessment1974].
-To make the link to the first approach even more clear, we may define complexity in these terms [@hauensteinComputingAICBlackbox2018]:
+To make the link to the first approach even more clear, we may give an alternative definition of complexity as the expected difference between observed prediction error and expected prediction error [@hauensteinComputingAICBlackbox2018]:
 \begin{equation}
 \mathcal{C} = \frac{1}{n} \sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i}))) - L(y_i, g(y_i|\hat\theta(y)))
 \end{equation}
 
 Instead of a formal analysis to derive $\mathcal{C}$, we can simply repeat the inductive process, i.e., using cross-validation.
-That drastically expands the set of inductive processes for which we can estimate the inductive bias since it is considerably easier to repeat the process than to derive the complexity analytically.
+The former requires the derivatives with regard to the parameters, so I call it parametric estimator of complexity.
+The latter eschews the need for that, so I call it non-parametric estimator of complexity.
+Only requiring that a process can be repeated on other data, drastically expands the set of inductive processes for which we can estimate the inductive bias.
 
 ## A conceptual perspective
 
 Now that we have established the need for transparency about the inductive process, we can drop a few more technical details to clarify what we have to make transparent.
-It bears repeating that simply laying open what has been done is not enough.
+It bears repeating that simply revealing what has been done is not enough.
 Merely showing the inductive results instead of the process that generated them is insufficient to appraise the theory.
 On a conceptual level, we want to compare the following:
 \begin{equation}
@@ -398,6 +399,8 @@ Therefore, the observed loss is an overconfident estimate of the loss in the fut
 \begin{equation}
 \mathcal{L}(\text{Model(Reality)}, \text{Reality}) > \mathcal{L}(\text{Model(Sample)}, \text{Sample})
 \end{equation}
+
+So the observed loss is an underestimation that has to be corrected for by considering the complexity of the model.
 \begin{equation}
 \mathcal{L}(\text{Model(Reality)}, \text{Reality}) \approx \mathcal{L}(\text{Model(Sample)}, \text{Sample}) + \mathcal{C}(\text{Model})
 \end{equation}
@@ -406,19 +409,21 @@ Transparency is necessary because induction leaves researchers overly optimistic
 The extent of this optimism depends on the inductive process, not merely its results.
 Specifically, it depends on the complexity, i.e., the ability of the inductive process to adapt to data.
 The ability to adapt to data is independent of the specific data that was observed.
-Complexity is a function of the model, i.e., $\mathcal{C}(\text{model})$, not of the data.
+Complexity is a function of the model, i.e., $\mathcal{C}(\text{Model})$, not of the data.
 Without knowing the inductive process, researchers cannot judge the overconfidence, so the inductive process ought to be made transparent.
 
 # How to establish transparency
 
 The above sections aimed to motivate the observation that the apparent fit of a theory to data is often overly optimistic if it has inductive elements.
 This observation is only useful if we know the extent of this optimism.
-However, both setups show that the extent of the optimism is closely related to the complexity of the inductive process ($\mathcal{C}(\text{model})$) and suggest two starting points for making this bias transparent.
-The first requires a formal analysis of the inductive process to compute the complexity (e.g., using information criteria), and the second merely requires that the process is repeatable (e.g., using cross-validation).
+However, both setups show that the extent of the optimism is closely related to the complexity of the inductive process ($\mathcal{C}(\text{Model})$) and suggest two starting points for making this bias transparent.
+The first requires a formal analysis of the statistical model and the inductive process it was embedded in, to compute the complexity (parametric, e.g., using information criteria), and the second merely requires that the process is repeatable (nonparametric, e.g., using cross-validation).
 Both approaches require researchers to make the inductive process transparent instead of merely publishing the results.
 
 Even a casual consideration of the above formalization should strike anyone who has ever worked with empirical data as unrealistic.
-No one can expect researchers to be inductive only in formally analyzable or strictly repeatable ways.
+This flexibility is often called researchers' degrees of freedom [@simmonsFalsePositivePsychologyUndisclosed2011].
+Using researchers' degrees of freedom opportunistically is an obvious problem [@yarkoniGeneralizabilityCrisis2022; @wichertsDegreesFreedomPlanning2016].
+However, no one can expect researchers to be inductive only in formally analyzable or strictly repeatable ways.
 The point is to set the goalpost and have a yardstick to measure how well we can judge empirical support.
 Without induction, there is no bias to correct for.
 With only formal induction, the bias can be quantified.
@@ -426,16 +431,16 @@ The issue of how to deal with informal induction remains.
 
 As a first step, it can be noted that one may split $\mathcal{C}$ in complexity that can be formally described and a part that can only be evaluated subjectively.
 Formal, in the strict sense, means that the complexity can be mathematically derived and in a looser sense that the process can be repeated at will.
-If a researcher employs a linear model, the complexity is calculable.
-Even if it were not, the linear model could be fitted on a large set of other data to asses its inductive behavior.
-However, suppose the researcher reconsiders the model based on the results and their internal model.
+If a researcher employs a linear model, the complexity is calculable parametrically.
+Even if it were not, the linear model could be fitted on a large set of other data to asses its expected inductive behavior nonparametrically.
+However, suppose the researcher reconsiders the model based on the results and their internal cognitive model (including prior knowledge, expectations, cognitive biases).
 For example, based on worse-than-expected results and their intuition, they decided to add a predictor to the model.
 In that case, the complexity can not be formally judged because the researcher is an intractable part of the inductive process.
 The researcher cannot be asked to repeat the process on all possible data sets, nor is the behavior mathematically well-defined.
 However, it is known that the resulting linear model is more complex than a linear regression formally implies.
 
 $$
-\mathcal{C}(\text{Model}) = \mathcal{C}(\text{formal}) +\mathcal{C}(\text{informal})
+\mathcal{C}(\text{Model}) = \mathcal{C}(\text{Model}_\text{formal}) + \mathcal{C}(\text{Model}_\text{informal})
 $$
 
 That is not to say that there is no basis for judging the informal induction.
@@ -461,8 +466,8 @@ However, there is another bound that restricts transparency further.
 That is how well the inductive process, be it formal or informal, is communicated to the intended recipient.
 To achieve transparency about the inductive process and ultimately about the empirical support of a theory, both bounds have to be increased. 
 
-In the following, I propose preregistration to move induction into the formal domain (pushing the first bound) and computational reproducibility to make formal induction transparent (pushing the second bond).
-I argue that both practices should ultimately provide transparency to judge empirical support for theories, though they may have secondary benefits for science.
+In the following, I propose preregistration to move induction into the formal domain (pushing the first bound) and computational reproducibility to make formal induction transparent (pushing the second bound).
+I argue that both practices should ultimately provide sufficient transparency to judge empirical support for theories, though they may have secondary benefits for science.
 
 ## Transparency about statistical models: Computational\ Reproducibilibiltiy
 
@@ -470,12 +475,12 @@ Assume that a researcher only engaged in formal induction while testing a theory
 If other researchers want to judge this empirical test properly, the inductive process must be communicated to them.
 In other words, more than having formal induction is needed, the induction still must be made transparent in practice.
 Such transparency can be achieved by computational reproducibility.
-Computational reproducibility is usually defined as the ability to recreate the same results from the same data set [@claerboutElectronicDocumentsGive1992].
+Computational reproducibility is usually defined as the ability to recreate the same results from the same data set [@claerboutElectronicDocumentsGive1992; @peikertReproducibleDataAnalysis2021; @peikertReproducibleResearchTutorial2021].
 However, through the lens of transparency about the inductive process, it may be possible to further refine our view on computational reproducibility.
 
 Consider software that delivers the same results upon input of the same data, i.e., it is reproducible.
 However, place two restrictions on the software.
-First, while able to compute results based on data, the software cannot be understood by human researchers, e.g., because it is a binary program.
+First, while able to compute results based on data, the software cannot be understood by human researchers, e.g., because it is an executable program, of which the source code may not be openly available.
 Second, when the data set changes, the software does not work anymore.
 The first condition rules out that the software can be analyzed formally.
 The second condition prevents from changing the data and observing the results.
@@ -497,7 +502,7 @@ In @peikertReproducibleDataAnalysis2021, I proposed a workflow that unifies both
 Implementing computational reproducibility by automating the process from data to results fulfills both conditions needed for transparency while reducing the effort that must be invested.
 Verifying that the results are actually produced by the inductive process and data is then a task that a computer may fulfil without human intervention.
 Removing the human from the loop facilitates that the data can be easily substituted by similar data.
-Given enough computing power, automatic reproducibility allows to scale the inductive process to many data sets and therefore enables the judgment of the complexity.
+Given enough computing power, automatic reproducibility allows to scale the inductive process to many data sets and therefore enables the assesment of the complexity.
 
 While this workflow provides transparency and facilitates that the recipients of the work can judge the inductive process easily, it asks a lot from the researchers who create the work.
 To address this problem and simplify the workflow's application in practice, I developed the R package `repro` [@R-repro].
@@ -505,11 +510,11 @@ I further refined and simplified the workflow to make it more accessible in @pei
 
 These works address the problem of automating reproducibility by dividing it into four subproblems.
 First, it must be unambiguous what results are generated by which inductive process.
-This can be ensured by employing dynamic document creation.
+This can be ensured by employing dynamic document creation [@knuth1984literate; @xie2019; @xie2015; @Aust_papaja_Prepare_reproducible_2022].
 Second, the version of the software that is used to generate the results must be known.
-This can be ensured by documenting the version using software management.
-Third, the version of the author's written code (and possibly text) must be tracked using version control systems.
-Fourth, how the data relates to software and computing infrastructure must be managed by, e.g., workflow automation.
+This can be ensured by documenting the version using software management [@merkelDockerLightweightLinux2014; @wiebelsLeveragingContainersReproducible2021].
+Third, the version of the author's written code (and possibly text) must be tracked using version control systems [@chaconProGit2014; @vanlissaWORCSWorkflowOpen2021].
+Fourth, how the data relates to software and computing infrastructure must be managed by, e.g., workflow automation [@feldmanMakeProgramMaintaining1979; @kimImplementingGitHubActions2022; @kinsmanHowSoftwareDevelopers2021].
 
 ## Transparency about human researchers: Preregistration
 
@@ -529,7 +534,7 @@ This goes back to the idea that simply knowing the outcome of an inductive proce
 For researchers to judge the complexity, the process must be transparent to the researcher, i.e., how would the results change if the data look different.
 
 Trusting a post hoc explanation of an inductive process is not entirely unreasonable.
-However, post hoc, formal and informal induction are indistinguishable unless the account is comprehensive.
+However, post hoc, formal and informal induction are indistinguishable unless the account is exhaustive.
 Again, not only comprehensive for the data that was observed but also for all possible data.
 This task is challenging to accomplish in practice.
 After all, researchers would have to publish the process that led to the induction, i.e., their thoughts and full mental model.
@@ -546,14 +551,16 @@ Having no access to the data when specifying the analysis forces the researcher 
 They have to reason about all the possible data patterns they might encounter.
 While this makes registration so difficult, it is exactly the information we need and from which the complexity of the inductive process might be derived.
 
-Note that requiring induction to be provably formal (analytically analyzable or repeatable), does not imply that induction itself is limited in its extend.
+Note that requiring induction to be provably formal (analytically analyzable or repeatable), does not imply that induction itself is limited in its extent.
 In other words, researchers still might be very unsure how the data will look and therefore rely on induction to fill in the blanks.
 However, they must be clear about what they are going to induce.
 A formal inductive process can be designed to accommodate a wide range of data patterns, e.g., for a novel research question or a vague theory.
 Several strategies reflect such uncertainties.
 For example, suppose it is unknown which variables from a broad set of variables are involved.
 In that case, a variable selection mechanism can be specified.
-Or suppose it is unclear what functional form to expect. In that case, many statistical models exist that allow almost arbitrary functional forms. If the theory does not suffice to define an outlier, this decision can be made data-dependent, etc.
+Or suppose it is unclear what functional form to expect between predictor and outcome.
+In that case, many statistical models exist that allow almost arbitrary functional forms [@rissanenUniversalCodingInformation1984], e.g., smoothing splines [@cravenSmoothingNoisyData1978], random forests [@hoRandomSubspaceMethod1998], neural networks [@amariUniversalTheoremLearning1993].
+If the theory does not suffice to define an outlier, this decision can be made data-dependent, etc.
 
 The idea of registering the inductive process without knowledge of the data to demarcate formal from informal induction suffers from two problems.
 First, how can this be accomplished in a way that is practical and fits into the well-established practices of the scientific community?
@@ -563,7 +570,7 @@ In @peikertReproducibleResearchTutorial2021, I address the first problem and pro
 In a PAC, researchers write the intended analyses as computer code, initially based on simulated data.
 They include this code in a reproducible dynamic document written in the style of a traditional academic manuscript.
 This version, with "mock" results based on simulated data, serves as the registration.
-When the data is gathered, the results are updated to reflect the actual data.
+When the data are gathered, the results are updated to reflect the actual observations.
 
 To answer the second question of how to account for informal induction, I investigate the objective of registration and how it may be separated from the objective of confirmatory science in XXX.
 Particularly, I propose to formalize the objective of registration as reduction of uncertainty about theoretical risk.
@@ -581,7 +588,7 @@ The need for transparency is directly related to the use of induction in empiric
 Induction is often necessary to test vague theories empirically.
 However, induction introduces a bias that leads to overconfidence.
 The extent of this overconfidence is a function of the inductive process.
-Specifically, I propose that transparency must concern the extent to which data may influence the results and term this complexity.
+Specifically, I propose that transparency must concern the extent to which data may influence the results and which is captured in the term complexity.
 I show that the complexity of an inductive process can be quantified if the process can be analyzed or repeated on similar data.
 I call such an inductive process "formal".
 However, researchers often engage in informal induction, where complexity must be judged subjectively and with some uncertainty.
@@ -595,8 +602,9 @@ Based on the computational reproducible workflow, I proposed preregistration as 
 
 ## From theory to model
 
-My consideration of transparency centers around the use of induction to test imprecise theories.
-A theory is imprecise because it must be refined using data to make testable statements.
+My consideration of transparency centers around the necessity to allow for induction to test imprecise theories.
+I find it unconvincing that with some more effort researchers will develop better and more precise theories from thin air.
+Instead, I find it more plausible that psychological sciences will refine theories using data to make testable statements [@brandmaierTheoryguidedExplorationStructural20161205] and account for the bias the induction entails.
 I conceptualize induction to derive testable statements as choosing among a set of implications of the theory.
 Such a set of possible implications and the process of choosing among them according to a loss function is what I understand as a model.
 It is not entirely clear how to chose the process of selecting the best fitting version of the theory.
@@ -612,12 +620,12 @@ Most proofs regarding optimality make restrictive assumptions, i.e., optimality 
 
 In practice, researchers are restricted by the statistical models that are available to them.
 A certain statistical method may imply a set of possible implications that only partially overlaps with the theory.
-Developing more powerful inductive algorithms is a very active field of research in the machine learning community.
+Developing more powerful inductive algorithms is a very active field of research in the machine learning community [@brandmaierStructuralEquationModel2013].
 However, having more and more powerful tools for induction simply means that more and more vague theories may be tested.
 It does not necessarily lead to the development of statistical methods that fit the theories researchers are interested in.
 
-It might happen that in the end, more than one inductive process may be applicable, and no criterium makes one preferable over the other, i.e., from the point of the researcher, the decision is arbitrary.
-It has been dealt with arbitrary assumptions by choosing an inductive process and forming the expectation over all possible data.
+It might happen that in the end, more than one inductive process may be applicable, and no criterion makes one preferable over the other, i.e., from the point of the researcher, the decision is arbitrary.
+I have dealt with arbitrary assumptions by choosing an inductive process and forming the expectation over all possible data.
 A possible direction for future research is to explore if forming the expectation over inductive processes is similarly fruitful.
 One suggestion in such a direction is a method called multiverse analysis [@steegenIncreasingTransparencyMultiverse2016], where many different data analytic decisions are systematically explored.
 
@@ -632,15 +640,16 @@ So even researchers who agree on a general class of metrics, e.g., the posterior
 Allowing loss functions to vary between researchers also implies that the complexity of the inductive process varies.
 It follows that the correction for complexity cannot be done by the authors for all their readers universally if the loss function and complexity may depend on the researcher assessing the theory.
 This again highlights the importance of making the process transparent.
-If the process is transparent, the readers might change the loss function and calculate complexity accordingly.
+If the process is transparent, the readers may change the loss function and calculate complexity accordingly.
 
 ## Future Research
 
-This dissertation is concerned with a narrow definition of transparency.
+This dissertation proposes a narrow definition of transparency.
 I have not addressed essential parts of the scientific process, among them:
 How should researchers decide which theory to test?
 How should they go about gathering data concerning the chosen theory?
-When they are ready to publish their conclusions, how should these conclusions be evaluated?
+When are they ready to publish their conclusions?
+How should these conclusions be evaluated?
 Which conclusions warrant publication?
 Of those, which warrants widespread attention of the scientific community?
 Which must be further substantiated?

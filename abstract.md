@@ -1,5 +1,5 @@
 Psychology and other empirical sciences are in the middle of a crisis, as many researchers have become aware that many findings do not have as much empirical support as they once believed.
-Several causes of this inflated confidence in findings have been proposed: misuse of statistical methods, sociological biases, and weak theories.
+Several causes of this crisis have been proposed: misuse of statistical methods, sociological biases, and weak theories.
 This dissertation proposes the following rationale: to some extent, imprecise theories are unavoidable, but they still can be subjected to an empirical test by employing induction.
 Data may be used to amend theories, allowing precise predictions that can be compared to reality.
 However, such a strategy comes at a cost.

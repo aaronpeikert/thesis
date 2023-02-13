@@ -3,64 +3,12 @@ title: "Towards Transparency and Open Science"
 subtitle: "A Principled Perspective on Computational Reproducibility and Preregistration"
 output:
   bookdown::pdf_document2:
+    includes:
+      in_header: "preamble.tex"
     latex_engine: "lualatex"
     toc: true
     number_sections: false
     keep_tex:  true
-header-includes: |
-  \usepackage{libertine}
-  %\usepackage{ebgaramond}
-  %\usepackage{garamondlibre}
-  %\usepackage{CormorantGaramond}
-  %\usepackage{MinionPro}
-  \usepackage{pdfpages}
-  
-  % below works well with hyperref, but spacing is standard (to large)
-  %\usepackage{sectsty}
-  %\sectionfont{\Large\normalfont\scshape\raggedright}
-  %\subsectionfont{\large\normalfont\scshape\raggedright}
-  
-    % titlesec does not play nice with RMarkdown, so hack:
-  \let\paragraph\oldparagraph
-  \let\subparagraph\oldsubparagraph
-  \usepackage[sc, compact, raggedright]{titlesec}
-  % titlesec does not play nice with hyperref, so hack:
-  \newcommand{\sectionbreak}{\phantomsection}
-  \newcommand{\subsectionbreak}{\phantomsection}
-
-  \usepackage{titling}
-  \pretitle{
-     \begin{minipage}{\textwidth}
-     \includepdf[offset=5mm 0mm]{cover.pdf}
-     \end{minipage}
-     \newpage
-     \clearpage%
-     \thispagestyle{empty}%
-     \addtocounter{page}{-2}%
-     \null%
-     \clearpage
-     \begin{center}\LARGE}
-  \posttitle{\end{center}}
-  
-  \usepackage{polyglossia}
-  \setmainlanguage[]{english}
-  \setotherlanguage[]{german}
-  
-  \let\oldabstract\abstract
-  \let\oldendabstract\endabstract
-  \makeatletter
-  \renewenvironment{abstract}
-  {\renewenvironment{quotation}%
-                 {\list{}{\addtolength{\leftmargin}{-1cm} % change this value to add or remove length   to the the default
-                          \listparindent 1.5em%
-                          \itemindent    \listparindent%
-                          \rightmargin   \leftmargin%
-                          \parsep        \z@ \@plus\p@}%
-                  \item\relax}%
-                 {\endlist}%
-  \oldabstract}
-  {\oldendabstract}
-  \makeatother
 fontsize: 11pt
 linestretch: 1.2
 # https://practicaltypography.com/page-margins.html
@@ -87,38 +35,8 @@ repro:
     - rsync
 ---
 
-\newpage
-\clearpage
-\thispagestyle{empty}
-\begin{center}
-\vspace*{\fill}
-Für meine Mutter.\vspace*{\fill}
-\end{center}
-\clearpage
-
-\newpage
-\clearpage
-\thispagestyle{empty}
-# Acknowledgments {.unlisted .unnumbered}
-
-No one appreciated yet.
-\clearpage
-\thispagestyle{empty}
-\begin{center}
-\vspace*{\fill}
-Insight must precede application.
-\vspace*{\fill}
-\end{center}
-\newpage
-\clearpage
-
-\begin{spacing}{1}
-\tableofcontents
-\end{spacing}
-
-\newpage
-\clearpage
-\thispagestyle{empty}
+```{r child='frontmatter.md'}
+```
 
 # Legal matters
 

@@ -1,10 +1,13 @@
-Stand \\today{} nocht nicht geschrieben.
-Ihr seid das Salz der Erde. Wenn nun das Salz nicht mehr salzt, womit soll man salzen? Es ist zu nichts mehr nütze, als dass man es wegschüttet und lässt es von den Leuten zertreten.
-Ihr seid das Licht der Welt. Es kann die Stadt, die auf einem Berge liegt, nicht verborgen sein. Man zündet auch nicht ein Licht an und setzt es unter einen Scheffel, sondern auf einen Leuchter; so leuchtet es allen, die im Hause sind.
-So lasst euer Licht leuchten vor den Leuten, damit sie 
-eure guten Werke sehen und euren Vater im Himmel preisen.
-Ihr sollt nicht meinen, dass ich gekommen bin, das Gesetz oder die Propheten aufzulösen; ich bin nicht gekommen aufzulösen, sondern zu erfüllen.
-Denn wahrlich, ich sage euch: 
-Bis Himmel und Erde vergehen, wird nicht vergehen der kleinste Buchstabe noch ein 
-Tüpfelchen vom Gesetz, bis es alles geschieht. Wer nun 
-eines von diesen kleinsten Geboten auflöst und lehrt die Leute so, der wird der Kleinste heißen im Himmelreich; wer es aber tut und lehrt, der wird groß heißen im Himmelreich.
+Die Psychologie und andere empirische Wissenschaften befinden sich in einer Krise, da vielen Forschern bewusst geworden ist, dass viele Erkenntnisse nicht so stark empirisch gestützt sind, wie sie einst glaubten.
+Es wurden mehrere Ursachen für dieses überzogene Vertrauen in die Ergebnisse vorgeschlagen: Missbrauch statistischer Methoden, soziologische Verzerrungen und schwache Theorien.
+In dieser Dissertation gehe ich davon aus, dass ungenaue Theorien unvermeidlich sind, diese aber mithilfe von Induktion einer empirischen Prüfung unterzogen werden können.
+Anhand von Daten können Theorien ergänzt werden, sodass präzise Vorhersagen möglich sind, die sich mit der Realität vergleichen lassen.
+Eine solche Strategie ist jedoch mit Kosten verbunden.
+Induktion ist daher zwar notwendig, aber führt zu einem übermäßigen Vertrauen in empirische Befunde.
+Um empirische Ergebnisse adäquat zu bewerten, muss diese Verzerrung berücksichtigt werden.
+Das Ausmaß der Verzerrung hängt von den Eigenschaften des induktiven Prozesses ab.
+Einige induktive Prozesse können vollständig transparent gemacht werden, sodass ihre Verzerrung angemessen berücksichtigt werden kann.
+Ich zeige, dass dies bei einer Induktion der Fall ist, die beliebig mit anderen Daten wiederholt werden kann, was die Bedeutung von computergestützter Reproduzierbarkeit unterstreicht.
+Induktion, die den Forscher und sein kognitives Modell einbezieht, kann nicht beliebig wiederholt werden; daher kann die Verzerrung durch Induktion nur mit Unsicherheit beurteilt werden.
+Ich schlage vor, dass die Verringerung dieser Unsicherheit das Ziel von Präregistrierung sein sollte.
+Nachdem ich die Ziele von Reproduzierbarkeit und Präregistrierung unter dem Gesichtspunkt der Transparenz über Induktion präzisiert habe, gebe ich Empfehlungen für die die Praxis beider Verfahren in den wissenschaftlichen Artikeln, die als Teil der Dissertation veröffentlicht wurden.

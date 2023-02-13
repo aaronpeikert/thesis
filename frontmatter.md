@@ -29,4 +29,3 @@ Insight must precede application.
 
 \newpage
 \clearpage
-\thispagestyle{empty}

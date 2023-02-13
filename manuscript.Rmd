@@ -45,6 +45,22 @@ header-includes: |
   \usepackage{polyglossia}
   \setmainlanguage[]{english}
   \setotherlanguage[]{german}
+  
+  \let\oldabstract\abstract
+  \let\oldendabstract\endabstract
+  \makeatletter
+  \renewenvironment{abstract}
+  {\renewenvironment{quotation}%
+                 {\list{}{\addtolength{\leftmargin}{-1cm} % change this value to add or remove length   to the the default
+                          \listparindent 1.5em%
+                          \itemindent    \listparindent%
+                          \rightmargin   \leftmargin%
+                          \parsep        \z@ \@plus\p@}%
+                  \item\relax}%
+                 {\endlist}%
+  \oldabstract}
+  {\oldendabstract}
+  \makeatother
 fontsize: 11pt
 linestretch: 1.2
 # https://practicaltypography.com/page-margins.html

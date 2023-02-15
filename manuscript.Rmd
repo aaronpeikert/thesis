@@ -202,7 +202,7 @@ By the same token, whole theories may escape refutation by replacing every ill-f
 If applied to auxiliary assumptions, such a strategy of post hoc changing a theory in light of facts has been called "Lakatosian Defense" [@meehlAppraisingAmendingTheories1990].
 If pushed to the limit, the result is a "theory" governed by the data.
 Such a theory, full of empirically induced statements, is almost empty of statements that have been empirically verified.
-The data used for induction can not refute these statements, so they have never been subject to an empirical test.
+The data used for induction cannot refute these statements, so they have never been subject to an empirical test.
 
 <!--the appraisal of "induced theories" should be low-->
 So what to think of such, yet untested, theory?

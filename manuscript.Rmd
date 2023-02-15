@@ -214,8 +214,8 @@ So empirical researchers find themselves in a pinch.
 On the one hand, they need induction to test their imprecise theories.
 On the other hand, induction may render any test of a hypothesis ineffective.
 Therefore, I argue that the problem is not induction but making transparent where and to what extent induction is used in the inferential process.
-The replication crisis can be traced to a misjudgment of how much induction has been going on in psychology and hence, how well-tested the empirical claims, as reported in the literature, actually are.
-Therefore, the question of this dissertation is *what* must be made transparent, and *how* to best make it transparent?
+The replication crisis can be traced to a misjudgment of how much induction has been going on in psychology hence, how well-tested the empirical claims, as reported in the literature, actually are.
+Therefore, the question of this dissertation is *what* has to be be made transparent, and *how* to best make it transparent?
 
 <!--forshadow the main part-->
 The first question (the *what*) is theoretical in nature.

@@ -193,7 +193,7 @@ It allows researchers to concentrate on the essential statements of their theori
 In some ways, it is the empirical researchers' answer to the Duhem–Quine problem [@duhemPhysicalTheoryExperiment1976; @vanormanquineTwoDogmasEmpiricism1976], which states that any empirical test of a theory is testing the conjunction of theory, auxiliary assumptions, and conjectures [@meehlTheoreticalRisksTabular1978; @meehlAppraisingAmendingTheories1990].
 Auxiliary assumptions are necessary to test a theory but do not follow from the theory itself.
 If such assumptions do not hold, they may lead to empirical falsification even though the theory holds.
-However, if an auxiliary assumption is induced, it can not be falsified by the same data that induced it.
+However, if an auxiliary assumption is induced, it cannot be falsified by the same data that induced it.
 Inducing such assumptions, therefore, effectively removes auxiliary assumptions from the conjunction that is exposed to falsification.
 Since empirical researchers cannot always derive every assumption from their theory, avoiding refutation because of those assumptions is a desirable property.
 

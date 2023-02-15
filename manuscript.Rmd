@@ -119,7 +119,7 @@ the Max Planck Institute for Human Development, Berlin, Germany and University C
 ## Used resources and aids
 
 I used several digital aids to improve the writing (not the content), including grammerly.com, deepl.com, and mentor.duden.de.
-Also, to aid with the clarity of the writing, I asked Andreas Brandmaier, Carli Ochs, Leo Richter, Leonie Haggitte, and Caroline Gahrmann for feedback.
+Also, to aid with the clarity of the writing, I asked Andreas Brandmaier, Carli Ochs, Leo Richter, Leonie Hagitte, and Caroline Gahrmann for feedback.
 Furthermore, I asked Leo Richter and Maximilian Ernst for help with mathematical notation and typesetting.
 I also prompted `ChatGPT` to write a song about reproducibility; while it was amusing, it was not funny enough to make an appearance in the text.
 

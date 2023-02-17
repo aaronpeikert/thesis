@@ -545,8 +545,8 @@ Preregistration allows a distinction between formal and informal induction, whil
 
 This dissertation advances the theory and application of registration and computational reproducibility.
 Based on theoretical considerations, I refined the requirements of computational reproducibility, so that not only the same data must produce the same results but also that the inductive process may be repeated on other similar data.
-I developed a workflow for computational reproducibility that satisfies these requirements and built tools to apply it.
-Based on the computational reproducible workflow, I proposed preregistration as code (PAC) as an advancement of the practice of registration and developed the reduction of uncertainty about the theoretical risk as a formal objective of registration.
+I developed a workflow for computational reproducibility that satisfies these requirements [@peikertReproducibleResearchTutorial2021; @peikertReproducibleDataAnalysis2021] and built tools to apply it [@vanlissaWORCSWorkflowOpen2021; @R-repro].
+Based on the computational reproducible workflow, I proposed preregistration as code (PAC) as an advancement of the practice of registration [@peikertReproducibleResearchTutorial2021] and developed the reduction of uncertainty about the theoretical risk as a formal objective of registration [@peikertWhyDoesPreregistration2023].
 
 ## From theory to model
 

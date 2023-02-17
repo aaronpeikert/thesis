@@ -38,7 +38,7 @@ repro:
     - libertine
     - pdfpages
     - lualatex-math
-    - lualatexbase
+    - luatexbase
     - titling
   apt:
     - git
@@ -639,8 +639,6 @@ Peikert, A., van Lissa, C. J., & Brandmaier, A. M. (2021). Reproducible Research
 \includepdf[pages=-, offset=5mm 0mm]{papers/tutorial.pdf}
 
 ## Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.
-
-
 
 The following article is prepared to be submitted to *Philosophical Psychology*.
 The following preprint is reprinted from the following source under the conditions of the [Creative Commons Public Domain Dedication (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/).

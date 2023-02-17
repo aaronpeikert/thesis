@@ -21,8 +21,15 @@ abstract: "`r paste0(c('\\\\setstretch{1.0}\\\\textsc{Abstract:}', readLines('ab
 csl: apa.csl
 toc: false # it is manually placed
 repro:
+  packages:
+    - gert
+    - aaronpeikert/repro@5075336
   files:
+    - zusammenfassung.md
     - abstract.md
+    - frontmatter.md
+    - cover.pdf
+    - preamble.tex
     - apa.csl
     - papers/
   tlmgr:
@@ -30,6 +37,9 @@ repro:
     - preview
     - libertine
     - pdfpages
+    - lualatex-math
+    - lualatex-base
+    - titling
   apt:
     - git
     - rsync

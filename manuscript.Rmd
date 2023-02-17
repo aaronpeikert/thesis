@@ -17,7 +17,7 @@ geometry: "left=4cm, right=4cm, top=3.5cm, bottom=4.5cm, bindingoffset=5mm"
 classoption: twoside
 papersize: a4
 bibliography: references.bib
-abstract: "`r paste0(c('\\\\setstretch{1.0}English:', readLines('abstract.md'), '\\\\par Deutsch:\\\\textgerman{', readLines('zusammenfassung.md'), '}\\\\newpage'), collapse = ' ')`"
+abstract: "`r paste0(c('\\\\setstretch{1.0}\\\\textsc{Abstract:}', readLines('abstract.md'), '\\\\vspace{1mm}\\\\par \\\\textsc{Zusammenfassung:}\\\\textgerman{', readLines('zusammenfassung.md'), '}\\\\newpage'), collapse = ' ')`"
 csl: apa.csl
 toc: false # it is manually placed
 repro:
@@ -83,25 +83,25 @@ that the principles of Humboldt-Universität zu Berlin for ensuring good academi
 Psychology is a difficult science [@meehlTheoreticalRisksTabular1978].
 Although there is some disagreement on why exactly this is the case, I doubt there is disagreement about the claim itself.
 Highlighting the difficulties and trying to overcome them are no recent trends, though they have been invigorated by the so-called replication crisis in psychology; a crisis that has also begun to ripple through other empirical sciences [@ioannidisWhyMostPublished2005; @opensciencecollaborationEstimatingReproducibilityPsychological2015].
-As psychology grapples with this crisis of confidence in its empirical findings, several causes have been identified and respective remedies have been proposed.
-The proposed countermeasures can be broadly categorized into those that aim to increase the correct use of statistical methods [e.g., @bakanTestSignificancePsychological20060327; @benjaminRedefineStatisticalSignificance2018; @cohenEarth051994;  @gigerenzerMindlessStatistics2004; @wagenmakersWhyPsychologistsMust2011] and those that are designed to counteract sociological and psychological biases [e.g., @simmonsFalsepositivePsychologyUndisclosed2011; @rosenthalFileDrawerProblem1979; @bakkerRulesGameCalled2012; @johnMeasuringPrevalenceQuestionable2012].
+As psychology grapples with this crisis of confidence in its empirical findings, several causes have been identified and respective remedies have been suggested.
+The proposed countermeasures can be broadly categorized into those that aim to increase the correct use of statistical methods [e.g., @bakanTestSignificancePsychological20060327; @benjaminRedefineStatisticalSignificance2018; @cohenEarth051994;  @gigerenzerMindlessStatistics2004; @wagenmakersWhyPsychologistsMust2011] and those that are designed to counteract sociological and psychological biases [e.g.; @simmonsFalsepositivePsychologyUndisclosed2011; @rosenthalFileDrawerProblem1979; @bakkerRulesGameCalled2012; @johnMeasuringPrevalenceQuestionable2012].
 
 <!--bla-transparency-bla-->
 In my view, both categories try to address a lack of transparency about the inductive process in the empirical test of a theory [@leePopperFalsificationCorroboration2021].
 Testing a theory empirically is often viewed as deductive since the theory is making statements about future observations.
-Empirical scientists, however, often simultaneously engage in induction by deriving general statements from past observation.
+Empirical scientists, however, often simultaneously engage in induction by deriving general statements from past observations.
 I will argue that the inductive element in empirical tests leads to overconfidence in the empirical results if unaccounted for.
 The extent of this bias depends on properties of the inductive process.
 The induction, therefore, must be transparent to other researchers in order for them to be able to judge the empirical support of a theory.
 
-The above distinction, between statistical and sociological countermeasures, arises from two sources of inductive bias.
+The above distinction between statistical and sociological countermeasures arises from two sources of inductive bias.
 On the one hand, we have inductive processes that are well-defined in the form of statistical methods, while on the other, researchers also engage in more informal inductive behavior outside of well-defined models.
 These different kinds of inductive behavior require different countermeasures.
 When rigorously applied, statistical methods make the inductive bias quantifiable, while open science measures reduce some uncertainty about the remaining informal sources of inductive bias.
 To understand why transparency is crucial, it is important to comprehend how integral formal and informal induction are for empirical sciences.
 Any science must be able to communicate how it generates its knowledge.
 However, transparency has an outstanding role in psychology and other empirical sciences because empirical statements lose their value without transparency about the inductive processes involved.
-Therefore, transparency is more than a virtue that may improve empirical sciences somewhat but is an indispensable property.
+Therefore, transparency is more than a virtue that may improve empirical sciences somewhat, rather it is an indispensable property.
 
 <!--induction is necessary for psychological science-->
 In order to function as an empirical science, psychology must be able to make statements about the world that can be compared to the actual conditions of the world.
@@ -109,19 +109,19 @@ In psychology, this is not a purely deductive endeavor [@hitchcockPredictionAcco
 Very few psychological theories are precise enough to derive testable statements [@friedTheoriesModelsWhat2020; @vanrooijTheoryDevelopmentRequires2020].
 While it is tempting to claim that a theory makes deductively testable claims [@leePopperFalsificationCorroboration2021] by, for example, implying a mean difference between two groups, such a statement is not testable on its own.
 Making inferences about a mean difference requires knowledge about the variance.
-Either the variance is known, than a purely deductive test is possible, or it has to be estimated from data, making induction part of the empirical test.
-Consider a placebo and an experimental group; there is possible to hypothesize and test a mean difference using a simple t-test.
-The decision to reject the null hypothesis (groups have equal means) depends on, besides true mean difference and sample size, the observed variance.
+Either the variance is known, then a purely deductive test is possible, or it has to be estimated from data, making induction part of the empirical test.
+Consider a placebo and an experimental group; there it is possible to hypothesize and test a mean difference using a simple t-test.
+The decision to reject the null hypothesis (groups have equal means) depends on the observed variance, besides true mean difference and sample size.
 However, the variance needs to be induced from the data.
 So the threshold of the deductive decision depends on a quantity that must be induced.
 
 <!--sometimes the use of induction is well justified-->
 Induction is necessary and, in the present case, harmless for psychology as a science.
 In this case, it is innocuous because the bias from inducing the variance can be accounted for.
-A t-test accounts for the estimation of variance by having somewhat wider tails than a z-test which assumes that the variance is known, i.e., threshold of significance is higher for a t-test (the critical value for a one-sided test with α-level set to 1% and degrees of freedom set to 10, is t≈`r round(qt(.99, 10), 2)` vs. z≈`r round(qnorm(.99), 2)`).
+A t-test accounts for the estimation of variance by having somewhat wider tails than a z-test which assumes that the variance is known, i.e., the threshold of significance is higher for a t-test (the critical value for a one-sided test with α-level set to 1% and degrees of freedom set to 10, is $t≈`r round(qt(.99, 10), 2)`$ vs. $z≈`r round(qnorm(.99), 2)`)$.
 It has been widely known for decades that even without this correction, the z-test is a good approximation when sample sizes are large [@studentProbableErrorMean1908], i.e., the inductive bias vanishes with increasing sample size.
-Induction is also necessary because it is virtually impossible to ask psychological researchers to specify every detail, such as the variance, a priori from their theory.
-If they had to, there would be currently very few psychological theory that could be subjected to an empirical test [@muthukrishnaProblemTheory2019].
+Induction is also necessary because it is virtually impossible to ask psychologists to specify every detail, such as the variance, a priori from their theory.
+If they had to, there would currently be very little psychological theory that could be subjected to an empirical test [@muthukrishnaProblemTheory2019].
 
 <!--necessity of induction-->
 In other words, induction gives theories some leeway to be imprecise and contain "blank" spaces, filled in later based on observation.
@@ -134,14 +134,14 @@ Inducing such assumptions, therefore, effectively removes auxiliary assumptions 
 Since empirical researchers cannot always derive every assumption from their theory, avoiding refutation because of those assumptions is a desirable property.
 
 <!--statistical induction can be dangerous-->
-By the same token, whole theories may escape refutation by replacing every ill-fitting statement deduced from theory with statements induced from data.
-If applied to auxiliary assumptions, such a strategy of post hoc changing a theory in light of facts has been called "Lakatosian Defense" [@meehlAppraisingAmendingTheories1990].
+By the same token, entire theories may escape refutation by replacing every ill-fitting statement deduced from theory with statements induced from data.
+If applied to auxiliary assumptions, such a strategy of changing a theory post hoc in light of facts has been called "Lakatosian Defense" [@meehlAppraisingAmendingTheories1990].
 If pushed to the limit, we arrive at a "theory" governed by the data.
 Such a theory, full of empirically induced statements, is almost empty of statements that have been empirically verified.
-The data used for induction can not refute these statements, so they have never been subject to an empirical test.
+The data used for induction can not refute these statements, so they have never been subjected to an empirical test.
 
 <!--the appraisal of "induced theories" should be low-->
-So what to think of such, yet untested, theory?
+So what is to be thought
 Researchers and philosophers of science differ considerably in their opinion about how to appraise theories, e.g., judging the long-term performance (if they are frequentists), degrees of belief (if they are Bayesians), or probativeness [if they are severe testers, @mayoStatisticalInferenceSevere2018, p. 14] of a hypothesis.
 Whatever measure they subscribe to, they would agree on a low appraisal of an untested theory.
 
@@ -163,7 +163,7 @@ Based on this distinction, my research articles that are part of this dissertati
 I argue that transparency in statistical methods is enabled by computational reproducibility, while transparency about sociological factors is facilitated by preregistration.
 The conceptualization of computational reproducibility and preregistration in regard of transparency is supplemented by practical guidance on how researchers may implement these approaches.
 
-# What necessitates transparency
+# What makes transparency nessesary?
 
 The need for transparency is closely tied to the use of induction in the empirical test of a theory.
 There has been a long and vigorous debate about what it means to test a theory empirically [@popperLogicScientificDiscovery2002, Ch.\ 5 Experience as a Method].
@@ -348,7 +348,7 @@ The ability to adapt to data is independent of the specific data that was observ
 Complexity is a function of the model, i.e., $\mathcal{C}(\text{Model})$, not of the data.
 Without knowing the inductive process, researchers cannot judge the overconfidence, so the inductive process ought to be made transparent.
 
-# How to establish transparency
+# How to establish transparency?
 
 The above sections aimed to motivate the observation that the apparent fit of a theory to data is often overly optimistic if it has inductive elements.
 This observation is only useful if we know the extent of this optimism.
@@ -357,7 +357,7 @@ The first requires a formal analysis of the statistical model and the inductive 
 Both approaches require researchers to make the inductive process transparent instead of merely publishing the results.
 
 Even a casual consideration of the above formalization should strike anyone who has ever worked with empirical data as unrealistic.
-This flexibility is often called researchers' degrees of freedom [@simmonsFalsePositivePsychologyUndisclosed2011].
+This flexibility is often called researchers' degrees of freedom [@simmonsFalsepositivePsychologyUndisclosed2011].
 Using researchers' degrees of freedom opportunistically is an obvious problem [@yarkoniGeneralizabilityCrisis2022; @wichertsDegreesFreedomPlanning2016].
 However, no one can expect researchers to be inductive only in formally analyzable or strictly repeatable ways.
 The point is to set the goalpost and have a yardstick to measure how well we can judge empirical support.
@@ -405,7 +405,7 @@ To achieve transparency about the inductive process and ultimately about the emp
 In the following, I propose preregistration to move induction into the formal domain (pushing the first bound) and computational reproducibility to make formal induction transparent (pushing the second bound).
 I argue that both practices should ultimately provide sufficient transparency to judge empirical support for theories, though they may have secondary benefits for science.
 
-## Transparency about statistical models: Computational\ Reproducibilibiltiy
+## Transparency about statistical models: Computational\ Reproducibility
 
 Assume that a researcher only engaged in formal induction while testing a theory empirically.
 If other researchers want to judge this empirical test properly, the inductive process must be communicated to them.
@@ -596,6 +596,12 @@ However, I hope we might abandon the tradition of analyzing scientific practices
 Instead the aim should be to analyze new practices of science, such as computational reproducibility or preregistration, as they emerge.
 That way, theoretical insight may shape application.
 
+# References
+
+<div id="refs"></div>
+
+\clearpage\newpage
+
 # Articles
 
 In the following, I reprinted the articles published as part of the dissertation as they were made accessible by the journals, as allowed by the respective licenses.
@@ -604,7 +610,7 @@ The annex to § 6, para. 2 of the Doctoral Degree Regulations of the Faculty of 
 
 \newpage
 
-## A Reproducible Data Analysis Workflow With R Markdown, Git, Make, and Docker
+## A reproducible data analysis workflow With R\ Markdown, Git, Make, and Docker
 
 The following article is reprinted from the following source under the conditions of the [Creative Commons Attribution (CC BY) 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
@@ -613,9 +619,7 @@ R Markdown, Git, Make, and Docker. *Quantitative and Computational Methods in Be
 
 \includepdf[pages=-, offset=5mm 0mm,frame=false]{papers/workflow.pdf}
 
-## Reproducible Research in R: A Tutorial on How to Do the Same Thing More Than Once
-
-
+## Reproducible research in R: A tutorial on how to do the same thing more than once
 
 The following article is reprinted from the following source under the conditions of the [Creative Commons Attribution (CC BY) 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
@@ -631,5 +635,3 @@ The following article is prepared to be submitted to *Philosophical Psychology*.
 The following preprint is reprinted from the following source under the conditions of the [Creative Commons Public Domain Dedication (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/).
 
 \includepdf[pages=-, offset=5mm 0mm]{papers/prereg.pdf}
-
-# References

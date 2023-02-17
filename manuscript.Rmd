@@ -38,7 +38,7 @@ repro:
 ```{r child='frontmatter.md'}
 ```
 
-# Legal matters
+# Legal matters {.unlisted .unnumbered}
 
 ## Digital copy of the work {.unlisted .unnumbered}
 
@@ -48,13 +48,15 @@ This work is made available online under the following source under the terms of
 ## Acknowledgement {.unlisted .unnumbered}
 
 During the work on their dissertation, Aaron Peikert was a pre-doctoral fellow of the [International Max Planck Research School on Computational Methods in Psychiatry and Ageing Research (IMPRS COMP2PSYCH)](https://www.mps-ucl-centre.mpg.de/comp2psych) of
-the Max Planck Institute for Human Development, Berlin, Germany and University College London, United Kingdom.
+the Max Planck Institute for Human Development, Berlin, Germany, and University College London, United Kingdom.
 
 ## Used resources and aids {.unlisted .unnumbered}
 
 I used several digital aids to improve the writing (not the content), including grammerly.com, deepl.com, and mentor.duden.de.
 Also, to aid with the clarity of the writing, I asked Andreas Brandmaier, Carli Ochs, Leo Richter, Leonie Haggitte, and Caroline Gahrmann for feedback.
 Furthermore, I asked Leo Richter and Maximilian Ernst for help with mathematical notation and typesetting.
+Julia Delius has kindly agreed to proofread the journal articles at the time of submission and the synopsis of the thesis.
+All the errors that remain are solely my responsibility.
 I also prompted `ChatGPT` to write a song about reproducibility; while it was amusing, it was not funny enough to make an appearance in the text.
 
 ## Declaration of independent work {.unlisted .unnumbered}

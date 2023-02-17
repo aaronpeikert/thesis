@@ -38,7 +38,7 @@ repro:
     - libertine
     - pdfpages
     - lualatex-math
-    - lualatex-base
+    - lualatexbase
     - titling
   apt:
     - git

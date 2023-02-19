@@ -1,4 +1,13 @@
-As of \\today{} not written.
-You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again? It is no longer good for anything, except to be thrown out and trampled underfoot.
-You are the light of the world. A town built on a hill cannot be hidden. Neither do people light a lamp and put it under a bowl. Instead they put it on its stand, and it gives light to everyone in the house. In the same way, let your light shine before others, that they may see your good deeds and glorify your Father in heaven.
-Do not think that I have come to abolish the Law or the Prophets; I have not come to abolish them but to fulfill them. For truly I tell you, until heaven and earth disappear, not the smallest letter, not the least stroke of a pen, will by any means disappear from the Law until everything is accomplished. Therefore anyone who sets aside one of the least of these commands and teaches others accordingly will be called least in the kingdom of heaven, but whoever practices and teaches these commands will be called great in the kingdom of heaven.
+Psychology and other empirical sciences are in the middle of a crisis, as many researchers have become aware that many findings do not have as much empirical support as they once believed.
+Several causes of this crisis have been suggested: misuse of statistical methods, sociological biases, and weak theories.
+This dissertation proposes the following rationale: to some extent, imprecise theories are unavoidable, but they still can be subjected to an empirical test by employing induction.
+Data may be used to amend theories, allowing precise predictions that can be compared to reality.
+However, such a strategy comes at a cost.
+While induction is necessary, it causes overconfidence in empirical findings.
+When assessing findings, this overconfidence must be taken into account.
+The extent of the overconfidence depends on the properties of the inductive process.
+Some inductive processes can be made fully transparent, so their bias can be accounted for appropriately.
+I show that this is the case for induction that can be repeated at will on other data, highlighting the importance of computational reproducibility.
+Induction involving the researcher and their cognitive model can not be repeated; hence, the extent of overconfidence must be judged with uncertainty.
+I propose that reducing this uncertainty should be the objective of preregistration.
+Having explicated the goals of computational reproducibility and preregistration from a perspective of transparency about induction in the synopsis, I put forward recommendations for the practice of both in the articles published as part of this dissertation.

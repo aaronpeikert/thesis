@@ -1,7 +1,10 @@
 RUN install2.r --error --skipinstalled \ 
+  gert \ 
   here \ 
   patchwork \ 
   qrcode \ 
   showtext \ 
   svglite \ 
   xaringanthemer
+RUN installGithub.r \ 
+  aaronpeikert/repro@5075336

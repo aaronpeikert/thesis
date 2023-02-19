@@ -13,7 +13,7 @@ fontsize: 11pt
 linestretch: 1.2
 # https://practicaltypography.com/page-margins.html
 # 3.81 to 5.08cm or 45-90 characters or 2-3 alphabets
-geometry: "left=4cm, right=4cm, top=3.5cm, bottom=4.5cm, bindingoffset=5mm"
+geometry: "left=4cm, right=4cm, top=3.5cm, bottom=4.5cm, bindingoffset=7mm"
 classoption: twoside
 papersize: a4
 bibliography: references.bib
@@ -629,7 +629,7 @@ The following article is reprinted from the following source under the condition
 Peikert, A., & Brandmaier, A. M. (2021). A Reproducible Data Analysis Workflow With
 R Markdown, Git, Make, and Docker. *Quantitative and Computational Methods in Behavioral Sciences*, *1*, e3763. https://doi.org/10.5964/qcmb.3763
 
-\includepdf[pages=-, offset=5mm 0mm,frame=false]{papers/workflow.pdf}
+\includepdf[pages=-, offset=7mm 0mm,frame=false]{papers/workflow.pdf}
 
 ## Reproducible research in R: A tutorial on how to do the same thing more than once
 
@@ -637,11 +637,11 @@ The following article is reprinted from the following source under the condition
 
 Peikert, A., van Lissa, C. J., & Brandmaier, A. M. (2021). Reproducible Research in R: A Tutorial on How to Do the Same Thing More Than Once. *Psych*, *3*(4), 836–867. https://doi.org/10.3390/psych3040053
 
-\includepdf[pages=-, offset=5mm 0mm]{papers/tutorial.pdf}
+\includepdf[pages=-, offset=7mm 0mm]{papers/tutorial.pdf}
 
 ## Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.
 
 The following article is prepared to be submitted to *Philosophical Psychology*.
 The following preprint is reprinted from the following source under the conditions of the [Creative Commons Public Domain Dedication (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/).
 
-\includepdf[pages=-, offset=5mm 0mm]{papers/prereg.pdf}
+\includepdf[pages=-, offset=7mm 0mm]{papers/prereg.pdf}

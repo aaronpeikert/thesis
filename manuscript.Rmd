@@ -266,7 +266,7 @@ For more details about this derivation, see @burnhamModelSelectionMultimodel2002
 The observed likelihood $\log(g(y|\hat\theta(y)))$ is, therefore, a biased estimate of the distance to the truth.
 We may conclude that substituting deduced quantities by induced estimates leads to some overconfidence about how close one is to the truth.
 This overconfidence is directly related to how much induction a model entails.
-This bias is often called the complexity or capacity of a model, i.e., how much the data are influencing the results, hence, in how much detail the model may represent the data [@goodfellowCapacityOverfittingUnderfitting2016, Chapter. 5.2; @mikkelsonComplexityVerisimilitudeRealism2001].
+This bias is often called the complexity or capacity of a model, i.e., how much the data are influencing the results, hence, in how much detail the model may represent the data [@goodfellowDeepLearning2016, Chapter. 5.2; @mikkelsonComplexityVerisimilitudeRealism2001].
 I therefore denote it as as $\mathcal{C}$.
 \begin{equation}
 \mathbb{E}_{X \sim f}\mathbb{E}_{Y \sim f^n}[log(g(x|\hat\theta(y)))] \approx \mathbb{E}_{Y \sim f^n}[\log(g(y|\hat{\theta}(y)))] + \mathcal{C}

@@ -612,7 +612,8 @@ That way, theoretical insight may shape application.
 
 <div id="refs"></div>
 
-\clearpage\newpage
+\pagenumbering{gobble}
+\cleardoublepage\newpage
 
 # Articles
 
@@ -620,6 +621,7 @@ In the following, I have reprinted the articles published as part of the dissert
 Note that the following articles were written collaboratively with the indicated coauthors.
 The annex to § 6, para. 2 of the Doctoral Degree Regulations of the Faculty of Life Sciences, amended on 05.03.2015, *University Gazette of Humboldt-Universität zu Berlin 12* will be submitted with the initiation of the doctoral degree procedure.
 
+\cleardoublepage
 \newpage
 
 ## A reproducible data analysis workflow With R\ Markdown, Git, Make, and Docker
@@ -629,7 +631,11 @@ The following article is reprinted from the following source under the condition
 Peikert, A., & Brandmaier, A. M. (2021). A Reproducible Data Analysis Workflow With
 R Markdown, Git, Make, and Docker. *Quantitative and Computational Methods in Behavioral Sciences*, *1*, e3763. https://doi.org/10.5964/qcmb.3763
 
+\cleardoublepage
+
 \includepdf[pages=-, offset=7mm 0mm,frame=false]{papers/workflow.pdf}
+
+\cleardoublepage
 
 ## Reproducible research in R: A tutorial on how to do the same thing more than once
 
@@ -637,11 +643,17 @@ The following article is reprinted from the following source under the condition
 
 Peikert, A., van Lissa, C. J., & Brandmaier, A. M. (2021). Reproducible Research in R: A Tutorial on How to Do the Same Thing More Than Once. *Psych*, *3*(4), 836–867. https://doi.org/10.3390/psych3040053
 
+\cleardoublepage
+
 \includepdf[pages=-, offset=7mm 0mm]{papers/tutorial.pdf}
+
+\cleardoublepage
 
 ## Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.
 
 The following article is prepared to be submitted to *Philosophical Psychology*.
 The following preprint is reprinted from the following source under the conditions of the [Creative Commons Public Domain Dedication (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/).
+
+\cleardoublepage
 
 \includepdf[pages=-, offset=7mm 0mm]{papers/prereg.pdf}

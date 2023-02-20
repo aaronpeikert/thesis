@@ -29,3 +29,4 @@ Insight must precede application.
 
 \newpage
 \clearpage
+\newgeometry{left=2cm,right=6cm}

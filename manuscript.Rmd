@@ -13,7 +13,8 @@ fontsize: 11pt
 linestretch: 1.2
 # https://practicaltypography.com/page-margins.html
 # 3.81 to 5.08cm or 45-90 characters or 2-3 alphabets
-geometry: "left=4cm, right=4cm, top=3.5cm, bottom=4.5cm, bindingoffset=7mm"
+# asymetric geometry is set after/in frontmatter.md
+geometry: "left=4cm, right=4cm, top=3cm, bottom=5cm, bindingoffset=7mm"
 classoption: twoside
 papersize: a4
 bibliography: references.bib

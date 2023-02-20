@@ -53,7 +53,7 @@ repro:
 
 ## Digital copy of the work {.unlisted .unnumbered}
 
-This work (version ``r repro::current_hash(backend = "gert")``) is made available online under the following source under the terms of the [Creative Commons Universal Public Domain Dedication | CC0](https://creativecommons.org/publicdomain/zero/1.0/):
+This work (version ``r repro::current_hash(backend = "gert")``) is made available online under the following source under the terms of the [Creative Commons Universal Public Domain Dedication | CC0](https://creativecommons.org/publicdomain/zero/1.0/), unless noted otherwise:
 <https://doi.org/10.5281/zenodo.7654989>
 
 ## Acknowledgement {.unlisted .unnumbered}

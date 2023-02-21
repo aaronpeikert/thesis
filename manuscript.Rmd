@@ -222,7 +222,7 @@ The best parameterization is achieved by:
 
 The inference goal for comparing other theories to $g(x)$ is, therefore:
 \begin{equation}
-\mathbb{E}_{X \sim f}\left[\log(g(x|\theta_*))\right]
+\mathbb{E}_{X \sim f}\left[\log(g(x|\theta_*))\right]\,.
 \end{equation}
 Of course, we usually do not know $\theta_*$.
 That is why it is necessary to induce it from data, denoted as $\hat\theta(y)$, where $Y$ are $n$ independent samples from $X\sim f$.
@@ -244,7 +244,7 @@ The inference goal, however, is to compare the theory $g$ to reality $f$, not to
 The point is to make a statement about the theory, not to make a statement about the data in light of the theory.
 If the estimate of $\hat\theta(y)$, i.e., the inductive process, is unbiased in the sense that it converges towards $\theta_*$, we may form an expectation over the data $Y$:
 \begin{equation}
-\mathbb{E}_{Y \sim f^n}\mathbb{E}_{X \sim f}[\log(g(x|\hat\theta(y)))]\label{eq:dataexp}
+\mathbb{E}_{Y \sim f^n}\mathbb{E}_{X \sim f}[\log(g(x|\hat\theta(y)))]\label{eq:dataexp}\,.
 \end{equation}
 
 Forming this expectation over data is a crucial step; it requires thinking beyond the observed data, of all the data we could have observed.
@@ -316,7 +316,6 @@ To make the link to the first approach even more clear, we may give an alternati
 \begin{equation}
 \mathcal{C} = \frac{1}{n} \sum_{i=1}^{n}L(y_i, g(y_i|\hat\theta(y_{-i}))) - L(y_i, g(y_i|\hat\theta(y)))
 \end{equation}
-
 Instead of a formal analysis to derive $\mathcal{C}$, we can simply repeat the inductive process, i.e., use cross-validation.
 The former requires the derivatives with regard to the parameters, so I call it parametric estimator of complexity.
 The latter eschews the need for that, so I call it non-parametric estimator of complexity.

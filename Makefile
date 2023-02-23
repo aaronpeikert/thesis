@@ -2,16 +2,16 @@ PROJECT := thesis
 WORKDIR := $(CURDIR)
 
 # list below your targets and their recipies
-all: manuscript.pdf
+all: manuscript.pdf README.md
 
 manuscript.pdf: manuscript.tex
-
-apa.csl:
-	curl -sL https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl > $@
 
 publish/: manuscript.pdf
 
 include .repro/Makefile_publish
+
+apa.csl:
+	curl -sL https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl > $@
 
 papers/: papers/workflow.pdf papers/tutorial.pdf papers/prereg.pdf
 
@@ -27,6 +27,8 @@ papers/prereg.pdf:
 	mkdir -p papers
 	curl -sL https://aaronpeikert.github.io/bayes-prereg/manuscript.pdf > $@
 
+data/simulation.rds: R/simulate.R R/funs.R
+	$(RUN1) Rscript -e 'source("$(WORKDIR)/$<")' $(RUN2)
 
 ### Wrap Commands ###
 # if a command is to be send to another process e.g. a container/scheduler use:

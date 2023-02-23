@@ -1,0 +1,15 @@
+---
+output: github_document
+repro:
+  files:
+    - abstract.md
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+Peikert, A. (2023). Towards Transparency and Open Science: A Principled   Perspective on Computational Reproducibility and Preregistration [Humboldt-Universität zu Berlin]. https://www.doi.org/10.5281/zenodo.7654989
+
+## Abstract
+
+```{r child='abstract.md'}
+```

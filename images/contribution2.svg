@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920px"
+   height="1080px"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="contribution2.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview267"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.55244701"
+     inkscape:cx="895.10847"
+     inkscape:cy="490.54479"
+     inkscape:window-width="1880"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs262">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2251"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2251-9"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:56px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';letter-spacing:0px;word-spacing:0px;fill:#93a1a1;fill-opacity:1"
+       x="571.57379"
+       y="204.61595"
+       id="text381"><tspan
+         sodipodi:role="line"
+         id="tspan379"
+         x="571.57379"
+         y="204.61595"
+         style="font-size:56px;fill:#93a1a1;fill-opacity:1">Reproducibility</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:56px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';letter-spacing:0px;word-spacing:0px;fill:#dc322f;fill-opacity:1"
+       x="-511.12726"
+       y="364.19452"
+       id="text381-7-3"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan379-5-5"
+         x="-511.12726"
+         y="364.19452"
+         style="font-size:56px;fill:#dc322f;fill-opacity:1">Practical</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:56px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';letter-spacing:0px;word-spacing:0px;fill:#dc322f;fill-opacity:1"
+       x="1193.712"
+       y="204.61595"
+       id="text381-3"
+       inkscape:transform-center-x="713.05291"
+       inkscape:transform-center-y="-8.8869635"><tspan
+         sodipodi:role="line"
+         id="tspan379-6"
+         x="1193.712"
+         y="204.61595"
+         style="font-size:56px;fill:#dc322f;fill-opacity:1">Preregistration</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:32px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#93a1a1;fill-opacity:1"
+       x="505.13239"
+       y="339.58743"
+       id="text2097"><tspan
+         sodipodi:role="line"
+         x="505.13239"
+         y="339.58743"
+         id="tspan2285">Develop a fully automated</tspan><tspan
+         sodipodi:role="line"
+         x="505.13239"
+         y="379.58743"
+         id="tspan2367">reproducibility workflow</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#93a1a1;fill-opacity:1"
+       x="671.22614"
+       y="501.17099"
+       id="text2097-0"><tspan
+         sodipodi:role="line"
+         x="671.22614"
+         y="501.17099"
+         id="tspan2367-6">1. Paper</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#b58900;fill-opacity:1"
+       x="1272.5895"
+       y="501.17099"
+       id="text2097-0-1"><tspan
+         sodipodi:role="line"
+         x="1272.5895"
+         y="501.17099"
+         id="tspan2367-6-8">2. Paper</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:32px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#657b83;fill-opacity:1"
+       x="1115.4523"
+       y="339.58743"
+       id="text2097-2"><tspan
+         sodipodi:role="line"
+         x="1115.4523"
+         y="339.58743"
+         id="tspan2285-0">Propose &quot;Preregistration as Code&quot;</tspan><tspan
+         sodipodi:role="line"
+         x="1115.4523"
+         y="379.58743"
+         id="tspan2371">a rigourous yet practical form of</tspan><tspan
+         sodipodi:role="line"
+         x="1115.4523"
+         y="419.58743"
+         id="tspan2377">preregistration</tspan></text>
+  </g>
+</svg>

@@ -418,6 +418,14 @@ class: center, middle
 ---
 class: center, middle
 
+.large[
+
+$\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})$
+
+]
+---
+class: center, middle
+
 Psychology is difficult .transparent[→ soft theories → require induction → biased expectation → replication crisis]
 
 ---
@@ -463,7 +471,7 @@ If the inductive bias is uncertain evaluating,
 
 .huge[
 
-$\mathcal{L}(\text{Theory}, \text{Data})$
+$\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})$
 
 ]
 
@@ -545,12 +553,12 @@ $\mathcal{C}(\text{Model})$
 ---
 class: center, middle
 
-.large[ .highlight[Reproducibility] is a necessary* condition to estimate:]
+.large[ .highlight[Reproducibility] is a necessary condition to estimate:]
 
 .huge[
 $\mathcal{C}(\text{Model})$]
 
-.transparent.small.right.grey[*In an ideal world.]
+.transparent[*In an ideal world.]
 
 ---
 class: center, middle
@@ -914,6 +922,31 @@ class: inverse, middle, center
 class: middle, center
 
 #.blurry2[Uncertainty]
+
+.transparent.blurry2.large[about]
+
+.transparent.huge.blurry2[
+
+$\mathcal{C}(\text{Human})$
+
+]
+
+---
+class: middle, center
+
+#.suppress.blurry2[Uncertainty]
+
+.blurry2.large[about]
+
+.highlight.huge.blurry2[
+
+$\mathcal{C}(\text{Human})$
+
+]
+
+---
+
+
 
 ---
 background-image: url("images/contribution.svg")

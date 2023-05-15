@@ -169,7 +169,24 @@ style_extra_css(css = list(".todo" = list(color = "#17C25B"),
 ### `r rmarkdown::metadata$date`
 
 ---
-class: inverse, center, middle
+background-image: url("images/contribution.svg")
+background-position: center
+background-size: contain
+
+---
+class: center, middle, inverse
+
+
+.large.red[Human]   .Huge.yellow[Bias]   .large.red[Machine]
+
+---
+class: center, middle
+
+.large.red[Preregistration]   .Huge.yellow[Induction]   .large.red[Reproducibility]
+
+
+---
+class: center, middle
 
 # Trust in Science
 
@@ -1041,5 +1058,3 @@ p +
 background-image: url("images/contribution.svg")
 background-position: center
 background-size: contain
----
-

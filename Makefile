@@ -6,7 +6,9 @@ all: manuscript.pdf README.md
 
 manuscript.pdf: manuscript.tex
 
-publish/: manuscript.pdf
+index.html: presentation.html
+
+publish/: manuscript.pdf presentation.html index.html
 
 include .repro/Makefile_publish
 

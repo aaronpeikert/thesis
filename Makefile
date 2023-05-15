@@ -9,7 +9,7 @@ manuscript.pdf: manuscript.tex
 index.html: presentation.html
 	cp $< $@
 
-publish/: manuscript.pdf presentation.html index.html xaringan-themer.css
+publish/: manuscript.pdf presentation.html index.html xaringan-themer.css images/ presentation_files/
 
 include .repro/Makefile_publish
 

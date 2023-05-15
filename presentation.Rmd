@@ -945,8 +945,97 @@ $\mathcal{C}(\text{Human})$
 ]
 
 ---
+class: center, middle
+
+.large[
+In .highlight[Machine Learning], $\mathcal{C}(\text{Model})$ is often unknown.
+]
+
+---
+class: center, middle
+
+#.textgrey[Cross Validaton]
+
+.right.large.transparent[**but resetting researchers memory is unethical]
+
+.right.large.transparent[**impossible**]
 
 
+---
+class: center, middle
+
+#.textgrey[Cross Validaton]
+
+.right.large[**but resetting researchers memory is ~~unethical~~**]
+
+.right.large[**impossible**]
+
+---
+class: center, middle
+
+#.textgrey[Test-set]
+
+$\mathcal{C}(\text{Model}) = 0$
+
+---
+class: center, middle
+
+# Preregistration
+
+$\mathcal{C}(\text{Human}) = 0$
+
+---
+class: center, middle
+
+# Unconvential
+
+---
+class: center, middle
+
+# Explatory Preregistrations?
+
+$\mathcal{C} = \mathcal{C}(\text{Model}) + \mathcal{C}(\text{Human})$ 
+
+Preregistration: $\mathcal{C}(\text{Human}) = 0$
+
+$\mathcal{C}(\text{Model})$ still might be high.
+
+
+---
+class: center, middle
+
+```{r}
+results <- readr::read_rds(here::here("data", "simulation.rds")) 
+```
+
+```{r measure-plots}
+# see R/plots.R
+```
+
+```{r}
+p <- plots[["Posterior Probability"]] +
+  xaringanthemer::theme_xaringan() +
+    theme(legend.position = c(.2, .8),
+        legend.title = element_blank(),
+        text = element_text(size = 18, color = colors$red),
+        title = element_blank(),
+        axis.title = element_text(size = 18),
+        plot.caption = element_text(size = 15)) +
+  labs(x = "Exploratory ↔ Confirmatory",
+       y = "Posterior Probability",
+       caption = "P(E|H) = .8, P(H) = .1") +
+  NULL
+p
+```
+
+---
+class: center, middle
+
+```{r}
+p +
+  scale_x_continuous(limits = c(.8, 1)) +
+  NULL
+```
 
 ---
 background-image: url("images/contribution.svg")

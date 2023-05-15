@@ -4,29 +4,94 @@
     <title>Transparency in Science</title>
     <meta charset="utf-8" />
     <meta name="author" content="Aaron Peikert" />
-    <meta name="date" content="2022-11-29" />
+    <script src="presentation_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
+class: center, middle, inverse, title-slide
 
-class: center, middle
-name: qrcode
-
-
-
-
-
-
-
-&lt;img src="images/qr_slides.svg" width="30%" /&gt;
-
-aaronpeikert.github.io/thesis
-
-.pull-right[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)]
+# Transparency in Science
+## Principled Approaches to Computational Reproducibility and Preregistration
+### Aaron Peikert
+### Defense | 22.05.2023
 
 ---
+
 class: center, middle
+
+&lt;style&gt;
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #b58900;
+}
+
+@keyframes khighlight {
+  from {color: inherit;}
+  to {color: var(--red);}
+}
+
+@keyframes ksuppress {
+  from {color: inherit;}
+  to {color: var(--grey);}
+}
+
+@keyframes kdehighlight {
+  from {color: var(--red);}
+  to {color: var(--textgrey);;}
+}
+
+/* The element to apply the animation to */
+.highlight {
+  animation-name: khighlight;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.suppress {
+  animation-name: ksuppress;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.big-borders {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+ul {
+  list-style: none;
+}
+
+li::before {
+  content: "⚬ ";
+  color: var(--red);
+}
+
+.transparent {
+  opacity: 0
+}
+
+&lt;/style&gt;
+
+
+
+
+
 
 # Transparency in Science
 
@@ -34,10 +99,27 @@ class: center, middle
 
 ### Aaron Peikert
 
-### LCBC Berlin  | 29.11.2022
+### Defense | 22.05.2023
 
 ---
-class: inverse, center, middle
+background-image: url("images/contribution.svg")
+background-position: center
+background-size: contain
+
+---
+class: center, middle, inverse
+
+
+.large.red[Human]   .Huge.yellow[Bias]   .large.red[Machine]
+
+---
+class: center, middle
+
+.large.red[Preregistration]   .Huge.yellow[Induction]   .large.red[Reproducibility]
+
+
+---
+class: center, middle
 
 # Trust in Science
 
@@ -47,6 +129,7 @@ class: center, middle
 .enormous[?]
 
 ---
+class: middle
 
 
 
@@ -54,558 +137,630 @@ class: center, middle
 
 .center[
 
-&lt;img src="presentation_files/figure-html/unnamed-chunk-4-1.svg" width="70%" /&gt;
+&lt;img src="presentation_files/figure-html/unnamed-chunk-2-1.svg" width="70%" /&gt;
 ]
 
-.small.right[Baker, M. 1,500 scientists lift the lid on reproducibility. *Nature* 533, 452–454 (2016). https://doi.org/10.1038/533452a]
+.small.right.animate__animated.animate__fadeIn.animate__slower[Baker, M. 1,500 scientists lift the lid on reproducibility. *Nature* 533, 452–454 (2016). https://doi.org/10.1038/533452a]
 
---
-
-.small.right[***They call it "reproducibility" and fail to publish the raw data.**]
-
----
-class: inverse, center, middle
-
-# Transparency in Science*
-
-*Statisticians' Edition
+.small.right.animate__animated.animate__fadeIn.animate__slower[***They call it "reproducibility" and fail to publish the raw data.**]
 
 ---
 class: center, middle
 
-# World → Theory
+#.textgrey[Psychology is a difficult science]
+
+.small.right.animate__animated.animate__fadeIn.animate__slower.animate__delay-2s[Meehl, P. E. (1978). Theoretical risks and tabular asterisks: Sir Karl, Sir Ronald, and the slow progress of soft psychology.  
+*Journal of Consulting and Clinical Psychology*, 46(4), 806–834. https://doi.org/10.1037/0022-006X.46.4.806]
 
 ---
 class: center, middle
 
-# World ← Theory
+.huge[Meehl, P. E. (1978). Theoretical risks and tabular asterisks:  
+Sir Karl, Sir Ronald, and the slow progress of soft psychology.  
+*Journal of Consulting and Clinical Psychology*, 46(4), 806–834.]
 
 ---
 class: center, middle
 
-# World ↔ Theory
-
---
-
-.curly.white.large[It's a match!]
+.huge.supress[Meehl, P. E. (1978). Theoretical risks and tabular asterisks:  
+Sir Karl, Sir Ronald, and the .highlight[slow progress] of .highlight[soft psychology].  
+*Journal of Consulting and Clinical Psychology*, 46(4), 806–834.]
 
 ---
-class: center, middle, inverse
+class:  middle, inverse, center
 
-# Principled Approach
+# The Progress of Soft Theories
 
 ---
 class: center, middle
 
-# `\(L(\text{Theory}, \text{Data})\)`
+# Theories
+
+.huge.animate__animated.animate__fadeIn.animate__slower[= allow to deduce predictions
+]
 
 ---
 class: center, middle
 
-# ѴαЯi€𝜏y
+#.textgrey[Hard Theories]
 
-### `\(L(\text{Theory}, \text{Data})\)`
-
----
-class: center, middle
-
-`$$L_1(\text{Theory}, \text{Data})$$`
-`$$\vdots$$`
-`$$L_\infty(\text{Theory}, \text{Data})$$`
-
----
-class: center, middle, inverse
-
-# Statistical Models
-
---
-
-= automated induction
+.huge[= make .highlight[precise] predictions for given circumstances
+]
 
 ---
 class: center, middle
 
-# Theory
+#.textgrey[Soft Theories]
 
----
-class: center, middle
-
-# T█e█ry
+.huge[= make .highlight[many] predictions for given circumstances
+]
 
 ---
 class: middle
 
-`$$Model(\text{Theory})$$`
----
-class: middle
+.huge[
 
-`$$Model(\text{Theory}, \text{Data})$$`
+We allow predictions to be:
 
----
-
-### How statisticians judge a model:
-
-Sampling the world and compare:
-
-$$
-L(\text{Model}(\text{Data}), \text{Data}) + \mathcal{C}(\text{Model})
-$$
-e.g.: Adjusted R², Stein's Unbiased Risk Estimator, Information Criteria, etc.
-
-.center[
-
-**We account for peeking at the data**
-
-]
-
----
-
-### Researcher have a harder job:
-
-Sampling the world and compare:
-
-$$
-L(\text{Model}(\text{Data}), \text{Data}) + \mathcal{C}(\text{Model}) + \mathcal{C}(\text{Human})
-$$
-.center[
-
-**We must account for the models and humans ability to make sense of any data.**
+- close to truth
+- probabilistic
+- parameterized
 
 ]
 
 ---
 class: center, middle
 
-.left[What happens if]
+#.textgrey[Verisimilitude]
 
-.center[
+(=closeness to truth)
 
-`\(\mathcal{C}(\text{Model})\)` or `\(\mathcal{C}(\text{Human})\)`
+.huge[
+
+`\(\mathcal{L}(\text{Theory}, \text{Data})\)`
+
+]
+
+---
+class: center, middle
+
+#.textgrey[Randomness]
+
+(=probabilistic)
+
+.huge[
+
+`\(\mathcal{L}(\text{Theory}, \text{Data})\)` is just an estimate.
 
 ]
 
-.right[is unknown?]
-
 ---
-class: center, middle, inverse
+class: center, middle
 
-# .blurry[Uncertainty]
+#.textgrey[Induction]
 
----
+(=parameterized)
 
-The goal:
+.huge[
 
-.center[
-
-`\(L(\text{Model}(\text{Data}), \text{Data}) + \mathcal{C}(\text{Model}) + \mathcal{C}(\text{Human})\)`
+`\(\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})\)`
 
 ]
+
+---
+class: middle, center, inverse
+
+# Induction
+
+.transparent[(=parameterized)]
+
+
+.huge.transparent[
+
+`\(\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})\)`
+
+]
+
+---
+class: center, inverse
+
+.huge[
+
+`\(\text{Model}(\text{Theory}, \text{Data})\)`
+
+]
+
+Find the version of a theory, that is best supported by data.
 
 --
 
-The enemy:
+or
+
+Of any prediction that a theory can make, choose the one that minimizes `\(\mathcal{L}(\cdot, \text{Data})\)`.
+
+--
+
+or
+
+```julia
+for prediction in theory
+  current = loss(prediction, data)
+  if current &lt; best
+    best = current
+  end
+  return best
+end
+```
+
+---
+class: center, middle
+
+.big-borders[
+
+##.left.red[Induction]
+
+###.textgrey[enables]
+
+##.right.red[soft theories]
+
+]
+
+---
+class: center, middle
+
+.Huge[One]   .red[little]   .Huge[problem.]
+
+---
+class: center, middle
+
+###.textgrey[Verisimilitude × Randomness × Induction]
+
+---
+class: center, middle
+
+# Bias
+
+---
+class: center, middle
+
+.large[
+
+`\(\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})\)`
+
+]
+---
+class: center, middle
+
+Psychology is difficult .transparent[→ soft theories → require induction → biased expectation → replication crisis]
+
+---
+class: center, middle
+
+Psychology is difficult .animate__animated.animate__fadeIn.red[→ soft theories] .transparent[→ require induction → biased expectation → replication crisis]
+
+---
+class: center, middle
+
+Psychology is difficult .dehighlight[→ soft theories] .animate__animated.animate__fadeIn.red[→ require induction] .transparent[→ biased expectation → replication crisis]
+
+---
+class: center, middle
+
+Psychology is difficult → soft theories .dehighlight[→ require induction] .animate__animated.animate__fadeIn.red[→ biased expectation] .transparent[→ replication crisis]
+
+---
+class: center, middle
+
+Psychology is difficult → soft theories → require induction .dehighlight[→ biased expectation] .animate__animated.animate__fadeIn.red[→ replication crisis]
+
+---
+class: center, middle
+
+#.textgrey[
+
+Why is .highlight[bias] a problem?
+
+]
+
+---
+class: center, middle
+
+#.blurry[Uncertainty]
+
+---
+class: center, middle
+
+
+If the inductive bias is uncertain evaluating,
+
+
+.huge[
+
+`\(\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})\)`
+
+]
+
+
+becomes uncertain and unconvincing.
+
+---
+class: center, middle
+
+`$$\mathcal{L}(\text{Theory}, \text{Data})$$`
+
+`$$=$$`
+
+`\(\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})\)`
+
+`\(+\)`
+
+.highlight[
+
+`\(\mathcal{C}(\text{Model})\)`
+
+]
+
+.small.right.transparent[
+
+This is similar to adjusted `\(R^2\)`, `\(C_p\)`, `\(AIC\)`, `\(BIC\)`, etc.
+
+]
+
+---
+class: center, middle
+
+`$$\mathcal{L}(\text{Theory}, \text{Data})$$`
+
+`$$=$$`
+
+`\(\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})\)`
+
+`\(+\)`
+
+.red[
+
+`\(\mathcal{C}(\text{Model})\)`
+
+]
+
+.small.right[
+
+This is similar to adjusted `\(R^2\)`, `\(C_p\)`, `\(AIC\)`, `\(BIC\)`, etc.
+
+]
+
+---
+class: center, middle
+
+.large.transparent[Under some circumstances,]
+
+.huge.red[
+
+`\(\mathcal{C}(\text{Model})\)`
+
+]
+
+.large[is the ability of a model to accommodate random data.]
+
+---
+class: center, middle
+
+.large[Under some circumstances,]
+
+.huge.red[
+
+`\(\mathcal{C}(\text{Model})\)`
+
+]
+ 
+.large[can be approximated.]
+
+---
+class: center, middle
+
+.large[ .highlight[Reproducibility] is a necessary condition to estimate:]
+
+.huge[
+`\(\mathcal{C}(\text{Model})\)`]
+
+.transparent[*In an ideal world.]
+
+---
+class: center, middle
+
+.large[
+
+Some things are
+
+.huge[.highlight[non]-reproducible]
+
+on a fundamental level.
+
+]
+
+---
+class: center, middle
+
+.huge.red[
+
+`\(\mathcal{C}(\text{Human})\)`
+
+]
+
+---
+class: middle, center
 
 .pull-left[
 
-.blurry2[$$\mathcal{C}(\text{Model})$$]
+###.center[Reproducibility]
+
+Allows estimating:
+
+.large[
+
+`$$\mathcal{C}(\text{Statistical Model})$$`
+
+
+]
+
 
 ]
 
 .pull-right[
 
-.blurry2[$$\mathcal{C}(\text{Human})$$]
+###.center[Preregistration]
 
-]
-
---
-
-The solution:
-
-.pull-left.center[
-
-### Computational Reproducibility
-
-]
-
-.pull-right.center[
-
-### Preregistration
-
-]
-
----
-
-.pull-left.center[
-
-### Computational Reproducibility
-
-Conceptually trivial
-
-]
-
-.pull-right.center[
-
-### Preregistration
-
-Conceptually difficult
-
-]
-
---
-
-.pull-left.center[
-
-technologically difficult
-
-low social hurdles
-
-]
-
-.pull-right.center[
-
-technologically trivial
-
-high social hurdles
-
-]
-
----
-
-.pull-left.center[
-
-### Computational Reproducibility
-
-Conceptually trivial 😀
-
-technologically difficult 😒
-
-low social hurdles 😀
-
-]
-
-.pull-right.center[
-
-### Preregistration
-
-Conceptually difficult 😒
-
-technologically trivial 😀
-
-high social hurdles 😒
-
-]
-
---
-
-Reducing uncertainty about:
-
-.center[
-
-`\(\mathcal{C}(\text{Model})\)` &amp;emsp; vs &amp;emsp; `\(\mathcal{C}(\text{Human})\)`
-
-]
-
----
-class: center, middle, inverse
-
-# Computational Reproducibility
-
----
-class: center, middle
-
-“Insanity is doing the same thing over and over again and expecting different results.”
-
-.right[—Albert Einstein (disputed)]
-
---
-
-As it turns out, doing the **same** thing is pretty complicated.
-
----
-class: middle
-
-1. Multiple inconsistent versions of code and data
---
-
-2. Copy-and-paste errors
---
-
-3. Ambiguous order of code execution
---
-
-4. Broken dependencies
-
----
-class: center, middle
-
-| Problem       | Solution            | Implementation    |
-|---------------|---------------------|-------------------|
-| versions?     | version control     | Git               |
-| copy&amp;paste?   | dynamic documents   | R Markdown        |
-| order?        | workflow automation | Make / GH Actions |
-| dependencies? | software management | Docker            |
-
----
-class: center, middle
-background-color: white
-
-&lt;img src="https://raw.githubusercontent.com/aaronpeikert/repro-tutorial/main/images/nutshell.svg" width="80%" /&gt;
-
-
----
-class: center, middle
-
-.small[&lt;https://github.com/aaronpeikert/repro-talk/releases/download/marbach/repro-talk.pdf&gt;]
-
----
-class: center, middle, inverse
-
-# Preregistration
-
----
-
-## Is there a replication crisis?*
-
-.center[
-
-&lt;img src="presentation_files/figure-html/unnamed-chunk-6-1.svg" width="70%" /&gt;
-]
-
-.small.right[Baker, M. 1,500 scientists lift the lid on reproducibility. *Nature* 533, 452–454 (2016). https://doi.org/10.1038/533452a]
-
----
-class: center, middle
-layout: true
-
----
-
-## Because researchers are *fraudsters*?
-
---
-
-# No
-
-???
-Some say to prevent intentional wrongdoing. 
-However, preregistrations are easily circumvented with bad intentions.
-We must assume researchers have good intentions.
----
-
-## Because researchers are *fools*?
-
---
-
-# No
---
-, not necessarily
-
-???
-Some say to prevent unintentional wrongdoing.
-Researchers must be put in restrains to prevent them from cutting themselves on the sharp edge of "false positives".
-
----
-layout: false
-class: inverse, center, middle
-
-# Traditional view
-
----
-class: center
-
-# Researchers confuse:
-
-.pull-left.center[
-
-# confirmatory
-
-]
-.pull-right.center[
-
-# exploratory
-
-]
----
-class: center
-
-# Preregistration separates:
-
-.pull-left.center[
-
-# confirmatory
-
-]
-.pull-right.center[
-
-# exploratory
-
-]
---
-.pull-left.center[
-
-# ≈
-# preregistered
-
-]
-.pull-right.center[
-
-# ≈
-# not preregistered
-
-]
-
---
-
-# ?
-
----
-class: inverse, center, middle
-
-# A Formal Objective
-
----
-class: middle
-
-.large[
-Ideally:
-1. The original author has **good intentions**.
-2. Their readers are **rational**.
-3. The goal is to **convince** the readers.
-]
-
----
-
-### Adjusting for complexity in simple models
-
-Adjusted R², Stein's Unbiased Risk Estimator, Information Criteria, etc.
-
-`$$L(\text{Model}(\text{Data}), \text{Data})  + \mathcal{C}(\text{Model})$$`
-
---
-
-### Alternatively:
-
-The statistical complexity of some models is hard to estimate.
-
-Find a situation, were `\(\mathcal{C}(\text{Model}) = 0\)`
-
----
-## Test-set (cross validation)
-
-`\(\mathcal{C}(\text{Model}) = 0\)`
-
-$$
-L(\text{Model}(\text{Train, Test}), \text{Test})
-$$
-.center[
-
-**There is no peeking to account for.**
-
-]
-
----
-## `\(\mathcal{C}(\text{Human})\)`
-
-The statistical complexity of humans is hard to estimate.
-
-Find a situation, were `\(\mathcal{C}(\text{Human}) = 0\)`
-
---
-
-.center[
-
-# Preregistration
-
-]
-
----
-class: center, middle, inverse
-
-# .blurry[Uncertainty]
-
----
-# Statistical Relevancy
-
-Any:
-
-`$$L(\text{Theory}, \text{Data})$$`
-
-Must benefit from:
-
-`$$P(E|H) \gg P(E|¬H)$$`
-
----
-class: center, middle, inverse
-
-# Bayes*
-
-*my favoritey `\(L(\text{Theory}, \text{Data})\)`
-
----
-class: middle
+Does reduce:
 
 .large[
 
+`$$\mathcal{C}(\text{Human})$$`
 
-`$$\frac{P(H)P(E|H)}{P(E)}$$`
 ]
 
---
 
-.left[Law of total probability:]
+]
+---
+class: center, middle
 
+.large[.highlight[Reproducibility] is necessary to estimate:]
 
+.large[
 
-`$$P(E) = P(H)P(E|H) + P(¬H)\color{#F28705}{P(E|¬H)}$$`
+`\(\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})\)` + `\(\mathcal{C}(\text{Model})\)` .transparent[ `\(\require{cancel} + \cancel{\mathcal{C}(\text{Human})}\)`
+]
+
+]
+
+.small.right.transparent[*In an ideal world.]
 
 ---
 class: center, middle
 
-## `\(1 - P(E|¬H)\)`
-## =
-## `\(P(¬E|¬H)\)`
-## =
-## Theorethical Risk
+.large[Reproducibility + .highlight[Preregistration] are sufficient* to estimate:]
+
+.large[
+
+`\(\require{cancel}\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})\)` + `\(\mathcal{C}(\text{Model}) + \mathcal{C}(\text{Human})\)`
+
+]
+
+.small.right.grey[*In an ideal world.]
 
 ---
 class: center, middle
 
-## `\(\mathcal{C}(\text{Model})\)` → Theorethical Risk ← `\(\mathcal{C}(\text{Human})\)`
+.large[Reproducibility + .highlight[Preregistration] are sufficient* to estimate:]
+
+.large[
+
+`\(\require{cancel}\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})\)` + `\(\mathcal{C}(\text{Model}) + \cancel{\mathcal{C}(\text{Human})}\)`
+
+]
+
+.small.right.grey[*In an ideal world.]
+---
+background-image: url("images/contribution1.svg")
+background-position: center
+background-size: contain
+---
+background-image: url("images/contribution2.svg")
+background-position: center
+background-size: contain
+---
+background-image: url("images/contribution3.svg")
+background-position: center
+background-size: contain
+---
+background-image: url("images/contribution4.svg")
+background-position: center
+background-size: contain
+---
+class: middle
+
+**.red[1\. Paper:]**  
+Peikert, A., &amp; Brandmaier, A. M. (2021). A Reproducible Data Analysis Workflow. *Quantitative and Computational Methods in Behavioral Sciences*, *1*. https://doi.org/10.5964/qcmb.3763
+
+**2\. Paper:**  
+Peikert, A., van Lissa, C. J., &amp; Brandmaier, A. M. (2021). Reproducible Research in R: A Tutorial on How to Do the Same Thing More Than Once. *Psych*, *3*(4), 836–867. https://doi.org/10.3390/psych3040053
+
+**3\. Paper:**  
+Peikert, A., &amp; Brandmaier, A. M. (2023). *Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.* PsyArXiv. .textgrey[https://doi.org/10.31234/osf.io/cs8wb]
+
+**Synopsis:**  
+Peikert, A. (2023). *Towards Transparency and Open Science: A Principled Perspective on Computational Reproducibility and Preregistration* [Doctoral dissertation, Humboldt-Universität zu Berlin]. Zenodo. https://www.doi.org/10.5281/zenodo.7654989
 
 ---
-class: center, middle, inverse
+class: inverse, middle, center
 
-# .blurry[Uncertainty]
+# Automate Reproducibility
+
+---
+class:  middle, center
+
+# Four Problems
+
+---
+class:  middle, center
+
+# Four Concepts
+
+---
+class:  middle, center
+
+# Four Tools
+
+---
+class: middle
+
+.pull-left.large[
+.textgrey[1\. Copy&amp;Paste Mistakes]  
+.transparent[2\. Conflicting Versions]  
+.transparent[3\. Missing Software]  
+.transparent[4\. Unclear Procedure]  
+]
+
+.pull-right.large[
+.transparent[Dynamic Documents]  
+.transparent[Version Control]  
+.transparent[Software Management]  
+.transparent[Workflow Orchestration]  
+]
+---
+class: middle
+
+.pull-left.large[
+.textgrey[1\. Copy&amp;Paste Mistakes]  
+.transparent[2\. Conflicting Versions]  
+.transparent[3\. Missing Software]  
+.transparent[4\. Unclear Procedure]  
+]
+
+.pull-right.large[
+.highlight[Dynamic Documents]  
+.transparent[Version Control]  
+.transparent[Software Management]  
+.transparent[Workflow Orchestration]  
+]
+---
+class: middle
+
+.pull-left.large[
+.suppress[1\. Copy&amp;Paste Mistakes]  
+.textgrey[2\. Conflicting Versions]  
+.transparent[3\. Missing Software]  
+.transparent[4\. Unclear Procedure]  
+]
+
+.pull-right.large[
+.suppress[Dynamic Documents]  
+.transparent[Version Control]  
+.transparent[Software Management]  
+.transparent[Workflow Orchestration]  
+]
+---
+class: middle
+
+.pull-left.large[
+.grey[1\. Copy&amp;Paste Mistakes]  
+.textgrey[2\. Conflicting Versions]  
+.transparent[3\. Missing Software]  
+.transparent[4\. Unclear Procedure]  
+]
+
+.pull-right.large[
+.grey[Dynamic Documents]  
+.highlight[Version Control]  
+.transparent[Software Management]  
+.transparent[Workflow Orchestration]  
+]
+---
+class: middle
+
+.pull-left.large[
+.grey[1\. Copy&amp;Paste Mistakes]  
+.suppress[2\. Conflicting Versions]  
+.textgrey[3\. Missing Software]  
+.transparent[4\. Unclear Procedure]  
+]
+
+.pull-right.large[
+.grey[Dynamic Documents]  
+.suppress[Version Control]  
+.transparent[Software Management]  
+.transparent[Workflow Orchestration]  
+]
+---
+class: middle
+
+.pull-left.large[
+.grey[1\. Copy&amp;Paste Mistakes]  
+.grey[2\. Conflicting Versions]  
+.textgrey[3\. Missing Software]  
+.transparent[4\. Unclear Procedure]  
+]
+
+.pull-right.large[
+.grey[Dynamic Documents]  
+.grey[Version Control]  
+.highlight[Software Management]  
+.transparent[Workflow Orchestration]  
+]
+---
+class: middle
+
+.pull-left.large[
+.grey[1\. Copy&amp;Paste Mistakes]  
+.grey[2\. Conflicting Versions]  
+.suppress[3\. Missing Software]  
+.textgrey[4\. Unclear Procedure]  
+]
+
+.pull-right.large[
+.grey[Dynamic Documents]  
+.grey[Version Control]  
+.suppress[Software Management]  
+.transparent[Workflow Orchestration]  
+]
+---
+class: middle
+
+.pull-left.large[
+.grey[1\. Copy&amp;Paste Mistakes]  
+.grey[2\. Conflicting Versions]  
+.grey[3\. Missing Software]  
+.textgrey[4\. Unclear Procedure]  
+]
+
+.pull-right.large[
+.grey[Dynamic Documents]  
+.grey[Version Control]  
+.grey[Software Management]  
+.highlight[Workflow Orchestration]  
+]
+
+---
+class: middle
+
+**1\. Paper:**  
+Peikert, A., &amp; Brandmaier, A. M. (2021). A Reproducible Data Analysis Workflow. *Quantitative and Computational Methods in Behavioral Sciences*, *1*. https://doi.org/10.5964/qcmb.3763
+
+**.red[2\. Paper:]**  
+Peikert, A., van Lissa, C. J., &amp; Brandmaier, A. M. (2021). Reproducible Research in R: A Tutorial on How to Do the Same Thing More Than Once. *Psych*, *3*(4), 836–867. https://doi.org/10.3390/psych3040053
+
+**3\. Paper:**  
+Peikert, A., &amp; Brandmaier, A. M. (2023). *Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.* PsyArXiv. .textgrey[https://doi.org/10.31234/osf.io/cs8wb]
+
+**Synopsis:**  
+Peikert, A. (2023). *Towards Transparency and Open Science: A Principled Perspective on Computational Reproducibility and Preregistration* [Doctoral dissertation, Humboldt-Universität zu Berlin]. Zenodo. https://www.doi.org/10.5281/zenodo.7654989
+
+---
+class: inverse, middle, center
+
+# Reproducibility × Preregistration
 
 ---
 class: center, middle
-name: theoretical-risk-plot2
-
-
-
-
-
-&lt;img src="presentation_files/figure-html/unnamed-chunk-8-1.svg" width="100%" /&gt;
-
-
----
-class: center, middle
-layout: true
----
-
-.large[**Preregistrations**] reduce .large[**uncertainty**] about .large[**theoretical risk**].
-
----
-
-### One further idea
-
----
-
-# Preregistration as Code
-
-### version control + dynamic documents
-
----
-class: center
 
 .pull-left[
 
@@ -624,7 +779,10 @@ data
 ↓
 
 article draft
+
 ]
+
+--
 
 .pull-right[
 
@@ -645,52 +803,136 @@ data
 article draft with real results
 
 ]
+---
+class: middle
+
+**1\. Paper:**  
+Peikert, A., &amp; Brandmaier, A. M. (2021). A Reproducible Data Analysis Workflow. *Quantitative and Computational Methods in Behavioral Sciences*, *1*. https://doi.org/10.5964/qcmb.3763
+
+**2\. Paper:**  
+Peikert, A., van Lissa, C. J., &amp; Brandmaier, A. M. (2021). Reproducible Research in R: A Tutorial on How to Do the Same Thing More Than Once. *Psych*, *3*(4), 836–867. https://doi.org/10.3390/psych3040053
+
+**.red[3\. Paper:]**  
+Peikert, A., &amp; Brandmaier, A. M. (2023). *Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.* PsyArXiv. .textgrey[https://doi.org/10.31234/osf.io/cs8wb]
+
+**Synopsis:**  
+Peikert, A. (2023). *Towards Transparency and Open Science: A Principled Perspective on Computational Reproducibility and Preregistration* [Doctoral dissertation, Humboldt-Universität zu Berlin]. Zenodo. https://www.doi.org/10.5281/zenodo.7654989
+
+---
+class: inverse, middle, center
+
+# The Goal of Preregistration
+
+---
+class: middle, center
+
+#.blurry2[Uncertainty]
+
+.transparent.blurry2.large[about]
+
+.transparent.huge.blurry2[
+
+`\(\mathcal{C}(\text{Human})\)`
+
+]
+
+---
+class: middle, center
+
+#.suppress.blurry2[Uncertainty]
+
+.blurry2.large[about]
+
+.highlight.huge.blurry2[
+
+`\(\mathcal{C}(\text{Human})\)`
+
+]
+
+---
+class: center, middle
+
+.large[
+In .highlight[Machine Learning], `\(\mathcal{C}(\text{Model})\)` is often unknown.
+]
+
+---
+class: center, middle
+
+#.textgrey[Cross Validaton]
+
+.right.large.transparent[**but resetting researchers memory is unethical]
+
+.right.large.transparent[**impossible**]
 
 
 ---
+class: center, middle
 
-# Can I explore the data?
+#.textgrey[Cross Validaton]
 
---
+.right.large[**but resetting researchers memory is ~~unethical~~**]
 
-# Yes.
-
----
-template: theoretical-risk-plot2
+.right.large[**impossible**]
 
 ---
+class: center, middle
 
-# Can I deviate?
+#.textgrey[Test-set]
 
---
-
-# Sometimes.
-
----
-template: theoretical-risk-plot2
+`\(\mathcal{C}(\text{Model}) = 0\)`
 
 ---
+class: center, middle
 
-# How much detail?
+# Preregistration
 
---
-
-# Very detailed.
-
----
-template: theoretical-risk-plot2
+`\(\mathcal{C}(\text{Human}) = 0\)`
 
 ---
-template: qrcode
+class: center, middle
+
+# Unconvential
+
+---
+class: center, middle
+
+# Explatory Preregistrations?
+
+`\(\mathcal{C} = \mathcal{C}(\text{Model}) + \mathcal{C}(\text{Human})\)` 
+
+Preregistration: `\(\mathcal{C}(\text{Human}) = 0\)`
+
+`\(\mathcal{C}(\text{Model})\)` still might be high.
+
+
+---
+class: center, middle
+
+
+
+
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-4-1.svg" width="100%" /&gt;
+
+---
+class: center, middle
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-5-1.svg" width="100%" /&gt;
+
+---
+background-image: url("images/contribution.svg")
+background-position: center
+background-size: contain
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"slideNumberFormat": "%current%",
-"highlightStyle": "github",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n",
+"highlightStyle": "solarized-dark",
 "highlightLines": true,
 "ratio": "16:9",
-"countIncrementalSlides": true
+"countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
@@ -731,19 +973,6 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
-// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
-// screen reader (see PR #262)
-(function(d) {
-  let res = {};
-  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
-    const t = tr.querySelector('td:nth-child(2)').innerText;
-    tr.querySelectorAll('td:first-child .key').forEach(key => {
-      const k = key.innerText;
-      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
-    });
-  });
-  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
-})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

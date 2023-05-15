@@ -7,6 +7,7 @@ all: manuscript.pdf README.md
 manuscript.pdf: manuscript.tex
 
 index.html: presentation.html
+	cp $< $@
 
 publish/: manuscript.pdf presentation.html index.html
 

@@ -169,7 +169,7 @@ style_extra_css(css = list(".todo" = list(color = "#17C25B"),
 ### `r rmarkdown::metadata$date`
 
 ---
-background-image: url("images/contribution.svg")
+background-image: url("images/contribution_notext_path.svg")
 background-position: center
 background-size: contain
 
@@ -696,19 +696,19 @@ $$\mathcal{C}(\text{Human})$$
 ]
 
 ---
-background-image: url("images/contribution1.svg")
+background-image: url("images/contribution1_path.svg")
 background-position: center
 background-size: contain
 ---
-background-image: url("images/contribution2.svg")
+background-image: url("images/contribution2_path.svg")
 background-position: center
 background-size: contain
 ---
-background-image: url("images/contribution3.svg")
+background-image: url("images/contribution3_path.svg")
 background-position: center
 background-size: contain
 ---
-background-image: url("images/contribution4.svg")
+background-image: url("images/contribution4_path.svg")
 background-position: center
 background-size: contain
 ---
@@ -1079,6 +1079,6 @@ p +
 ```
 
 ---
-background-image: url("images/contribution.svg")
+background-image: url("images/contribution_path.svg")
 background-position: center
 background-size: contain

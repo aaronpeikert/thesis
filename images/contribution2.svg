@@ -25,8 +25,8 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="0.55244701"
-     inkscape:cx="895.10847"
-     inkscape:cy="490.54479"
+     inkscape:cx="959.36803"
+     inkscape:cy="492.35491"
      inkscape:window-width="1880"
      inkscape:window-height="1051"
      inkscape:window-x="0"
@@ -64,7 +64,7 @@
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-size:56px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';letter-spacing:0px;word-spacing:0px;fill:#93a1a1;fill-opacity:1"
+       style="font-size:56px;line-height:1.25;font-family:'Libertinus Serif Display';-inkscape-font-specification:'Libertinus Serif Display';letter-spacing:0px;word-spacing:0px;fill:#657b83;fill-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
        x="571.57379"
        y="204.61595"
        id="text381"><tspan
@@ -72,10 +72,10 @@
          id="tspan379"
          x="571.57379"
          y="204.61595"
-         style="font-size:56px;fill:#93a1a1;fill-opacity:1">Reproducibility</tspan></text>
+         style="font-size:56px;fill:#657b83;fill-opacity:1;-inkscape-font-specification:'Libertinus Serif Display';font-family:'Libertinus Serif Display';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Reproducibility</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:56px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';letter-spacing:0px;word-spacing:0px;fill:#dc322f;fill-opacity:1"
+       style="font-size:56px;line-height:1.25;font-family:'Libertinus Serif Display';-inkscape-font-specification:'Libertinus Serif Display';letter-spacing:0px;word-spacing:0px;fill:#dc322f;fill-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
        x="-511.12726"
        y="364.19452"
        id="text381-7-3"
@@ -84,10 +84,10 @@
          id="tspan379-5-5"
          x="-511.12726"
          y="364.19452"
-         style="font-size:56px;fill:#dc322f;fill-opacity:1">Practical</tspan></text>
+         style="font-size:56px;fill:#dc322f;fill-opacity:1;-inkscape-font-specification:'Libertinus Serif Display';font-family:'Libertinus Serif Display';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Practical</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:56px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';letter-spacing:0px;word-spacing:0px;fill:#dc322f;fill-opacity:1"
+       style="font-size:56px;line-height:1.25;font-family:'Libertinus Serif Display';-inkscape-font-specification:'Libertinus Serif Display';letter-spacing:0px;word-spacing:0px;fill:#dc322f;fill-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
        x="1193.712"
        y="204.61595"
        id="text381-3"
@@ -97,10 +97,10 @@
          id="tspan379-6"
          x="1193.712"
          y="204.61595"
-         style="font-size:56px;fill:#dc322f;fill-opacity:1">Preregistration</tspan></text>
+         style="font-size:56px;fill:#dc322f;fill-opacity:1;-inkscape-font-specification:'Libertinus Serif Display';font-family:'Libertinus Serif Display';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Preregistration</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:32px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#93a1a1;fill-opacity:1"
+       style="font-size:32px;line-height:1.25;font-family:'Libertinus Sans';-inkscape-font-specification:'Libertinus Sans';letter-spacing:0px;word-spacing:0px;fill:#657b83;fill-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
        x="505.13239"
        y="339.58743"
        id="text2097"><tspan
@@ -114,7 +114,7 @@
          id="tspan2367">reproducibility workflow</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#93a1a1;fill-opacity:1"
+       style="font-size:40px;line-height:1.25;font-family:'Libertinus Sans';-inkscape-font-specification:'Libertinus Sans';letter-spacing:0px;word-spacing:0px;fill:#657b83;fill-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
        x="671.22614"
        y="501.17099"
        id="text2097-0"><tspan
@@ -124,7 +124,7 @@
          id="tspan2367-6">1. Paper</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#b58900;fill-opacity:1"
+       style="font-size:40px;line-height:1.25;font-family:'Libertinus Sans';-inkscape-font-specification:'Libertinus Sans';letter-spacing:0px;word-spacing:0px;fill:#b58900;fill-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
        x="1272.5895"
        y="501.17099"
        id="text2097-0-1"><tspan
@@ -134,7 +134,7 @@
          id="tspan2367-6-8">2. Paper</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:32px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#657b83;fill-opacity:1"
+       style="font-size:32px;line-height:1.25;font-family:'Libertinus Sans';-inkscape-font-specification:'Libertinus Sans';letter-spacing:0px;word-spacing:0px;fill:#657b83;fill-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
        x="1115.4523"
        y="339.58743"
        id="text2097-2"><tspan

@@ -169,7 +169,7 @@ style_extra_css(css = list(".todo" = list(color = "#17C25B"),
 ### `r rmarkdown::metadata$date`
 
 ---
-background-image: url("images/contribution.svg")
+background-image: url("images/contribution_path.svg")
 background-position: center
 background-size: contain
 
@@ -329,9 +329,11 @@ class: center, middle
 
 .huge[
 
-$\mathcal{L}(\text{Theory}, \text{Data})$
+$\mathcal{L}(\text{Theory}, \text{Reality})$
 
 ]
+
+.transparent[is just an estimate.]
 
 ---
 class: center, middle
@@ -342,9 +344,12 @@ class: center, middle
 
 .huge[
 
-$\mathcal{L}(\text{Theory}, \text{Data})$ is just an estimate.
+$\mathcal{L}(\text{Theory}, \text{Data})$
 
 ]
+
+is just an estimate.
+
 
 ---
 class: center, middle
@@ -359,6 +364,8 @@ $\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})$
 
 ]
 
+.transparent[is just an estimate.]
+
 ---
 class: middle, center, inverse
 
@@ -372,6 +379,9 @@ class: middle, center, inverse
 $\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})$
 
 ]
+
+is just an estimate.
+
 
 ---
 class: center, inverse
@@ -413,9 +423,36 @@ class: center, middle
 
 ###.textgrey[enables]
 
+##.right.red[precision]
+
+]
+
+---
+class: center, middle
+
+.big-borders[
+
+##.left.red[Induction]
+
+###.textgrey[enables]
+
+##.right.red[predictions]
+
+]
+
+---
+class: center, middle
+
+.big-borders[
+
+##.left.red[Induction]
+
+###.textgrey[enables]
+
 ##.right.red[soft theories]
 
 ]
+
 
 ---
 class: center, middle
@@ -428,9 +465,9 @@ class: center, middle
 ###.textgrey[Verisimilitude × Randomness × Induction]
 
 ---
-class: center, middle
+class: center, middle, inverse
 
-# Bias
+#.red[Bias]
 
 ---
 class: center, middle
@@ -473,27 +510,6 @@ class: center, middle
 Why is .highlight[bias] a problem?
 
 ]
-
----
-class: center, middle
-
-#.blurry[Uncertainty]
-
----
-class: center, middle
-
-
-If the inductive bias is uncertain evaluating,
-
-
-.huge[
-
-$\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})$
-
-]
-
-
-becomes uncertain and unconvincing.
 
 ---
 class: center, middle
@@ -542,40 +558,48 @@ This is similar to adjusted $R^2$, $C_p$, $AIC$, $BIC$, etc.
 ]
 
 ---
-class: center, middle
+class: center, middle, inverse
 
-.large.transparent[Under some circumstances,]
+.large[.highlight[Reproducibility] is necessary to estimate:]
 
-.huge.red[
+.large[
 
-$\mathcal{C}(\text{Model})$
+$\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})$ + $\mathcal{C}(\text{Model})$ .transparent[ $\require{cancel} + \cancel{\mathcal{C}(\text{Human})}$
+]
 
 ]
 
-.large[is the ability of a model to accommodate random data.]
+.small.right.transparent[*In an ideal world.]
+
 
 ---
 class: center, middle
 
-.large[Under some circumstances,]
+#.textgrey[
 
-.huge.red[
-
-$\mathcal{C}(\text{Model})$
+Why is .highlight[bias] a problem?
 
 ]
- 
-.large[can be approximated.]
 
 ---
 class: center, middle
 
-.large[ .highlight[Reproducibility] is a necessary condition to estimate:]
+#.blurry[Uncertainty]
+
+---
+class: center, middle
+
+
+If the inductive bias is uncertain evaluating,
+
 
 .huge[
-$\mathcal{C}(\text{Model})$]
 
-.transparent[*In an ideal world.]
+$\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})$
+
+]
+
+becomes uncertain and unconvincing.
 
 ---
 class: center, middle
@@ -598,53 +622,6 @@ class: center, middle
 $\mathcal{C}(\text{Human})$
 
 ]
-
----
-class: middle, center
-
-.pull-left[
-
-###.center[Reproducibility]
-
-Allows estimating:
-
-.large[
-
-$$\mathcal{C}(\text{Statistical Model})$$
-
-
-]
-
-
-]
-
-.pull-right[
-
-###.center[Preregistration]
-
-Does reduce:
-
-.large[
-
-$$\mathcal{C}(\text{Human})$$
-
-]
-
-
-]
----
-class: center, middle
-
-.large[.highlight[Reproducibility] is necessary to estimate:]
-
-.large[
-
-$\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})$ + $\mathcal{C}(\text{Model})$ .transparent[ $\require{cancel} + \cancel{\mathcal{C}(\text{Human})}$
-]
-
-]
-
-.small.right.transparent[*In an ideal world.]
 
 ---
 class: center, middle
@@ -671,20 +648,55 @@ $\require{cancel}\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Dat
 ]
 
 .small.right.grey[*In an ideal world.]
+
 ---
-background-image: url("images/contribution1.svg")
+class: middle, center, inverse
+
+.pull-left[
+
+###.center[Reproducibility]
+
+Allows estimating:
+
+.large[
+
+$$\mathcal{C}(\text{Model})$$
+
+
+]
+
+
+]
+
+.pull-right[
+
+###.center[Preregistration]
+
+Does reduce:
+
+.large[
+
+$$\mathcal{C}(\text{Human})$$
+
+]
+
+
+]
+
+---
+background-image: url("images/contribution1_path.svg")
 background-position: center
 background-size: contain
 ---
-background-image: url("images/contribution2.svg")
+background-image: url("images/contribution2_path.svg")
 background-position: center
 background-size: contain
 ---
-background-image: url("images/contribution3.svg")
+background-image: url("images/contribution3_path.svg")
 background-position: center
 background-size: contain
 ---
-background-image: url("images/contribution4.svg")
+background-image: url("images/contribution4_path.svg")
 background-position: center
 background-size: contain
 ---
@@ -1055,6 +1067,6 @@ p +
 ```
 
 ---
-background-image: url("images/contribution.svg")
+background-image: url("images/contribution_path.svg")
 background-position: center
 background-size: contain

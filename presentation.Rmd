@@ -380,7 +380,7 @@ $\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})$
 
 ]
 
-is just an estimate.
+.transparent[is just an estimate.]
 
 
 ---
@@ -595,7 +595,19 @@ If the inductive bias is uncertain evaluating,
 
 .huge[
 
-$\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})$
+  $\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Data})$
+  
+]
+
+.huge[
+
+$+$ 
+
+]
+
+.huge.blurry2[
+
+$\mathcal{C}(\text{Model})$
 
 ]
 

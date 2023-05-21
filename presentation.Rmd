@@ -558,6 +558,19 @@ This is similar to adjusted $R^2$, $C_p$, $AIC$, $BIC$, etc.
 ]
 
 ---
+class: center, middle
+
+.large.transparent[Under some circumstances,]
+
+.huge.red[
+
+$\mathcal{C}(\text{Model})$
+
+]
+
+.large[is the ability of a model to accommodate random data.]
+
+---
 class: center, middle, inverse
 
 .large[.highlight[Reproducibility] is necessary to estimate:]

@@ -636,7 +636,7 @@ $\mathcal{C}(\text{Human})$
 ]
 
 ---
-class: center, middle
+class: center, middle, inverse
 
 .large[Reproducibility + .highlight[Preregistration] are sufficient* to estimate:]
 
@@ -649,7 +649,7 @@ $\require{cancel}\mathcal{L}(\text{Model}(\text{Theory}, \text{Data}), \text{Dat
 .small.right.grey[*In an ideal world.]
 
 ---
-class: center, middle
+class: center, middle, inverse
 
 .large[Reproducibility + .highlight[Preregistration] are sufficient* to estimate:]
 
@@ -721,7 +721,7 @@ Peikert, A., & Brandmaier, A. M. (2021). A Reproducible Data Analysis Workflow. 
 Peikert, A., van Lissa, C. J., & Brandmaier, A. M. (2021). Reproducible Research in R: A Tutorial on How to Do the Same Thing More Than Once. *Psych*, *3*(4), 836–867. https://doi.org/10.3390/psych3040053
 
 **3\. Paper:**  
-Peikert, A., & Brandmaier, A. M. (2023). *Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.* PsyArXiv. .textgrey[https://doi.org/10.31234/osf.io/cs8wb]
+Peikert, A., Ernst, M. S., & Brandmaier, A. M. (2023, February 17). *Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.* PsyArXiv. .textgrey[https://doi.org/10.31234/osf.io/cs8wb]
 
 **Synopsis:**  
 Peikert, A. (2023). *Towards Transparency and Open Science: A Principled Perspective on Computational Reproducibility and Preregistration* [Doctoral dissertation, Humboldt-Universität zu Berlin]. Zenodo. https://www.doi.org/10.5281/zenodo.7654989
@@ -885,7 +885,7 @@ Peikert, A., & Brandmaier, A. M. (2021). A Reproducible Data Analysis Workflow. 
 Peikert, A., van Lissa, C. J., & Brandmaier, A. M. (2021). Reproducible Research in R: A Tutorial on How to Do the Same Thing More Than Once. *Psych*, *3*(4), 836–867. https://doi.org/10.3390/psych3040053
 
 **3\. Paper:**  
-Peikert, A., & Brandmaier, A. M. (2023). *Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.* PsyArXiv. .textgrey[https://doi.org/10.31234/osf.io/cs8wb]
+Peikert, A., Ernst, M. S., & Brandmaier, A. M. (2023, February 17). *Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.* PsyArXiv. .textgrey[https://doi.org/10.31234/osf.io/cs8wb]
 
 **Synopsis:**  
 Peikert, A. (2023). *Towards Transparency and Open Science: A Principled Perspective on Computational Reproducibility and Preregistration* [Doctoral dissertation, Humboldt-Universität zu Berlin]. Zenodo. https://www.doi.org/10.5281/zenodo.7654989
@@ -949,7 +949,7 @@ Peikert, A., & Brandmaier, A. M. (2021). A Reproducible Data Analysis Workflow. 
 Peikert, A., van Lissa, C. J., & Brandmaier, A. M. (2021). Reproducible Research in R: A Tutorial on How to Do the Same Thing More Than Once. *Psych*, *3*(4), 836–867. https://doi.org/10.3390/psych3040053
 
 **.red[3\. Paper:]**  
-Peikert, A., & Brandmaier, A. M. (2023). *Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.* PsyArXiv. .textgrey[https://doi.org/10.31234/osf.io/cs8wb]
+Peikert, A., Ernst, M. S., & Brandmaier, A. M. (2023, February 17). *Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.* PsyArXiv. .textgrey[https://doi.org/10.31234/osf.io/cs8wb]
 
 **Synopsis:**  
 Peikert, A. (2023). *Towards Transparency and Open Science: A Principled Perspective on Computational Reproducibility and Preregistration* [Doctoral dissertation, Humboldt-Universität zu Berlin]. Zenodo. https://www.doi.org/10.5281/zenodo.7654989

@@ -1,6 +1,7 @@
 ---
 title: "Towards Transparency and Open Science"
 subtitle: "A Principled Perspective on Computational Reproducibility and Preregistration"
+author: "Aaron Peikert"
 output:
   bookdown::pdf_document2:
     includes:

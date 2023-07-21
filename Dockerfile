@@ -4,7 +4,7 @@ FROM rocker/verse:4.1.3
 ARG BUILD_DATE=2022-12-13
 WORKDIR /home/rstudio
 RUN apt-get update -y && apt-get install -y rsync
-RUN tlmgr install collection-latexrecommended libertine pdfpages lualatex-math luatexbase titling
+RUN tlmgr install collection-latexrecommended libertine pdfpages lualatex-math luatexbase titling pdfx
 RUN MRAN=https://mran.microsoft.com/snapshot/${BUILD_DATE} \
   && echo MRAN=$MRAN >> /etc/environment \
   && export MRAN=$MRAN \

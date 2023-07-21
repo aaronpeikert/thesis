@@ -42,6 +42,7 @@ repro:
     - lualatex-math
     - luatexbase
     - titling
+    - pdfx
   apt:
     - git
     - rsync

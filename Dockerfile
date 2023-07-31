@@ -4,7 +4,7 @@ FROM rocker/verse:4.1.3
 ARG BUILD_DATE=2022-12-13
 WORKDIR /home/rstudio
 RUN apt-get update -y && apt-get install -y rsync
-RUN tlmgr install collection-latexrecommended libertine pdfpages lualatex-math luatexbase titling pdfx
+RUN tlmgr install collection-latexrecommended libertine pdfpages lualatex-math luatexbase titling pdfx luatex85 colorprofiles
 RUN apt-get update -y && apt-get install -y git rsync
 RUN install2.r --error --skipinstalled \ 
   gert \ 

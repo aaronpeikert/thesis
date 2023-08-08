@@ -1,12 +1,8 @@
 manuscript.tex: manuscript.Rmd references.bib zusammenfassung.md abstract.md frontmatter.md cover.pdf preamble.tex apa.csl papers/
 	$(RUN1) Rscript -e 'rmarkdown::render("$(WORKDIR)/$<", "all")' $(RUN2)
 
-presentation.html: presentation.Rmd
+presentation.html: presentation.Rmd data/simulation.rds R/plots.R
 	$(RUN1) Rscript -e 'rmarkdown::render("$(WORKDIR)/$<", "all")' $(RUN2)
 
 README.md: README.Rmd abstract.md
 	$(RUN1) Rscript -e 'rmarkdown::render("$(WORKDIR)/$<", "all")' $(RUN2)
-
-test.tex: test.Rmd
-	$(RUN1) Rscript -e 'rmarkdown::render("$(WORKDIR)/$<", "all")' $(RUN2)
-

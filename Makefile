@@ -19,7 +19,7 @@ manuscript_grey.pdf: manuscript_gh.pdf
 	-sColorConversionStrategy=Gray \
 	-sDEVICE=pdfwrite \
 	-o manuscript_grey.pdf \
-	manuscript.pdf
+	manuscript_gh.pdf
 
 dissertation_peikert_aaron.pdf: manuscript_grey.pdf
 	gs \

@@ -8,6 +8,8 @@ manuscript.pdf: manuscript.tex
 
 edoc: dissertation_peikert_aaron.pdf
 
+.PHONY: manuscript_gh.pdf
+
 manuscript_gh.pdf:
 	curl -sL https://aaronpeikert.github.io/thesis/manuscript.pdf > $@
 

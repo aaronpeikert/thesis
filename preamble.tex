@@ -1,5 +1,12 @@
 \usepackage{libertine}
+\usepackage{titling}
 \DeclareRobustCommand\textsb[1]{{\libertineSB#1}}
+
+\begin{filecontents*}[overwrite]{\jobname.xmpdata}
+\Title{Towards Transparency and Open Science}
+\Author{Aaron Peikert}
+\Language{en-US}
+\end{filecontents*}
 
 %\usepackage{ebgaramond}
 %\usepackage{garamondlibre}
@@ -7,7 +14,7 @@
 %\usepackage{MinionPro}
 \usepackage{pdfpages}
 \usepackage{luatex85}
-\usepackage[a-1b]{pdfx}
+\usepackage[a-2b,mathxmp]{pdfx}
 \usepackage{colorprofiles}
 
 % below works well with hyperref, but spacing is standard (to large)
@@ -22,7 +29,7 @@
 % titlesec does not play nice with hyperref, so hack:
 \newcommand{\sectionbreak}{\phantomsection}
 \newcommand{\subsectionbreak}{\phantomsection}
-  \usepackage{titling}
+
 \pretitle{
    \begin{minipage}{\textwidth}
    \includepdf[offset=5mm 0mm]{cover.pdf}

@@ -42,7 +42,7 @@ repro:
     - lualatex-math
     - luatexbase
     - titling
-    - pdfx
+    - pdfx    
   apt:
     - git
     - rsync
@@ -634,7 +634,7 @@ R Markdown, Git, Make, and Docker. *Quantitative and Computational Methods in Be
 
 \cleardoublepage
 
-\includepdf[pages=-, offset=7mm 0mm,frame=false]{papers/workflow.pdf}
+\includepdf[pages=-, width=\paperwidth - 12mm, offset=12mm 0]{papers/workflow.pdf}
 
 \cleardoublepage
 
@@ -646,7 +646,7 @@ Peikert, A., van Lissa, C. J., & Brandmaier, A. M. (2021). Reproducible Research
 
 \cleardoublepage
 
-\includepdf[pages=-, offset=7mm 0mm]{papers/tutorial.pdf}
+\includepdf[pages=-, width=\paperwidth - 12mm, offset=12mm 0]{papers/tutorial.pdf}
 
 \cleardoublepage
 
@@ -660,4 +660,4 @@ Peikert, A., & Brandmaier, A. M. (2023). *Why does preregistration increase the 
 
 \cleardoublepage
 
-\includepdf[pages=-, offset=7mm 0mm]{papers/prereg.pdf}
+\includepdf[pages=-, width=\paperwidth - 12mm, offset=12mm 0]{papers/prereg.pdf}

@@ -6,6 +6,29 @@ all: manuscript.pdf README.md
 
 manuscript.pdf: manuscript.tex
 
+edoc: dissertation_peikert_aaron.pdf
+
+manuscript_gh.pdf:
+	curl -sL https://aaronpeikert.github.io/thesis/manuscript.pdf > $@
+
+# used GPL Ghostscript 9.53.3
+manuscript_grey.pdf: manuscript_gh.pdf
+	gs \
+	-sColorConversionStrategy=Gray \
+	-sDEVICE=pdfwrite \
+	-o manuscript_grey.pdf \
+	manuscript.pdf
+
+dissertation_peikert_aaron.pdf: manuscript_grey.pdf
+	gs \
+	-dPDFA=1 \
+	-dNOOUTERSAVE \
+	-sColorConversionStrategy=UseDeviceIndependentColor \
+	-sDEVICE=pdfwrite \
+	-dPDFACompatibilityPolicy=2 \
+	-o dissertation_peikert_aaron.pdf \
+	manuscript_grey.pdf
+
 index.html: presentation.html
 	cp $< $@
 

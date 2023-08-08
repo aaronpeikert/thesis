@@ -19,17 +19,20 @@ manuscript_grey.pdf: manuscript_gh.pdf
 	-sColorConversionStrategy=Gray \
 	-sDEVICE=pdfwrite \
 	-o manuscript_grey.pdf \
-	manuscript_gh.pdf
+	manuscript_gh.pdf \
+	manuscript.pdfmark
 
 dissertation_peikert_aaron.pdf: manuscript_grey.pdf
 	gs \
-	-dPDFA=1 \
+	-dPDFA=2 \
 	-dNOOUTERSAVE \
 	-sColorConversionStrategy=UseDeviceIndependentColor \
+	-sProcessColorModel=DeviceRGB \
 	-sDEVICE=pdfwrite \
 	-dPDFACompatibilityPolicy=2 \
 	-o dissertation_peikert_aaron.pdf \
-	manuscript_grey.pdf
+	manuscript_grey.pdf \
+	manuscript.pdfmark
 
 index.html: presentation.html
 	cp $< $@
